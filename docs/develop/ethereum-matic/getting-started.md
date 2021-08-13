@@ -9,7 +9,7 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-Matic brings you a trustless two-way transaction channel between Matic and Ethereum by introducing the cross-chain bridge with Plasma and PoS security. With this users can transfer tokens across matic without incurring third-party risks and market liquidity limitations. **_The Plasma and PoS Bridge is available on both Mumbai as well as Mainnet._**
+Matic brings you a trustless two-way transaction channel between Matic and Ethereum by introducing the cross-chain bridge with Plasma and PoS security. With this, users can transfer tokens across matic without incurring third-party risks and market liquidity limitations. **_The Plasma and PoS Bridge is available on both Mumbai as well as Mainnet._**
 
 **Matic network bridge provides a scaling solution which is near-instant, low-cost, and quite flexible**. Matic uses a dual-consensus architecture(Plasma + Proof-of-Stake (PoS) platform)
 to optimise for speed and decentralisation. We consciously architected the system to support arbitrary state transitions on our sidechains, which are EVM-enabled.
@@ -26,6 +26,6 @@ to optimise for speed and decentralisation. We consciously architected the syste
 | **Short Description**              | DApp Developer's looking for flexibility and faster withdrawals with POS system security | DApp Developer's looking for increased security guarantees with Plasma exit mechanism\.   |
 | **Structure**                      | Highly flexible                                                                          | Rigid, Less Flexible                                                                      |
 | **Deposit\(Ethereum → Matic\)**    | 3-5 mins                                                                                 | 3-5 mins                                                                                  |
-| **Withdrawal\(Matic → Ethereum\)** | 1 checkpoint = ~3 hours                                                                  | 10080 mins or 7 days \(Challenge Period\)                                                 |
+| **Withdrawal\(Matic → Ethereum\)** | 1 checkpoint = ~ 20 mins to 3 hours                                                                  | 10080 mins or 7 days \(Challenge Period\)                                                 |
 | **Security**                       | Proof\-of\-Stake system, secured by a robust set of external validators\.                | Matic’s Plasma contracts piggybacks on Ethereum’s security with 7 days challenge period\. |
 | **Support Standards**              | ETH, ERC20, ERC721, ERC1155 and Others                                                   | Only ETH, ERC20, ERC721                                                                   |

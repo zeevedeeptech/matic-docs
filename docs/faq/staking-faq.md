@@ -14,6 +14,21 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 For Staking you would need to have funds on Ethereum Mainnet. Login to Metamask on the Ethereum network using the Staking Dashboard. https://wallet.matic.network/staking
 
+Please watch the video for a graphical illustration of how this works
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/staking_faq/How to Stake.mov"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
+
+### I've staked. How do i stake more?
+
+Please watch the video for a graphical illustration of how this works
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/staking_faq/Stakemore.mov"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 ### I am unable to view the Staking tab. How do i access Staking?
 
@@ -41,6 +56,13 @@ You can visit the below link for Staking: https://wallet.matic.network/staking/v
 
 You would need to have a minimum of 2 Matic to withdraw rewards.
 
+### How to restake rewards?
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/staking_faq/Restake Rewards.mov"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
+
 ### I want to Restake Rewards but I am unable to ?
 
 You would need to have a minimum of 2 Matic to restake rewards.
@@ -53,8 +75,14 @@ You can claim your rewards by clicking on the “My Account”, all the delegato
 <img src={useBaseUrl("img/staking_faq/Withdraw Rewards SS1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/Withdraw Rewards SS2.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/Withdraw Rewards SS2.png")} height="380px"/><br/>
 
+Please watch the video for a graphical illustration of how this works
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/staking_faq/Withdraw Rewards.mov"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 ### How to restake?
 
@@ -68,7 +96,7 @@ Clicking on Restake Reward will ask you for confirmation from your Metamask acco
 <img src={useBaseUrl("img/staking_faq/Restake SS1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/Restake SS2.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/Restake SS2.png")} height="415px"/><br/>
 
 
 ### How to unbond?
@@ -81,8 +109,14 @@ Here you will see an Unbond button for each of the validators. Click on the Unbo
 <img src={useBaseUrl("img/staking_faq/Unbond SS1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/Unbond SS2.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/Unbond SS2.png")} height="420px"/><br/>
 
+Please watch the video for a graphical illustration of how this works
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/staking_faq/Unbond.mov"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 ### How to claim stake?
 
@@ -92,7 +126,14 @@ Once the unbonding period is complete the Claim Stake button will be enabled and
 <img src={useBaseUrl("img/staking_faq/Claim Stake SS1.png")} height="300px"/><br/>
 
 `Step 2` <br/>
-<img src={useBaseUrl("img/staking_faq/Claim Stake SS2.png")} height="300px"/><br/>
+<img src={useBaseUrl("img/staking_faq/Claim Stake SS2.png")} height="360px"/><br/>
+
+Please watch the video for a graphical illustration of how this works
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/staking_faq/Claim Stake.mov"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
 ### Are hardware wallets supported?
 
@@ -141,4 +182,4 @@ Check for the following:
 
 ### I have unbonded, how long will it take to Unbond
 
-The unbonding period is currently set to 80 checkpoints. This is approximately 9-10 days. Every checkpoint takes approximately 3 hours. However, some checkpoints could be delayed due to congestion on Ethereum.
+The unbonding period is currently set to 80 checkpoints. This is approximately ~3-4 days. Every checkpoint takes approximately 3 hours. However, some checkpoints could be delayed due to congestion on Ethereum.

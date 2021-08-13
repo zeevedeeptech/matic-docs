@@ -1,6 +1,6 @@
 ---
 id: mintable-assets
-title: Matic Mintable Assets
+title: Polygon Mintable Assets
 description: Build your next blockchain app on Matic.
 keywords:
   - docs
@@ -8,21 +8,21 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-## What are Matic mintable tokens?
+## What are Polygon mintable tokens?
 
-Assets can be transferred to and from across the Ethereum and Matic chain using the PoS bridge. These assets include ERC20, ERC721, ERC1155 and many other token standards. Most of the assets are pre-existing on Ethereum chain. But new assets can be created on the Matic chain as well and moved back to Ethereum chain as and when required. This can save lots of gas and time that is spent on token minting on Ethereum. Creation of assets on the Matic chain is much easier and a more recommended approach. These assets can be moved to Ethereum chain when required. Such type of assets are called Matic mintable assets. 
+Assets can be transferred to and from across the Ethereum and Polygon chain using the PoS bridge. These assets include ERC20, ERC721, ERC1155 and many other token standards. Most of the assets are pre-existing on Ethereum chain. But new assets can be created on the Polygon chain as well and moved back to Ethereum chain as and when required. This can save lots of gas and time that is spent on token minting on Ethereum. Creation of assets on the Polygon chain is much easier and a more recommended approach. These assets can be moved to Ethereum chain when required. Such type of assets are called Polygon mintable assets. 
 
-In the case of Matic Mintable tokens, assets are created on Matic. When a Matic minted asset has to be moved to Ethereum, the asset has to be burned first and then a proof of this burn transaction has to be submitted on the Ethereum chain. The RootChainManager contract calls a special predicate contract internally. This predicate contract directly calls the mint function of the asset contract on Ethereum and the tokens are minted to the users address. This special predicate is called the MintableAssetPredicate.
+In the case of Polygon Mintable tokens, assets are created on Polygon. When a Polygon minted asset has to be moved to Ethereum, the asset has to be burned first and then a proof of this burn transaction has to be submitted on the Ethereum chain. The RootChainManager contract calls a special predicate contract internally. This predicate contract directly calls the mint function of the asset contract on Ethereum and the tokens are minted to the users address. This special predicate is called the MintableAssetPredicate.
 
 ## What are the requirements to be satisfied? 
 
-There are a few conditions that have to be strictly followed when we have to create an asset on Matic and then move it back to Ethereum. 
+There are a few conditions that have to be strictly followed when we have to create an asset on Polygon and then move it back to Ethereum. 
 
-### Contract to be deployed on Matic chain
+### Contract to be deployed on Polygon chain
 You can either deploy
 
-- A mintable token contract on the Matic chain or
-- Submit a mapping request and the mintable token contract can be autodeployed for you on the Matic chain via the Mapper tool. You just need to submit a mapping request at [https://mapper.matic.today/](https://mapper.matic.today/) and leave the child contract field blank in the form. Also, do remember to choose the Mintable option in the form.
+- A mintable token contract on the Polygon chain or
+- Submit a mapping request and the mintable token contract can be autodeployed for you on the Polygon chain via the Mapper tool. You just need to submit a mapping request at [https://mapper.matic.today/](https://mapper.matic.today/) and leave the child contract field blank in the form. Also, do remember to choose the Mintable option in the form.
 
 Please visit this [link](/docs/develop/ethereum-matic/submit-mapping-request) to understand how to create a new mapping request. 
 
@@ -49,14 +49,14 @@ Please do mention the contract address of the deployed child token when you subm
 
     
     ```jsx
-    Mainnet
+    Ethereum Mainnet
     "MintableERC20PredicateProxy"  : "0x9923263fA127b3d1484cFD649df8f1831c2A74e4",
     "MintableERC721PredicateProxy" : "0x932532aA4c0174b8453839A6E44eE09Cc615F2b7",
     "MintableERC1155PredicateProxy": "0x2d641867411650cd05dB93B59964536b1ED5b1B7",
     ```
 
     ```jsx
-    Mumbai( Matic Testnet )
+    Goerli Testnet
     "MintableERC20PredicateProxy"  : "0x37c3bfC05d5ebF9EBb3FF80ce0bd0133Bf221BC8",
     "MintableERC721PredicateProxy" : "0x56E14C4C1748a818a5564D33cF774c59EB3eDF59",
     "MintableERC1155PredicateProxy": "0x72d6066F486bd0052eefB9114B66ae40e0A6031a",

@@ -70,7 +70,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 **😎 Advanced**
 
 - [Sidechains and Plasma](https://docs.matic.network/docs/home/blockchain-basics/sidechain)
-- [Matic's architecture and Security](https://docs.matic.network/docs/home/architecture/components)
+- [Matic's architecture and Security](https://docs.matic.network/docs/home/architecture/security-models)
 - [When to use Plasma](https://docs.matic.network/docs/home/architecture/security-models)
 - [Moving assets from Mainchain to Matic chain: the Plasma way](https://docs.matic.network/docs/develop/maticjs/getting-started)
 - [Swapping Plasma Assets](https://docs.matic.network/docs/develop/advanced/swap-assets)

@@ -9,11 +9,17 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
+## Quick Summary:
+
+This section of the docs deal with tracking and monitoring the pace and speed of transactions done within the Polygon ecosystem. Depositing into the network (when done with the PoS bridge) typically takes an average of 5-7 minutes but we've seen instances where users seek to see real time progress reports. As a developer, you may also want to augment the  UX of your app with instant feedback to the user. In all these cases, look into this section, we have exactly what you need.
+
 ## Deposit Events
 
-When a token is deposited from Ethereum to Matic, a process called state sync mechanism comes into play that eventually mints the tokens for the user on the Matic chain. This process takes about ~5-7 minutes to happen and hence listening to the deposit event is very important to create a good user experience. This is an example script that can be used to track real time deposit events.
+When a user deposits a token from Ethereum to Polygon, the [State Sync Mechanism](https://docs.matic.network/docs/contribute/state-sync/state-sync/#:~:text=State%20Sync%20is%20the%20native,logic%20sits%20inside%20onStateReceive%20function.) is triggered. If you didn't click on that link, the state sync mechanism is simply the native mechanism that reads Ethereum data from Polygon EVM chain and establishes a balance between the two chains. Over a process that lasts for 5-7 minutes, the mechanism mints the equivalent value of the Ethereum tokens deposits on the Polygon chain for the user. As this takes a small amount of time, it is sometimes good UX to listen to the event stream and track it to see when it starts and ends.
 
-### Realtime deposit event tracking using a web socket connection
+## Realtime deposit event tracking using a web socket connection
+
+The fastest route to seeing the stream of the connection and intermittently checking to see its process is via a WebSocket protocol. This is what your sample script should look like
 
 ```jsx
 const WebSocket = require("ws");
@@ -110,140 +116,11 @@ checkDepositStatus(
   });
 ```
 
-### Historical deposit completion check by querying the blockchain.
-
-This script can be used to check if a particular deposit has been completed on the child chain or not. The main chain and the child chain keep incrementing the value of a global counter variable on both the chains. The [StateSender](https://github.com/maticnetwork/contracts/blob/develop/contracts/root/stateSyncer/StateSender.sol#L38) contract emits an event that has the counter value. The counter value on the child chain can be queried from the [StateReceiver](https://github.com/maticnetwork/genesis-contracts/blob/master/contracts/StateReceiver.sol#L12) contract. If the counter value on child chain is greater than or equal to the same on main chain, then the deposit can considered as completed successfully.
-
-```js
-let Web3 = require("web3");
-
-// For mainnet, use Ethereum RPC
-const provider = new Web3.providers.HttpProvider(
-  "https://goerli.infura.io/v3/API-KEY"
-);
-const web3 = new Web3(provider);
-
-// For mainnet, use the matic mainnet RPC: <Sign up for a dedicated free RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.>
-const child_provider = new Web3.providers.HttpProvider(
-  "<insert Mumbai testnet RPC URL>" //Get a free RPC URL from https://rpc.maticvigil.com/ or other hosted node providers.
-);
-
-const child_web3 = new Web3(child_provider);
-
-const contractInstance = new child_web3.eth.Contract(
-  [
-    {
-      constant: true,
-      inputs: [],
-      name: "lastStateId",
-      outputs: [
-        {
-          internalType: "uint256",
-          name: "",
-          type: "uint256",
-        },
-      ],
-      payable: false,
-      stateMutability: "view",
-      type: "function",
-    },
-  ],
-  "0x0000000000000000000000000000000000001001"
-);
-
-async function depositCompleted(txHash) {
-  let tx = await web3.eth.getTransactionReceipt(txHash);
-  let child_counter = await contractInstance.methods.lastStateId().call();
-  let root_counter = web3.utils.hexToNumberString(tx.logs[3].topics[1]);
-  return child_counter >= root_counter;
-}
-
-// Param 1 - Deposit transaction hash
-depositCompleted(
-  "0x29d901174acd42d4651654a502073f3c876ff85b7887b2e2634d00848f6c982e"
-)
-  .then((res) => {
-    console.log(res);
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-```
-
-## Checkpoint Events
-
-### Real-time checkpoint status tracking
-
-All transactions that occur on Matic chain are check-pointed to the Ethereum chain in frequent intervals of time by the validators. This time is ~10 mins on Mumbai and ~30 mins on Matic mainnet. The checkpoint occurs on a contract called the RootChain contract deployed on Ethereum chain. The following script can be used to listen to Real-time checkpoint inclusion events.
-
-```jsx
-const Web3 = require("web3");
-
-// Ethereum provider
-const provider = new Web3.providers.WebsocketProvider(
-  "wss://goerli.infura.io/ws/v3/api-key"
-);
-
-const web3 = new Web3(provider);
-
-// Sign up for a free dedicated RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.
-const chil_provider = new Web3.providers.HttpProvider(
-  "<insert Mumbai testnet RPC URL>"
-);
-const child_web3 = new Web3(chil_provider);
-
-// txHash - transaction hash on Matic
-// rootChainAddress - root chain proxy address on Ethereum
-async function checkInclusion(txHash, rootChainAddress) {
-  let txDetails = await child_web3.eth.getTransactionReceipt(txHash);
-
-  block = txDetails.blockNumber;
-  return new Promise(async (resolve, reject) => {
-    web3.eth.subscribe(
-      "logs",
-      {
-        address: rootChainAddress,
-      },
-      async (error, result) => {
-        if (error) {
-          reject(error);
-        }
-
-        console.log(result);
-        if (result.data) {
-          let transaction = web3.eth.abi.decodeParameters(
-            ["uint256", "uint256", "bytes32"],
-            result.data
-          );
-          if (block <= transaction["1"]) {
-            resolve(result);
-          }
-        }
-      }
-    );
-  });
-}
-
-// Param1 - Burn transaction hash on child chain
-// Param2 - RootChainProxy Address on root chain (0x86E4Dc95c7FBdBf52e33D563BbDB00823894C287 for mainnet)
-checkInclusion(
-  "0x9d1e61d9daaa12fcd00fcf332e1c06fd8253a949b4f2a4741c964454a67ea943",
-  "0x2890ba17efe978480615e330ecb65333b880928e"
-)
-  .then((res) => {
-    console.log(res);
-    provider.disconnect();
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-```
-
-### Historical checkpoint inclusion check by querying the blockchain.
+### Historical Checkpoint Inclusion Check by querying the blockchain
 
 This can be checked using the following API. The block number of the burn transaction on the child chain has to be given as a param to this GET API.
 
-```
+```jsx
 // Testnet
 https://apis.matic.network/api/v1/mumbai/block-included/block-number
 // Mainnet

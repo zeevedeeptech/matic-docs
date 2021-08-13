@@ -8,45 +8,52 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
-### Introduction
+## Quick Summary:
 
-Mapping is necessary in order to transfer your assets to and from the Ethereum and Matic Network.
+This section deals with a very necessary prerequisite to using the Polygon bridge - Mapping. Mapping is the process of creating and maintaining a stable connection between the contracts on the two networks(Ethereum and Polygon) and transferring assets to and fro the two networks.
 
-- **The Root chain** :: refers to either Goerli or Ethereum Mainnet
-- **The Child chain** :: refers to either Matic Mumbai or Matic Matic Mainnet
+## Introduction
 
-If you already have your token contract deployed on the Root chain and want to move it to Child chain, then you should follow this walkthrough, but if you intend to deploy your contract on Matic Mainnet first, mint the tokens on the Child chain first and then move them back to the Root chain. You should then follow this [guide](/docs/develop/ethereum-matic/mintable-assets).
+ To understand how mapping works, the first thing to do is to understand the technical terms used to describe the transactions. 
+
+- The **Root Chain** here refers to either the Goerli or Ethereum Mainnet
+- The **Child Chain** refers to either Mumbai or Polygon Mainnet
+
+If you have your token contract deployed on the **Root Chain** and want to move it to the **Child Chain** then this is the documentation for you. If however your intent is to deploy your contract on the **Polygon** mainnet, mint the tokens on the **Child Chain** and then move them back to the **Root Chain** - ****the end result of this is what we call Polygon Mintable Assets -  then you need to follow this [guide](https://docs.matic.network/docs/develop/ethereum-matic/mintable-assets/)
 
 ## Standard Child Token
 
-If you just need a standard ERC20/ERC721/ERC1155 contract, then you can go ahead and submit a mapping request at https://mapper.matic.today/ and we will auto deploy the standard child token contract for you. 
+If your use case is a very standard ERC20/ERC721/ERC1155 contract, then you're in luck. Polygon makes its very easy for you to simply submit a mapping request at [https://mapper.matic.today/](https://mapper.matic.today/). Do that right now and the team will be on standby to automatically deploy a standard child token contract for you.
 
-Standard Child Token contract will look like these:-
+Incase you're not sure what a Standard Child Token contract looks like, please check the following links to see if they bear resemblance to your usecase
+
 1. [ERC20](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildERC20.sol#L1492-#L1508)
 2. [ERC721](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildERC721.sol#L2157-#L2238)
 3. [ERC1155](https://github.com/maticnetwork/pos-portal/blob/master/flat/ChildERC1155.sol#L1784-#L1818)
 
-Please visit this [link](/docs/develop/ethereum-matic/submit-mapping-request) to understand how to create a new mapping request. 
+Please visit this [link](https://docs.matic.network/docs/develop/ethereum-matic/submit-mapping-request/) to understand how to create a new mapping request.
 
 ## Custom Child Token
 
-If you need a custom child token contract which has additional functions to the standard functions, **then you will have to deploy your token contracts on the Child chain** and submit a mapping request [here](https://mapper.matic.today/) and include the address of your deployed child token contract. Let's describe an example of creating a custom child token contract.
+There are many reasons why you may need a custom child token (with additional functions) rather than standard child token. To do this, you'll have to deploy your token contracts on the Child Chain and then submit your mapping request [here](https://mapper.matic.today/). Make sure to include the address of your deployed child token contract and you should be good to go. Let's describe an example of creating a custom child token contract.
 
 **Your custom child contract should follow certain guidelines before you deploy it on the child chain.**
 
-`deposit` method should be present in your custom child contract. This function is called by the `ChildChainManagerProxy` contract whenever a deposit is initiated from the root chain. This deposit function internally mints the token on the child chain.
+The custom child contract must have: 
 
-`withdraw` method should be present in your custom child contract. It can be called to burn your tokens on the child chain. Burning is the first step of your withdrawal process. This withdraw function will internally burn the token on the child chain.
+A **deposit** method**.** The **deposit** method should be present in your custom child contract. This function is called by the ChildChainManagerProxy contract whenever a deposit is initiated from the root chain. This deposit function internally mints the token on the child chain.
 
-These rules need to followed to maintain proper balance of assets between two chains.
+A **withdraw** method. The **withdraw** method must be available as it is what is called to burn your tokens on the child chain. Burning is the first step of the withdrawal process. These rules need to be followed to maintain a proper balance of assets between the two child and root chains.
 
-> Note: No token minting in constructor of child token contract.
+**Sidenote**: No token minting in constructor of child token contract.
 
-#### Implementation
+### Implementation
 
-Now that we covered _why_ we need to implement `deposit` & `withdraw` methods in child token contract, we can now proceed for implementing it.
+Now that we covered why we need to implement **deposit** & **withdraw** methods in child token contract, we can now proceed for implementing it.
 
-```js title="ChildERC20.sol"
+```jsx
+// ChildERC20.sol
+
 pragma solidity 0.6.6;
 
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -84,9 +91,11 @@ contract ChildERC20 is ERC20,
 }
 ```
 
-One thing you might notice in the code sample above is that the `deposit` function can be called by anyone, which is not allowed. In order to prevent this, we're going to make sure it can only be called by `ChildChainManagerProxy`. (ChildChainManagerProxy - on [Mumbai](https://mumbai.polygonscan.com/address/0xb5505a6d998549090530911180f38aC5130101c6/transactions) , on [Matic Mainnet](https://polygonscan.com/address/0xA6FA4fB5f76172d178d61B04b0ecd319C5d1C0aa/) )
+Look into the code block and you'll notice that the deposit function can be called by anyone, which shouldn't be really. In order to prevent this, we're going to make sure it can only be called by ChildChainManagerProxy. (ChildChainManagerProxy - on Mumbai , on Polygon Mainnet)
 
-```js title="ChildERC20.sol"
+```jsx
+// ChildERC20.sol
+
 pragma solidity 0.6.6;
 
 import {ERC20} from "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -149,10 +158,10 @@ This updated implementation can be used for mapping.
 Steps :
 
 1. Deploy root token on root chain i.e. {Goerli, Ethereum Mainnet}
-2. Ensure your child token has the `deposit` & `withdraw` functions.
-3. Deploy the child token on child chain i.e. {Matic Mumbai, Matic Mainnet}
+2. Ensure your child token has the **deposit** & **withdraw** functions.
+3. Deploy the child token on child chain i.e. {Polygon Mumbai, Polygon Mainnet}
 4. Submit a mapping request, to be resolved by team.
 
 ### Request Submission
 
-Please go use [this link](/docs/develop/ethereum-matic/submit-mapping-request) to submit a mapping request.
+Please go use this [link](https://docs.matic.network/docs/develop/ethereum-matic/submit-mapping-request) to submit a mapping request.
