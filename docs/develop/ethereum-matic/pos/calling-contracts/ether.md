@@ -17,7 +17,7 @@ This section deals with the flow of transactions from the Ethereum to the Polygo
 
 ### Depositing Ether
 
-- Make the depositEtherFor call on the RootChainManager and send the ether asset.
+- Make the depositEtherFor call on the **RootChainManager** and send the ether asset.
 
 ### Withdrawing Ether
 

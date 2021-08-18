@@ -13,11 +13,13 @@ Scalable Relayer Infrastructure for Blockchain Transactions.
 
 ## Introduction
 
-Biconomy is a scalable transaction relayer infrastructure, which can pay blockchain transaction's gas fee for your dApp user, while collecting fees from you on monthly basis, in form of some stable token.
+Biconomy is a scalable transaction relayer infrastructure, which can pay blockchain transaction's gas fee for your dApp user, while collecting fees from you on monthly basis, in form of some stable token. It seeks to abstract away the complexies of the blockchain for customers by enabling gasless transactions, paying in their favourite ERC20 token irrespective of the native coin to be paid in and gas prices optimizations.
 
-Meta Transactions can be crafted in any of following two ways.
+Go to the official docs from Biconomy [here to get started](https://docs.biconomy.io/biconomy-dashboard).
 
-### Contract based Accounts
+
+
+<!-- ### Contract based Accounts
 
 In this approach, for each user an upgradable contract wallet is created, which acts as a proxy contract & relays all transactions to destination smart contract. As user needs to keep all of their assets under supervision of this proxy contract, all blockchain transactions to be routed via this proxy contract.
 
@@ -80,4 +82,4 @@ Now whenever there is a write transaction action(registered in mexa dashboard al
 
 ### Next
 
-You can go through [this](https://github.com/bcnmy/dapp-demo) example for getting an in depth overview of native meta transactions.
+You can go through [this](https://github.com/bcnmy/dapp-demo) example for getting an in depth overview of native meta transactions. -->

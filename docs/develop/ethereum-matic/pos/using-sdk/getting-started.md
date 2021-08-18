@@ -14,10 +14,10 @@ import TabItem from '@theme/TabItem';
 
 ## Quick Summary 
 
-The matic.js SDK takes all the computing power of Polygon and places it right at your finger tip. With custom-made functions that allow for approval, deposit and wtihdraw, all without doing too much footwork, our reason for engineering this was to ensure you can get instant value from our platform. 
+The matic.js SDK takes all the computing power of Polygon and places it right at your finger tip. With custom-made functions that allow for approval, deposit and withdrawals, all without doing too much footwork. Our reason for engineering this was to ensure you get instant value from our platform. 
 
 ## Installation
-The first step to using the awesome power of Polygon via our SDK is by doing an NPM install of it. Find here 
+The first step to using the awesome power of Polygon via our SDK is by doing an NPM install of it. Find [here](https://www.npmjs.com/package/@maticnetwork/maticjs). 
 
 ```bash
 npm install @maticnetwork/maticjs
