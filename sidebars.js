@@ -70,7 +70,7 @@ module.exports = {
         //   href: "https://status.matic.today/#/checkpoints",
         // },
         "develop/tools/matic-gas-station",
-        //"develop/tools/widget"
+        "develop/tools/widget",
       ],
     },
     {
@@ -539,5 +539,6 @@ module.exports = {
     // "faq/staking-tutorials",
     "faq/wallet-bridge-faq",
     "faq/consensys-framework",
+    "faq/widget-faq",
   ],
 };
