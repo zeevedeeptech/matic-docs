@@ -1,7 +1,7 @@
 ---
-id: network-agnostics
-title: Network Agnostic Transactions
-sidebar_label: Network Agnostic Transactions
+id: custom-meta-transactions
+title: Custom Meta Transaction Implementation
+sidebar_label: Custom Meta Transaction Implementation
 description: Build your next blockchain app on Matic.
 keywords:
   - docs
