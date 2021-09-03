@@ -30,7 +30,7 @@ Withdraw ETH -
 
 ### Deposit
 
-ETH can be deposited to Polygon chain by calling **_depositEtherFor_** on RootChainManager contract. Polygon POS client exposes **_depositEtherForUser_** method to make this call.
+ETH can be deposited to Polygon chain by calling **_depositEtherForUser_** on RootChainManager contract. Polygon POS client exposes **_depositEtherForUser_** method to make this call.
 
 **_ETH_** is deposited as **_ERC20_** token on Polygon chain. For withdrawing it follow the same process as withdrawing ERC20 tokens.
 
