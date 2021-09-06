@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-Wallet widget is a light wallet which can be embedded in any web application for executing bridge transactions - Deposit & Withdraw. 
+Wallet widget is a UI tool which can be embedded in any web application for executing bridge transactions - Deposit & Withdraw. 
 
 Every widget is identified by an unique name which you can get from [Widget dashboard](https://wallet.polygon.technology/widget-dashboard) .
 
@@ -40,8 +40,10 @@ We have created examples for different framework and tools to help you with the 
 Create instance of widget with some configuration
 
 ```javascript
-var widget = new MaticWidget({
-    appName: "<your app id>", //appName from dashboard
+import { Widget } from "@maticnetwork/wallet-widget";
+
+var widget = new Widget({
+    appName: "<widget name>", //widget name from dashboard
     target: '#btnMaticWidget', // element selector for showing widget on click
     network: 'testnet' // network to be used - testnet or mainnet
 });
