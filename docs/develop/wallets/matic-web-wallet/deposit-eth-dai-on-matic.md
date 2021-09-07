@@ -9,9 +9,9 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-This tutorial explains the easiest way to get funds on [https://matic.opensea.io/](http://matic.opensea.io) so that you can start buying NFT's without any hassles. Funds are needed to participate in trading on [https://matic.opensea.io/](http://matic.opensea.io). Sell orders can be placed if you have NFT token balance in the NFT categories currently supported on the platform. For buying the NFT's, you need to have sufficient DAI/WETH balance on Matic network. These are the only two ERC20 tokens that are currently supported on [https://matic.opensea.io/](http://matic.opensea.io). 
+This tutorial explains the easiest way to get funds on [https://matic.opensea.io/](http://matic.opensea.io) so that you can start buying NFT's without any hassle. Funds are needed to participate in trading on [https://matic.opensea.io/](http://matic.opensea.io). Sell orders can be placed if you have NFT token balance in the NFT categories currently supported on the platform. For buying the NFTs, you need to have sufficient DAI/WETH balance on Matic network. These are the only two ERC20 tokens that are currently supported on [https://matic.opensea.io/](http://matic.opensea.io). 
 
-For those who are vey new to L2, its important to understand that Polygon is a sidechain of Ethereum which is built to enhance scalability. It takes very less transaction confirmation time and costs very less fees for performing transactions on Polygon. But if your funds pre-exist on Ethereum, you have to bring them to Polygon using the PoS bridge that Polygon offers. 
+For those who are very new to L2, its important to understand that Polygon is a sidechain of Ethereum which is built to enhance scalability. Transaction confirmation times and fees for performing transactions on Polygon are much less than on Ethereum. Because of this, if your funds pre-exist on Ethereum you will need to bring them over to Polygon using the PoS bridge that Polygon offers. 
 
 Getting these tokens on the Polygon chain can be done in different ways. 
 
@@ -23,9 +23,9 @@ Getting these tokens on the Polygon chain can be done in different ways.
 
 <img src={useBaseUrl("img/nft-marketplace/wallet-dashboard.png")} />
 
-This is how the wallet dashboard looks like when you visit [https://wallet.matic.network](https://wallet.matic.network/bridge/)
+This is how the wallet dashboard looks when you visit [https://wallet.matic.network](https://wallet.matic.network/bridge/)
 
-Clicking on deposit button besides the token you want to deposit, will take you to the following page. 
+Clicking on the deposit button besides the token you want to deposit will take you to the following page. 
 
 **Depositing ETH** 
 
@@ -35,13 +35,13 @@ Clicking on deposit button besides the token you want to deposit, will take you 
 
 <img src={useBaseUrl("img/nft-marketplace/deposit-dai.png")} />
 
-If you have sufficient balance of ETH/DAI on Ethereum, then you should be able to deposit. It is recommended to follow this guide to understand more on deposits 
+If you have a sufficient balance of ETH/DAI on Ethereum, then you should be able to deposit. It is recommended to follow this guide to understand more on deposits 
 
 [https://blog.matic.network/deposits-and-withdrawals-on-pos-bridge/](https://blog.matic.network/deposits-and-withdrawals-on-pos-bridge/)
 
    **"PLEASE ENSURE THAT YOU USE THE PoS BRIDGE WHEN YOU DEPOSIT ETH/DAI."** 
 
-Its very important to follow this because [matic.opensea.io](http://matic.opensea.io) only supports the pos version of DAI/ETH. Depositing ETH/DAI using the Plasma bridge will result in plasma-WETH and plasma-DAI getting deposited in to your account and you will not be able to use it for trading on matic.opnsea.io. Once you complete the deposit process, it will take about 7-8 minutes for your deposit to get completed. You should be able to track the real time status of your deposit from the activity header component that you can see on the right hand side of the navigation bar. Once the deposit is completed, you can see the balance updated on the wallet dashboard as well as under the "My Account" section of matic.opensea.io as shown below. 
+Its very important to follow this because [matic.opensea.io](http://matic.opensea.io) only supports the pos version of DAI/ETH. Depositing ETH/DAI using the Plasma bridge will result in plasma-WETH and plasma-DAI getting deposited in to your account and you will not be able to use it for trading on matic.opensea.io. Once you complete the deposit process, it will take about 7-8 minutes for your deposit to be completed. You should be able to track the real time status of your deposit from the activity header component that you can see on the right hand side of the navigation bar. Once the deposit is completed, you can see the balance updated on the wallet dashboard as well as under the "My Account" section of matic.opensea.io as shown below. 
 
 <img src={useBaseUrl("img/nft-marketplace/balance.png")} />
 
