@@ -47,7 +47,7 @@ Its very important to follow this because [matic.opensea.io](http://matic.opense
 
 2. **Get funds directly on Polygon from Transak.**
 
-This is the URL that you should visit fo purchasing tokens on Transak 
+This is the URL that you should visit for purchasing tokens on Transak 
 [https://global.transak.com/](https://global.transak.com/)
 
 You can choose the network as Polygon and then choose DAI/WETH from the token list and then go ahead with the steps in the transak application. 
