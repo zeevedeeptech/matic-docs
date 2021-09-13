@@ -109,7 +109,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 - [Full stack dapp tutorial series](https://kauri.io/collection/5b8e401ee727370001c942e3/full-stack-dapp-tutorial-series)
 - [Infura Docs](https://infura.io/docs)
 - [Truffle Suite Docs](https://www.trufflesuite.com/docs) (Recommended)
-- [Truffle tutorials](https://www.trufflesuite.com/tutorials) (Recommended)
+- [Truffle tutorial](https://www.trufflesuite.com/tutorial) (Recommended)
 - [Parity Wiki](https://wiki.parity.io/)
 - [Geth docs](https://geth.ethereum.org/)
 - [Remix](https://remix.ethereum.org/)
@@ -122,7 +122,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 ### **Learn the Basics of Development**
 
 - [Full stack dapp tutorial series](https://kauri.io/collection/5b8e401ee727370001c942e3/full-stack-dapp-tutorial-series)
-- [Truffle tutorials](https://www.trufflesuite.com/tutorials)
+- [Truffle tutorial](https://www.trufflesuite.com/tutorial)
 - [Dapp University](https://www.youtube.com/channel/UCY0xL8V6NzzFcwzHCgB8orQ)
 - [ConsenSys Academy Developer Program On-Demand course](https://consensys.net/academy/ondemand/)
 - [What is Ethereum?](https://blockgeeks.com/guides/ethereum/)
