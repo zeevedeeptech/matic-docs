@@ -55,7 +55,7 @@ You can follow the instructions from the below links:
 
 ETH is required on your signer account because for submitting checkpoints to Ethereum, all transactions require ETH to be used as Gas. Hence ETH is required on your Signer Account.
 
-**8. I'm trying to setup my node using Ansbile and I'm getting a "Host not found" error**
+**8. I'm trying to setup my node using Ansible and I'm getting a "Host not found" error**
 
 This could be because your `inventory.yml` file may have some formatting issues. Correct them with proper indentation and then try again
 
