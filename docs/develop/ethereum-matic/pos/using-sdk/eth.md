@@ -8,10 +8,13 @@ keywords:
   - matic
 image: https://matic.network/banners/matic-network-16x9.png
 ---
+## Quick Summary
+
+This section of the docs deals with how to deposit and withdraw ERC20 tokens on the Polygon network. Common functions exist between the ETH, ERC20, ERC721 and ERC1155 sections of the docs with variances in the naming and implementation patterns as befitting the standards. The most important prerequisite to using this section of the docs is mapping your assets, so please submit your mapping request [here](https://docs.matic.network/docs/develop/ethereum-matic/submit-mapping-request/).
 
 ## Introduction
 
-This guide uses the Polygon Testnet (Mumbai) which in itself is mapped to the Goerli Network to demonstrate asset transfer between the two blockchains. It's important to note that for the purposes of this tutorial, you should use a proxy address whenever is possible. This is because the implementation contract address is liable to change when a new update is added to the contract code. The proxy never changes and the proxy redirects all the incoming calls to the latest implementation. If you use the proxy address, you won't need to worry about any changes happening on the implementation contract before you're ready.
+This guide uses the Polygon Testnet (Mumbai) which in itself is mapped to the Goerli Network to demonstrate asset transfer between the two blockchains. It's important to note that for the purposes of this tutorial, you should use a proxy address whenever is possible. This is because while the implementation contract address is liable to change when a new update is added to the contract code, the proxy never changes and it redirects all the incoming calls to the latest implementation. In essence, if you use the proxy address, you won't need to worry about any changes happening on the implementation contract before you're ready.
 
 For example, please use the **RootChainManagerProxy** address for interactions instead of the **RootChainManager** address. Deployment details like the PoS contract addresses, ABI, Test Token Addresses can be found [here](https://docs.matic.network/docs/develop/ethereum-matic/pos/deployment/)
 
@@ -35,7 +38,7 @@ Mapping your assets is a necessary step for integrating the PoS bridge on your a
 
 ### Deposit
 
-ETH can be deposited to the Polygon chain by calling **depositEtherFor** on the RootChainManager contract. The Polygon PoS client exposes the **depositEtherForUser** method to make this call. Since ETH is deposited as ERC20 on the Polygon chain, withdrawing it follows the same process as ERC20 tokens.
+ETH can be deposited to the Polygon chain by calling **depositEtherFor** on the **RootChainManager** contract. The Polygon PoS client exposes the **depositEtherForUser** method to make this call. Since ETH is deposited as ERC20 on the Polygon chain, withdrawing it follows the same process as ERC20 tokens.
 
 The **depositEtherForUser** method looks like this:
 
@@ -46,11 +49,11 @@ await maticPOSClient.depositEtherForUser(from, amount, {
 });
 ```
 
-Sidenote: Deposits from Ethereum to Polygon happen using the state sync mechanism and this takes about 5-7 minutes. After waiting for this time interval, it is recommended to check the balance using web3.js/matic.js library or using Metamask. The explorer will show the balance only if at least one asset transfer has happened on the child chain. This [link](https://docs.matic.network/docs/develop/ethereum-matic/pos/deposit-withdraw-event-pos/) explains how to track the deposit events.
+Sidenote: Deposits from Ethereum to Polygon happen using the **State Sync** Mechanism and this takes about 5-7 minutes. After waiting for this time interval, it is recommended to check the balance using web3.js/matic.js library or using Metamask. The explorer will show the balance only if at least one asset transfer has happened on the child chain. This [link](https://docs.matic.network/docs/develop/ethereum-matic/pos/deposit-withdraw-event-pos/) explains how to track the deposit events.
 
 ### Burn
 
-To burn the tokens and engage the withdrawal process, please call the **withdraw** function of the MaticWETH contract. Since Ether is an ERC20 token on the Polygon chain, using the **burnERC20** method that the Polygon PoS client exposes kickstarts the process.
+To burn the tokens and engage the withdrawal process, please call the **Withdraw** function of the MaticWETH contract. Since Ether is an ERC20 token on the Polygon chain, using the **burnERC20** method that the Polygon PoS client exposes kickstarts the process.
 
 The **burnERC20** method looks like this
 

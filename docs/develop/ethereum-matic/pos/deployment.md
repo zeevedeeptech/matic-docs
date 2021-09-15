@@ -18,4 +18,4 @@ Maticjs Examples: [https://github.com/maticnetwork/matic.js/tree/master/examples
 
 Contracts Addresses on Mumbai: [https://static.matic.network/network/testnet/mumbai/index.json](https://static.matic.network/network/testnet/mumbai/index.json). Use the `Proxy` address where ever it is available.
 
-Contracts Addresses on Matic Mainnet: [https://static.matic.network/network/mainnet/v1/index.json](https://static.matic.network/network/mainnet/v1/index.json). Use the `Proxy` address where ever it is available.
+Contracts Addresses on Polygon Mainnet: [https://static.matic.network/network/mainnet/v1/index.json](https://static.matic.network/network/mainnet/v1/index.json). Use the `Proxy` address where ever it is available.
