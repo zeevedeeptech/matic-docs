@@ -14,7 +14,7 @@ module.exports = {
     announcementBar: {
       id: "support_us",
       content:
-        'We are changing domains. The documentation will move to <a target="_blank" rel="noopener noreferrer" href="https://docs.polygon.technology/"> docs.polygon.technology</a>. Please bookmark this <a target="_blank" rel="noopener noreferrer" href="https://docs.polygon.technology/"> link</a>.',
+        'We are changing domains. The documentation will move to <a target="_blank"  href="https://docs.polygon.technology/"> docs.polygon.technology</a>. Please bookmark this <a target="_blank" href="https://docs.polygon.technology/">link.</a>',
       backgroundColor: "#2b6def", // Defaults to `#fff`
       textColor: "#fff", // Defaults to `#000`
     },

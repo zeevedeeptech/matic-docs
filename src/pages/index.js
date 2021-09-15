@@ -70,7 +70,6 @@ function Home() {
         className="bootstrap-wrapper"
       >
         <img src={useBaseUrl("img/home/background-mockup-left.svg")} className="background-img left" />
-        <img src={useBaseUrl("img/home/background-mockup-right.svg")} className="background-img right" />
         <div className="container">
           <div className="row pt-40">
             {networkBanner &&
