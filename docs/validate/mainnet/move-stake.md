@@ -28,7 +28,7 @@ Also, the Move Stake function is a temporary function developed by the Polygon t
 
 ### How to Move Stake
 
-In order to Move stake, first you will need to login to the Staking UI: https://wallet.matic.network/staking using your Delegator Address. 
+In order to Move stake, first you will need to login to the Staking UI: https://wallet.polygon.technology/staking using your Delegator Address. 
 
 **Delegator Address** = The address that you have already used for Staking on the Foundation Nodes.
 

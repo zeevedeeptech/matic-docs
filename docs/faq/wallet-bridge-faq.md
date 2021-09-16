@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Where can I use the Matic Web Wallet?
-[https://wallet.matic.network/](https://wallet.matic.network/)
+[https://wallet.polygon.technology/](https://wallet.polygon.technology/)
 
 ## Which wallets are currently supported?
 
@@ -229,7 +229,7 @@ If this is a transaction on the Polygon mainnet, we'll require that you have suf
 
 ## How do I bridge assets across chains?
 
-[https://wallet.matic.network/bridge/](https://wallet.matic.network/bridge/) (ETH <-> Polygon) <br/>
+[https://wallet.polygon.technology/bridge/](https://wallet.polygon.technology/bridge/) (ETH <-> Polygon) <br/>
 [https://xpollinate.io/](https://xpollinate.io/) (BSC <-> Polygon <-> xDai) <br/>
 [https://exchange.chainswap.com/](https://exchange.chainswap.com/) (ETH <-> Polygon/BSC) <br/>
 [https://anyswap.exchange/bridge](https://anyswap.exchange/bridge) (ETH <-> Polygon <-> BSC/xDai) <br/>

@@ -14,7 +14,7 @@ We have revamped the Polygon Web wallet interface, which has some great UX fixes
 
 ## Logging into the Polygon Web Wallet
 
-To login to the Polygon Web Wallet you need to access the following URL: https://wallet.matic.network/
+To login to the Polygon Web Wallet you need to access the following URL: https://wallet.polygon.technology/
 How to connect to Polygon to Metamask, please refer this [guide](https://docs.matic.network/docs/develop/metamask/config-matic)
 
 Once you access this page, you will be requested to connect to your MetaMask account. Note that currently the Polygon Web Wallet supports MetaMask, WalletConnect and Wallet Link. We will gradually add support for more wallets.

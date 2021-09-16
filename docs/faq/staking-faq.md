@@ -12,7 +12,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### How to stake?
 
-For Staking you would need to have funds on Ethereum Mainnet. Login to Metamask on the Ethereum network using the Staking Dashboard. https://wallet.matic.network/staking
+For Staking you would need to have funds on Ethereum Mainnet. Login to Metamask on the Ethereum network using the Staking Dashboard. https://wallet.polygon.technology/staking/
 
 Please watch the video for a graphical illustration of how this works
 
@@ -32,7 +32,7 @@ Please watch the video for a graphical illustration of how this works
 
 ### I am unable to view the Staking tab. How do i access Staking?
 
-Once logged into https://wallet.matic.network you need to  click on apps > staking. Users will be landed on staking overview page. Reference for guide:
+Once logged into https://wallet.polygon.technology/ you need to  click on apps > staking. Users will be landed on staking overview page. Reference for guide:
 
 <img src={useBaseUrl("img/staking_faq/howToAccessStake.png")} height="300px"/>
 
@@ -42,7 +42,7 @@ Check if you have funds on the Main Ethereum Network, to delegate your tokens. A
 
 ### How do I know which Validator to select for better rewards?
 
-It depends on your understanding and research on which validator you would want to stake on.You can find the list of validators here : https://wallet.matic.network/staking/validators
+It depends on your understanding and research on which validator you would want to stake on.You can find the list of validators here : https://wallet.polygon.technology/staking/validators
 
 ### What is the unbonding period? 
 
@@ -50,7 +50,7 @@ The unbonding period on Polygon is 80 checkpoints. This period applies to the or
 
 ### Where to Stake? 
 
-You can visit the below link for Staking: https://wallet.matic.network/staking/validators
+You can visit the below link for Staking: https://wallet.polygon.technology/staking/validators
 
 ### I want to Withdraw Rewards but I am unable to ?
 

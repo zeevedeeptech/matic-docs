@@ -19,7 +19,7 @@ Delegators are token holders who cannot, or do not want to run a validator node 
 
 ## Accessing the Dashboard and Login
 
-You will need to first choose the Ethereum Mainnet on your Metamask. Once you have chosen that, you can then login to the Polygon's Staking Dashboard. You can access the Dashboard here: https://wallet.matic.network/staking
+You will need to first choose the Ethereum Mainnet on your Metamask. Once you have chosen that, you can then login to the Polygon's Staking Dashboard. You can access the Dashboard here: https://wallet.polygon.technology/staking
 
 Polygon Validator Dashboard currently supports only Metamask as of now. So you will need to have the Metamask's extension added to your browser.
 

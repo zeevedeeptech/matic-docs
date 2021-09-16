@@ -164,7 +164,7 @@ contract APIConsumer is ChainlinkClient {
 
 To get mainnet Polygon LINK token from the Ethereum mainnet, you must follow a 2 step process.
 
-1. Bridge your LINK using the Plasma or [PoS bridge](https://wallet.matic.network/bridge/).
+1. Bridge your LINK using the Plasma or [PoS bridge](https://wallet.polygon.technology/bridge).
 2. Swap the LINK for the ERC677 version via the [Pegswap, deployed by the Chainlink](https://pegswap.chain.link/). 
 
 The Polygon bridge brings over an ERC20 version of LINK, and LINK is an ERC677, so we just have to update it with this swap. 
