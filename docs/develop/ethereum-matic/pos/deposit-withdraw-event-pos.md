@@ -9,6 +9,10 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png
 ---
 
+## Quick Summary
+
+This section of the docs deal with tracking and monitoring the pace and speed of transactions done within the Polygon ecosystem. Depositing into the network (when done with the PoS bridge) typically takes an average of 5-7 minutes but we've seen instances where users seek to see real time progress reports. As a developer, you may also want to augment the  UX of your app with instant feedback to the user. In all these cases, look into this section, we have exactly what you need.
+
 ## Deposit Events
 
 When a token is deposited from Ethereum to Polygon, a process called state sync mechanism comes into play that eventually mints the tokens for the user on the Polygon chain. This process takes about ~5-7 minutes to happen and hence listening to the deposit event is very important to create a good user experience. This is an example script that can be used to track real time deposit events.
@@ -110,11 +114,11 @@ checkDepositStatus(
   });
 ```
 
-### Historical deposit completion check by querying the blockchain.
+### Historical deposit completion check by querying the blockchain
 
 This script can be used to check if a particular deposit has been completed on the child chain or not. The main chain and the child chain keep incrementing the value of a global counter variable on both the chains. The [StateSender](https://github.com/maticnetwork/contracts/blob/develop/contracts/root/stateSyncer/StateSender.sol#L38) contract emits an event that has the counter value. The counter value on the child chain can be queried from the [StateReceiver](https://github.com/maticnetwork/genesis-contracts/blob/master/contracts/StateReceiver.sol#L12) contract. If the counter value on child chain is greater than or equal to the same on main chain, then the deposit can considered as completed successfully.
 
-```js
+```jsx
 let Web3 = require("web3");
 
 // For mainnet, use Ethereum RPC
@@ -123,7 +127,7 @@ const provider = new Web3.providers.HttpProvider(
 );
 const web3 = new Web3(provider);
 
-// For mainnet, use the Polygon mainnet RPC: <Sign up for a dedicated free RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.>
+// For mainnet, use the matic mainnet RPC: <Sign up for a dedicated free RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.>
 const child_provider = new Web3.providers.HttpProvider(
   "<insert Mumbai testnet RPC URL>" //Get a free RPC URL from https://rpc.maticvigil.com/ or other hosted node providers.
 );
@@ -174,9 +178,9 @@ depositCompleted(
 
 ### Real-time checkpoint status tracking
 
-All transactions that occur on Polygon chain are check-pointed to the Ethereum chain in frequent intervals of time by the validators. This time is ~10 mins on Mumbai and ~30 mins on Polygon mainnet. The checkpoint occurs on a contract called the RootChain contract deployed on Ethereum chain. The following script can be used to listen to Real-time checkpoint inclusion events.
+All transactions that occur on Polygon chain are check-pointed to the Ethereum chain in frequent intervals of time by the validators. This time is ~10 mins on Mumbai and ~30 mins on Polygon mainnet. The checkpoint occurs on a contract called the **RootChainContract** deployed on Ethereum chain. The following script can be used to listen to real-time checkpoint inclusion events.
 
-```jsx
+```js
 const Web3 = require("web3");
 
 // Ethereum provider
@@ -239,11 +243,11 @@ checkInclusion(
   });
 ```
 
-### Historical checkpoint inclusion check by querying the blockchain.
+### Historical checkpoint inclusion check by querying the blockchain
 
 This can be checked using the following API. The block number of the burn transaction on the child chain has to be given as a param to this GET API.
 
-```
+```js
 // Testnet
 https://apis.matic.network/api/v1/mumbai/block-included/block-number
 // Mainnet

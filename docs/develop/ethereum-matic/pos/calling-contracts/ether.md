@@ -13,7 +13,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 Depositing Ether -
 
-1. Make **_depositEtherFor_** call on **_RootChainManager_** and **send **the required ether.
+- Make the depositEtherFor call on the **RootChainManager** and send the ether asset.
 
 Withdrawing Ether -
 
