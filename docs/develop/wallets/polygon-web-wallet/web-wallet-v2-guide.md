@@ -14,7 +14,10 @@ We have revamped the Polygon Web wallet interface, which has some great UX fixes
 
 ## Logging into the Polygon Web Wallet
 
+<<<<<<< HEAD:docs/develop/wallets/polygon-web-wallet/web-wallet-v2-guide.md
 On how to connect to Polygon to Metamask, please refer this [guide](https://docs.matic.network/docs/develop/metamask/config-matic)
+=======
+>>>>>>> 02f91411bc7dc2e46429e92b5a0cd38f1d138fb4:docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide.md
 To login to the Polygon Web Wallet you need to access the following URL: https://wallet.polygon.technology/
 How to connect to Polygon to Metamask, please refer this [guide](https://docs.polygon.technology//docs/develop/metamask/config-matic)
 
@@ -22,6 +25,7 @@ Once you access this page, you will be requested to connect to your MetaMask acc
 Once you connect your account with the Web Wallet you will be navigated to the landing page and you can see all your token balances on the Polygon Wallet across the bridges(PoS and Plasma).You don’t need to toggle between bridges which was available in V1.
 
 
+<<<<<<< HEAD:docs/develop/wallets/polygon-web-wallet/web-wallet-v2-guide.md
 Once you access this page, you will be requested to connect to your MetaMask account. Note that currently the Polygon Web Wallet supports MetaMask, WalletConnect and Wallet Link. We will gradually add support for more wallets.
 Once you connect your account with the Web Wallet you will be navigated to the landing page with various means on how to transact with the wallet web depending on your use case. We have the Polygon Wallet, perfect for sending, recieving and storingyour assets on the Polygon network, the Polygon Bridge, for withdrawals and deposits across networks. Polygon Staking - your go-to place for staking and getting rewards with your $MATIC, and the Widget Dashboard. 
 
@@ -35,6 +39,12 @@ Click on the Polygon Wallet or Polygon Bridge, and you will see all your token b
 
 Click on the ‘Move Funds to Polygon Mainnet’ button or you can click on the ‘Deposit’ link from any of the token types on ‘Your tokens on Polygon Mainnet’ section.
 <img src={useBaseUrl("img/wallet/wallet-2.png")} width="100%" height="100%" /> 
+=======
+## Depositing Funds from Ethereum to Polygon
+
+Click on the ‘Move Funds to Polygon Mainnet’ button or you can click on the ‘Deposit’ link from any of the token types on ‘Your tokens on Polygon Mainnet’ section.
+<img src={useBaseUrl("img/wallet/Wallet-2.png")} width="100%" height="100%" /> 
+>>>>>>> 02f91411bc7dc2e46429e92b5a0cd38f1d138fb4:docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide.md
 
 You will be redirected to the bridge page where you need to enter the deposit amount.
 <img src={useBaseUrl("img/wallet/wallet-3.png")} width="100%" height="100%"/> 
