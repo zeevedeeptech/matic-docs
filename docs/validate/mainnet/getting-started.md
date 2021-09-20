@@ -1,27 +1,27 @@
 ---
 id: getting-started
 title: Getting Started
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
-Hey everyone! Matic Mainnet is here - Get ready to run Validator nodes on the Matic Mainnet!
+Hey everyone! Polygon Mainnet is here - Get ready to run Validator nodes on the Polygon Mainnet!
 
-We have been working hard on enabling the Proof-of-Stake (PoS) layer on the Matic Network, and we are launching our public  staking to the community
+We have been working hard on enabling the Proof-of-Stake (PoS) layer on the Polygon, and we are launching our public  staking to the community
 
-To participate and become a responsible validator by running a node on the the Matic Mainnet you can follow the documentation here
+To participate and become a responsible validator by running a node on the the Polygon Mainnet you can follow the documentation here
 
 Please ensure that you read the documentation carefully before starting the setup for the nodes.
 
-Node setup guide: https://docs.matic.network/docs/validate/mainnet/validator-guide
+Node setup guide: https://docs.polygon.technology/docs/validate/mainnet/validator-guide
 
-**Stake on Matic**
+**Stake on Polygon**
 
 Before you initiate the staking process, ensure that your node's health check is complete. Please perform a health check by joining the Discord Server and contacting one of the admins (Delroy)
 
-Stake tokens to become a validator - [follow this guide](https://docs.matic.network/docs/validate/mainnet/stake-on-matic)
+Stake tokens to become a validator - [follow this guide](https://docs.polygon.technology/docs/validate/mainnet/stake-on-matic)
 
 
 **Queries, any?**

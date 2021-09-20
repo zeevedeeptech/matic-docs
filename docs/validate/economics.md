@@ -2,7 +2,7 @@
 id: economics
 title: Staking Economics
 sidebar_label: Economics
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -14,7 +14,7 @@ Validators stake their Matic tokens as collateral to work for the security of th
 
 ## What is the incentive?
 
-Matic will be allocating 12% of its total supply of 10 billion tokens to fund the staking rewards. This is to ensure that the network is seeded well enough until transaction fees gain traction. These rewards are primarily meant to jump-start the network. While the protocol in the long run is intended to sustain itself on the basis of transaction fees. 
+Polygon will be allocating 12% of its total supply of 10 billion tokens to fund the staking rewards. This is to ensure that the network is seeded well enough until transaction fees gain traction. These rewards are primarily meant to jump-start the network. While the protocol in the long run is intended to sustain itself on the basis of transaction fees. 
 
 **Validator Rewards = Staking Rewards + Transaction Fees**
 
@@ -61,7 +61,7 @@ The responsibility of creating blocks and also proposing checkpoints is variably
 
 Yearly incentive as mentioned above is to be considered absolute, which means irrespective of the overall stake or the target bonding rate in the network, the said amount will be given out as a reward to all signers periodically. 
 
-In Matic, there is an additional element of committing periodic checkpoints (a Merkle tree hash representation of the Matic sidechain blocks) to the Ethereum mainnet. This is a major part of the validator responsibilities and they are incentivized to perform this activity. This constitutes a cost to the validator which is unique to a Layer 2 solution such as ours. We strive to accommodate this cost in the validator staking reward payout mechanism as a bonus to be paid to the proposer, who is responsible for committing the checkpoint. Rewards minus the bonus is to be shared among all stakers; proposer and signers, proportionally. 
+In Polygon, there is an additional element of committing periodic checkpoints (a Merkle tree hash representation of the Polygon sidechain blocks) to the Ethereum mainnet. This is a major part of the validator responsibilities and they are incentivized to perform this activity. This constitutes a cost to the validator which is unique to a Layer 2 solution such as ours. We strive to accommodate this cost in the validator staking reward payout mechanism as a bonus to be paid to the proposer, who is responsible for committing the checkpoint. Rewards minus the bonus is to be shared among all stakers; proposer and signers, proportionally. 
 
 ## How is proposer bonus calculated?
 Let’s have a look at a scenario affecting the checkpoint cost with the following assumptions:
@@ -94,9 +94,9 @@ Each block producer at Bor will be given a certain percentage of the transaction
 
 ## Becoming a Validator
 
-We had earlier mentioned that we are thinking of having a minimum self-stake requirement from the validators, as we do hope that validators also have their skin in the game. However, since we will be moving to a robust replacement strategy because the number of validator slots are limited as of now, the Matic Network staking program will not have a minimum self-stake requirement. It is however, logical that over time, the average/median stake by a validator will tend upwards and become substantial.
+We had earlier mentioned that we are thinking of having a minimum self-stake requirement from the validators, as we do hope that validators also have their skin in the game. However, since we will be moving to a robust replacement strategy because the number of validator slots are limited as of now, the Polygon staking program will not have a minimum self-stake requirement. It is however, logical that over time, the average/median stake by a validator will tend upwards and become substantial.
 
-Thus to begin with, becoming a validator on Matic Network requires a minimum self stake of 1 MATIC.
+Thus to begin with, becoming a validator on Polygon requires a minimum self stake of 1 MATIC.
 
 The replacement strategy involves calculation of a comprehensive validator scoring mechanism. If all validator slots are filled, a new validator can only replace one from the current set if it can beat the score of the least ranked validator. Bidding in the real world is simple, whoever gets the most stake gets the spot. However, the way to elect validators is not limited in this ecosystem. 
 

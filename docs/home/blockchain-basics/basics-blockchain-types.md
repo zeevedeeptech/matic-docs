@@ -1,7 +1,7 @@
 ---
 id: blockchain-types
 title: Types of Blockchain
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic

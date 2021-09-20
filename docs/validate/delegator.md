@@ -1,8 +1,8 @@
 ---
 id: delegator
-title: Delegate on Matic
-sidebar_label: Delegate on Matic
-description: Build your next blockchain app on Matic.
+title: Delegate on Polygon
+sidebar_label: Delegate on Polygon
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 
-This is a step-by-step guide to help you become a delegator on Matic Mainnet. There are no pre-requisites required to become a delegator on Matic. All you have to do is have an Ethereum account.
+This is a step-by-step guide to help you become a delegator on Polygon Mainnet. There are no pre-requisites required to become a delegator on Polygon. All you have to do is have an Ethereum account.
 
 ## What is a Delegator?
 
@@ -19,11 +19,11 @@ Delegators are token holders who cannot, or do not want to run a validator node 
 
 ## Accessing the Dashboard and Login
 
-You will need to first choose the Ethereum Mainnet on your Metamask. Once you have chosen that, you can then login to the Matic's Staking Dashboard. You can access the Dashboard here: https://wallet.matic.network/staking
+You will need to first choose the Ethereum Mainnet on your Metamask. Once you have chosen that, you can then login to the Polygon's Staking Dashboard. You can access the Dashboard here: https://wallet.polygon.technology/staking
 
-Matic Validator Dashboard currently supports only Metamask as of now. So you will need to have the Metamask's extension added to your browser.
+Polygon Validator Dashboard currently supports only Metamask as of now. So you will need to have the Metamask's extension added to your browser.
 
-If you are currently using a different wallet, you can import your account to Metamask and then use the Staking Dashboard. You can read our guide on how to [Import an Account to Metamask](https://docs.matic.network/docs/home/blockchain-basics//import-account-to-metamask).
+If you are currently using a different wallet, you can import your account to Metamask and then use the Staking Dashboard. You can read our guide on how to [Import an Account to Metamask](https://docs.polygon.technology/docs/home/blockchain-basics//import-account-to-metamask).
 
 In order to import you account you first need to make sure that you install the Metamask extension on your browser. To install Metamask extension you use this link: https://metamask.io
 
@@ -37,7 +37,7 @@ Once you have logged in you will be navigated to a screen where you will see a l
 
 ## How to Delegate to a Validator
 
-You need to have your funds (ETH and MATIC tokens) on the Main Ethereum Network to delegate your tokens.  If your tokens are on any other network/testnet or Matic Mainnet, then you won't be able to delegate your tokens to Matic.
+You need to have your funds (ETH and MATIC tokens) on the Main Ethereum Network to delegate your tokens.  If your tokens are on any other network/testnet or Polygon Mainnet, then you won't be able to delegate your tokens to Polygon.
 
 <img src={useBaseUrl("img/staking/main-ethereum-network.png")} />
 
@@ -108,7 +108,7 @@ Here you will see an `Unbond` button for each of the validator. Click on the `Un
 
 You will receive a pop-up notification informing you about the Unbond process. It will display the Rewards that have been accumulated (if any) and also your total stake amount. You will also be given information on when you would receive these tokens back to your account.
 
-When you unbond from a validator, there is an `unbonding period` that we maintain to ensure there is no malicious behaviour on the network. The Unbonding period is for ~9 days (80 Checkpoints) on Matic Mainnet. You will receive your rewards immediately after you unbond, however, your stake token amount will be unlocked in ~9 days.
+When you unbond from a validator, there is an `unbonding period` that we maintain to ensure there is no malicious behaviour on the network. The Unbonding period is for 80 Checkpoints on Polygon Mainnet. You will receive your rewards immediately after you unbond, however, your stake token amount will be unlocked in ~9 days.
 
 Clicking on `Unbond` button will ask you to confirm the transaction. Depending on the network congestion on Ethereum the transaction will take time to complete.
 

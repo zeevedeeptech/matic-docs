@@ -1,7 +1,7 @@
 ---
 id: how-state-sync-works
 title: How does State Sync work?
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic

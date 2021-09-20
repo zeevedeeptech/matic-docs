@@ -1,7 +1,7 @@
 ---
 id: technical-faqs
 title: Technical FAQs
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -9,7 +9,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 
 ### 1. Are the private keys same for Heimdall and Bor keystore?
-Yes, the private key used for generating Validator keys and Bor Keystore is the same. The private key used in this instance is your Wallet's ETH address where your Matic testnet tokens are stored.
+Yes, the private key used for generating Validator keys and Bor Keystore is the same. The private key used in this instance is your Wallet's ETH address where your Polygon testnet tokens are stored.
 
 ### 2. List of Common Commands
 
@@ -119,7 +119,7 @@ run
 
     heimdalld unsafe-reset-all 
 
-and start Heimdall services again. You can refer to Step 7 in the setup guide - https://docs.matic.network/staking/linux-package-installation/#step-7-run-heimdall
+and start Heimdall services again. You can refer to this guide - https://docs.polygon.technology/docs/validate/mainnet/validator-guide
 
 ### 5. From where do I create the API key?
 
@@ -200,7 +200,7 @@ This occurs mainly because of a previous installation of Matic on your machine. 
 
 ### 13. I'm not clear on which Private Key should I add when I generate validator key
 
-The Private key to be used is your Wallet's ETH address where your Matic testnet Tokens are stored. You can complete the setup with one public-private key pair tied to the address submitted on the form.
+The Private key to be used is your Wallet's ETH address where your Polygon testnet Tokens are stored. You can complete the setup with one public-private key pair tied to the address submitted on the form.
 
 
 ### 14. Is there a way to know if Heimdall is synced?
@@ -329,4 +329,4 @@ Delete Bor: `sudo rm -rf ~/.bor`
 
 ### 28. What to do when you get "Wrong Block.Header.AppHash." error
 
-This error usually occurs due to Infura requests getting exhausted. When you setup a node on Matic, you add an Infura Key to the Config file (Heimdall). By default you are allowed 100k Requests per day, if this limit is crossed, then you would face such problems. To resolve this you can create a new API key and add it to the `config.toml` file.
+This error usually occurs due to Infura requests getting exhausted. When you setup a node on Polygon, you add an Infura Key to the Config file (Heimdall). By default you are allowed 100k Requests per day, if this limit is crossed, then you would face such problems. To resolve this you can create a new API key and add it to the `config.toml` file.

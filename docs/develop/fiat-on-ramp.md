@@ -1,7 +1,7 @@
 ---
 id: fiat-on-ramp
 title: Fiat-on-Ramp
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -19,7 +19,7 @@ Imagine you'd want to travel to a foreign nation, you'd require the currency use
 Easiest way ofcourse is to have some way to convert to the currency you require. "On-ramp" solutions provide this to you as a user. 
 Formally said, you hand in your fiat via your credit card (having completed relevant KYC), the system provides you with equivalent cryptocurrency you require.
 
-To integrate your DApp with fiat on ramp solution on Matic, you can choose to go with either the following or spin up with a custom solution:
+To integrate your DApp with fiat on ramp solution on Polygon, you can choose to go with either the following or spin up with a custom solution:
 
 1. [MoonPay](https://www.moonpay.io/)
 2. [Sendwyre](https://www.sendwyre.com/)
@@ -31,4 +31,4 @@ To allow crypto purchases from your DApp partner with the above providers. We'd 
 
 Apply to become a Partner or Request a Demo, write a message or email to the respective service.
 
-> We are **<your dapp name\>** deployed on Matic Network. Requesting fiat-on-ramp solution to onboard users on our DApp. **Please include A short description on my DApp.**
+> We are **<your dapp name\>** deployed on Polygon. Requesting fiat-on-ramp solution to onboard users on our DApp. **Please include A short description on my DApp.**

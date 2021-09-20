@@ -10,9 +10,9 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-This tutorial is a brief introduction on how to transfer tokens between Ethereum and Matic on Plasma using **_matic.js SDK and Metamask_**. Matic-Ethereum bridge provides a cross-chain channel using which users can transfer tokens from Ethereum to Matic and vice-versa. More details on using the bridge can be found [here](/docs/develop/ethereum-matic/plasma/getting-started). This **tutorial mainly focuses on using the bridge from a front end perspective**. We will be using Metamask for this purpose.
+This tutorial is a brief introduction on how to transfer tokens between Ethereum and Polygon on Plasma using **_matic.js SDK and Metamask_**. Polygon-Ethereum bridge provides a cross-chain channel using which users can transfer tokens from Ethereum to Polygon and vice-versa. More details on using the bridge can be found [here](/docs/develop/ethereum-matic/plasma/getting-started). This **tutorial mainly focuses on using the bridge from a front end perspective**. We will be using Metamask for this purpose.
 
-The most important thing to be understood from this tutorial is the **proper usage of the web3 provider in the matic.js instance** we create. Whether using PoS or Plasma, certain actions need to be performed on Matic and some on Ethereum. Due to this reason, **different providers are required in different scenarios. Hence correctly setting the providers is very necessary.**
+The most important thing to be understood from this tutorial is the **proper usage of the web3 provider in the matic.js instance** we create. Whether using PoS or Plasma, certain actions need to be performed on Polygon and some on Ethereum. Due to this reason, **different providers are required in different scenarios. Hence correctly setting the providers is very necessary.**
 
 1. An example react app that demonstrates the usage of the Plasma and PoS bridge can be found [here](https://github.com/maticnetwork/pos-plasma-tutorial) .
 2. Install the dependencies using `npm install.`
@@ -36,15 +36,15 @@ ETHEREUM_CHAINID: Chain ID of root chain
 
 ```
 
-- The configuration and key values for matic mainnet and mumbai testnet can be found here
+- The configuration and key values for Polygon mainnet and mumbai testnet can be found here
   1. [Mumbai Testnet Config](https://static.matic.network/network/testnet/mumbai/index.json)
-  2. [Matic Mainnet Config](https://static.matic.network/network/mainnet/v1/index.json)
+  2. [Polygon Mainnet Config](https://static.matic.network/network/mainnet/v1/index.json)
 
 4. Run the project using `npm start` .
 
 ## Example using Plasma ERC20
 
-> NOTE: For the mainnet, Ethereum is the root chain and Matic Mainnet is the child chain and for the testnet, Goerli is the root chain and Mumbai is the child chain. The values in config.json file should be set accordingly. Goerli and Mumbai networks are used as the root and child chain in this tutorial.
+> NOTE: For the mainnet, Ethereum is the root chain and Polygon Mainnet is the child chain and for the testnet, Goerli is the root chain and Mumbai is the child chain. The values in config.json file should be set accordingly. Goerli and Mumbai networks are used as the root and child chain in this tutorial.
 
 > getMaticPlasmaParent() and getMaticPlasmaChild() is used to initialize the root and child chain matic.js objects for Plasma bridge. Code snippets mention below under each step can be found in the [tutorial](https://github.com/maticnetwork/pos-plasma-tutorial) repo as well.
 
@@ -119,7 +119,7 @@ During burning of ERC20 tokens, providers are specified as below
 
 ### Confirm Withdraw
 
-Withdrawal of funds is initiated from the child chain. A checkpoint interval of 30 mins(~10 minutes for testnet) is set, where all the blocks on the Matic block layer are validated. Once the checkpoint is submitted to the root chain, the withdraw function can be triggered.
+Withdrawal of funds is initiated from the child chain. A checkpoint interval of 30 mins(~10 minutes for testnet) is set, where all the blocks on the Polygon block layer are validated. Once the checkpoint is submitted to the root chain, the withdraw function can be triggered.
 
 Once the withdraw function is successful,an NFT Exit (ERC721) token is created. Users need to wait for a 7 day challenge period (~5 minutes for testnet). Once the challenge period is complete, the withdrawn funds can be claimed back to your account on the root chain using a process-exit which is explained in the next step.
 

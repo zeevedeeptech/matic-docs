@@ -1,7 +1,7 @@
 ---
 id: config-polygon-on-wallet-link
 title: Configure Polygon on Wallet Link
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic

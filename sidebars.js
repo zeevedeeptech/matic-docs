@@ -7,7 +7,7 @@
 
 module.exports = {
   introduction: [
-    "home/new-to-matic",
+    "home/new-to-polygon",
     {
       type: "category",
       label: "Blockchain Basics",
@@ -16,7 +16,7 @@ module.exports = {
         "home/blockchain-basics/blockchain-types",
         "home/blockchain-basics/consensus-mechanism",
         "home/blockchain-basics/ethereum",
-        "home/blockchain-basics/matic",
+        "home/blockchain-basics/polygon",
         "home/blockchain-basics/solidity",
         "home/blockchain-basics/transactions",
         "home/blockchain-basics/gas",
@@ -25,18 +25,15 @@ module.exports = {
         "home/blockchain-basics/import-account-to-metamask",
       ],
     },
-    "home/architecture/matic-architecture",
-    // "home/architecture/matic-flow",
+    "home/architecture/polygon-architecture",
     "home/architecture/security-models",
-    // "home/architecture/bor-chain",
-    // "home/architecture/heimdall-chain",
     "home/faq",
   ],
   development: [
     "develop/getting-started",
     {
       type: "category",
-      label: "Deploying on Matic",
+      label: "Deploying on Polygon",
       items: ["develop/remix", "develop/truffle", "develop/hardhat"],
     },
     {
@@ -56,8 +53,8 @@ module.exports = {
       items: [
         {
           type: "link",
-          label: "Matic Faucet",
-          href: "https://faucet.matic.network/",
+          label: "Polygon Faucet",
+          href: "https://faucet.polygon.technology/",
         },
         // {
         //   type: "link",
@@ -69,8 +66,8 @@ module.exports = {
         //   label: "Checkpoint Status",
         //   href: "https://status.matic.today/#/checkpoints",
         // },
-        "develop/tools/matic-gas-station",
-        "develop/tools/widget",
+        "develop/tools/polygon-gas-station",
+        
       ],
     },
     {
@@ -120,64 +117,69 @@ module.exports = {
         "develop/wallets/walletconnect",
         {
           type: "category",
-          label: "Matic Web Wallet",
+          label: "Polygon Web Wallet",
           items: [
-            "develop/wallets/matic-web-wallet/web-wallet-v2-guide",
-            "develop/wallets/matic-web-wallet/deposit-eth-dai-on-matic",
+            "develop/wallets/polygon-web-wallet/web-wallet-v2-guide",
+            "develop/wallets/polygon-web-wallet/deposit-eth-dai-on-polygon",
           ],
         },
       ],
     },
     {
       type: "category",
-      label: "Ethereum ↔ Matic",
+      label: "Ethereum ↔ Polygon",
       items: [
-        "develop/ethereum-matic/getting-started",
+        "develop/ethereum-polygon/getting-started",
         {
           type: "category",
           label: "PoS Bridge",
           items: [
-            "develop/ethereum-matic/pos/getting-started",
+            "develop/ethereum-polygon/pos/getting-started",
             {
               type: "category",
               label: "Using SDK",
               items: [
-                "develop/ethereum-matic/pos/using-sdk/getting-started",
-                "develop/ethereum-matic/pos/using-sdk/eth",
-                "develop/ethereum-matic/pos/using-sdk/erc20",
-                "develop/ethereum-matic/pos/using-sdk/erc721",
-                "develop/ethereum-matic/pos/using-sdk/erc1155",
+                "develop/ethereum-polygon/pos/using-sdk/getting-started",
+                "develop/ethereum-polygon/pos/using-sdk/eth",
+                "develop/ethereum-polygon/pos/using-sdk/erc20",
+                "develop/ethereum-polygon/pos/using-sdk/erc721",
+                "develop/ethereum-polygon/pos/using-sdk/erc1155",
               ],
             },
             {
               type: "category",
               label: "Calling Contracts",
               items: [
-                "develop/ethereum-matic/pos/calling-contracts/ether",
-                "develop/ethereum-matic/pos/calling-contracts/erc20",
-                "develop/ethereum-matic/pos/calling-contracts/erc721",
-                "develop/ethereum-matic/pos/calling-contracts/erc1155",
+                "develop/ethereum-polygon/pos/calling-contracts/ether",
+                "develop/ethereum-polygon/pos/calling-contracts/erc20",
+                "develop/ethereum-polygon/pos/calling-contracts/erc721",
+                "develop/ethereum-polygon/pos/calling-contracts/erc1155",
               ],
             },
-            "develop/ethereum-matic/pos/deposit-withdraw-event-pos",
-            "develop/ethereum-matic/pos/deployment",
-            "develop/ethereum-matic/pos/mapping-assets",
+            "develop/ethereum-polygon/pos/deposit-withdraw-event-pos",
+            "develop/ethereum-polygon/pos/deployment",
+            "develop/ethereum-polygon/pos/mapping-assets",
           ],
         },
         {
           type: "category",
           label: "Plasma Bridge",
           items: [
-            "develop/ethereum-matic/plasma/getting-started",
-            "develop/ethereum-matic/plasma/eth",
-            "develop/ethereum-matic/plasma/erc20",
-            "develop/ethereum-matic/plasma/erc721",
-            "develop/ethereum-matic/plasma/deposit-withdraw-event-plasma",
-            "develop/ethereum-matic/plasma/mapping-assets",
+            "develop/ethereum-polygon/plasma/getting-started",
+            "develop/ethereum-polygon/plasma/eth",
+            "develop/ethereum-polygon/plasma/erc20",
+            "develop/ethereum-polygon/plasma/erc721",
+            "develop/ethereum-polygon/plasma/deposit-withdraw-event-plasma",
+            "develop/ethereum-polygon/plasma/mapping-assets",
           ],
         },
-        "develop/ethereum-matic/submit-mapping-request",
-        "develop/ethereum-matic/mintable-assets",
+        {
+          type: "category",
+          label:"Tools",
+          items: ["develop/ethereum-polygon/tools/widget"],
+        },
+        "develop/ethereum-polygon/submit-mapping-request",
+        "develop/ethereum-polygon/mintable-assets",
       ],
     },
     {
@@ -202,8 +204,8 @@ module.exports = {
       type: "category",
       label: "Oracles",
       items: [
-        "develop/oracles/optimisticoracle",
         "develop/oracles/getting-started",
+        "develop/oracles/optimisticoracle",
         "develop/oracles/chainlink",
         "develop/oracles/razor",
         "develop/oracles/bandchain",
@@ -223,23 +225,12 @@ module.exports = {
         },
       ],
     },
-    {
-      type: "category",
-      label: "Realtime Updates",
-      items: [
-        "develop/dagger-webhooks",
-        {
-          type: "category",
-          label: "Zapier - Multiple Apps",
-          items: ["develop/zapier/getting-started"],
-        },
-      ],
-    },
+    
 
     {
       type: "category",
       label: "Tutorials",
-      items: ["develop/pos-using-metamask", "develop/plasma-using-metamask"],
+      items: ["develop/pos-using-metamask", "develop/plasma-using-metamask", "develop/nft-tutorial"],
     },
     {
       type: "category",
@@ -254,7 +245,7 @@ module.exports = {
       type: "category",
       label: "Architecture",
       items: [
-        "contribute/matic-architecture",
+        "contribute/polygon-architecture",
         {
           type: "category",
           label: "Heimdall",
@@ -345,7 +336,7 @@ module.exports = {
             "integrate/network-detail",
             {
               type: "link",
-              label: "Matic-Mainnet",
+              label: "Polygon-Mainnet",
               href: "https://github.com/maticnetwork/static/blob/master/network/mainnet/v1/index.json",
             },
             {
@@ -357,8 +348,8 @@ module.exports = {
         },
         {
           type: "link",
-          label: "Matic Faucet",
-          href: "https://faucet.matic.network/",
+          label: "Polygon Faucet",
+          href: "https://faucet.polygon.technology/",
         },
         {
           type: "link",
@@ -384,7 +375,7 @@ module.exports = {
       type: "category",
       label: "Basics",
       items: [
-        "validate/basics/what-is-matic",
+        "validate/basics/what-is-polygon",
         "validate/basics/validator",
         "validate/basics/delegator",
         "validate/basics/pos_staking_delegation",
@@ -431,7 +422,7 @@ module.exports = {
         "validate/mainnet/validator-responsibilities",
         "validate/mainnet/validator-guide",
         "validate/mainnet/validator-guide-binaries",
-        "validate/mainnet/stake-on-matic",
+        "validate/mainnet/stake-on-polygon",
         "validate/mainnet/validator-replacement",
         "validate/mainnet/signer-change",
         "validate/mainnet/commission",
@@ -453,7 +444,7 @@ module.exports = {
       type: "category",
       label: "Architecture",
       items: [
-        "contribute/matic-architecture",
+        "contribute/polygon-architecture",
         {
           type: "category",
           label: "Heimdall",

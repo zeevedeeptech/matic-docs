@@ -1,7 +1,7 @@
 ---
 id: delegation
 title: Delegation (Validator shares)
-description: For the Matic network's Proof of Security based consensus, all the 2/3+1 proof verification and handling of staking, rewards are executed on the Ethereum smart contract. The whole design follows this philosophy of doing less on the Mainnet contract.
+description: For the Polygon's Proof of Security based consensus, all the 2/3+1 proof verification and handling of staking, rewards are executed on the Ethereum smart contract. The whole design follows this philosophy of doing less on the Mainnet contract.
 keywords:
   - docs
   - matic
@@ -9,7 +9,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 ## Overview
 
-Matic supports delegation via validator shares. By using this design, it is easier to distribute rewards and slash with scale (thousands of delegators) on Ethereum contracts without much computation.
+Polygon supports delegation via validator shares. By using this design, it is easier to distribute rewards and slash with scale (thousands of delegators) on Ethereum contracts without much computation.
 
 Delegators delegate by purchasing shares of a finite pool from validators. Each validator will have their own validator share token. Let's call these fungible tokens `VATIC` for a validator `A`. As soon as a user delegates to a validator `A`, they will be issued `VATIC` based on an exchange rate of `MATIC/VATIC` pair. As users accrue value the exchange rate indicates that they can now withdraw more `MATIC` for each `VATIC` and when users get slashed, users withdraw less `MATIC` for their `VATIC`.
 

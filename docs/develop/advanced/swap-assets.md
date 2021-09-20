@@ -1,7 +1,7 @@
 ---
 id: swap-assets
 title: Swap Assets
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -10,16 +10,16 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 ## Swap ERC20 and ERC721 tokens atomically using Plasma Asset Swaps
 
-This document will help you understand the Plasma asset swaps that can be performed while using Matic. This allows you to create applications such as decentralized exchanges, NFT marketplaces and similar while using our Plasma construction, which piggybacks on the security of Ethereum.
+This document will help you understand the Plasma asset swaps that can be performed while using Polygon. This allows you to create applications such as decentralized exchanges, NFT marketplaces and similar while using our Plasma construction, which piggybacks on the security of Ethereum.
 
 ## Introduction to EIP712 and signed transfer
-This section aims to provide an introduction to the swap of mapped assets on Matic plasma chain. 
+This section aims to provide an introduction to the swap of mapped assets on Polygon plasma chain. 
 
->Note: For tokens deployed on Matic directly - the process isn't required. The process only applies to tokens that are *mapped* on to Matic.
+>Note: For tokens deployed on Polygon directly - the process isn't required. The process only applies to tokens that are *mapped* on to Polygon.
 
 The transfer process is enabled by making use of the new RPC call `eth_SignTypedData`, introduced in [EIP712](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-712.md) - this is done to avoid the complexity of allowance on plasma chains and to add simplicity to plasma fraud proofs.
 
-The construction includes introduction of a new method in each associated asset contract - [ERC721](https://github.com/maticnetwork/contracts/blob/aee2433b2cb76b8bf2ad53736a9e6340cd3d9f15/contracts/child/ChildERC721.sol#L76) and [ERC20](https://github.com/maticnetwork/contracts/blob/aee2433b2cb76b8bf2ad53736a9e6340cd3d9f15/contracts/child/ChildERC20.sol#L104) on matic plasma chain, called `transferWithSig`. And a `Marketplace.sol` smart contract that executes the swap.
+The construction includes introduction of a new method in each associated asset contract - [ERC721](https://github.com/maticnetwork/contracts/blob/aee2433b2cb76b8bf2ad53736a9e6340cd3d9f15/contracts/child/ChildERC721.sol#L76) and [ERC20](https://github.com/maticnetwork/contracts/blob/aee2433b2cb76b8bf2ad53736a9e6340cd3d9f15/contracts/child/ChildERC20.sol#L104) on Polygon plasma chain, called `transferWithSig`. And a `Marketplace.sol` smart contract that executes the swap.
 
 
 ## transferWithSig Method
@@ -64,7 +64,7 @@ Now this particular functionality - of transferring assets from a user's account
 ### Terminology
 An **order** comprises of an order id, token address, amount (or token id). A user signs on an **order** and generates a signature. This signature is then used to transfer the signed amount of assets on user's behalf. 
 
-Below is a detailed spec of the [Marketplace](https://github.com/maticnetwork/contracts/blob/master/contracts/child/misc/Marketplace.sol) smart contract deployed on Matic chain, that performs atomic asset swaps. 
+Below is a detailed spec of the [Marketplace](https://github.com/maticnetwork/contracts/blob/master/contracts/child/misc/Marketplace.sol) smart contract deployed on Polygon chain, that performs atomic asset swaps. 
 
 ### Marketplace.sol
 
@@ -143,7 +143,7 @@ require(taker == tradeParticipant2, "Orders are not complimentary");
 
 ## Tutorial (ERC20/721 Swap)
 
-Here is a short tutorial for you to try out execution of plasma-backed asset swaps on matic. 
+Here is a short tutorial for you to try out execution of plasma-backed asset swaps on Polygon. 
 A boilerplate codebase is ready for you to clone [here](https://github.com/nglglhtr/asset-swap-tutorial). 
 The repository consists of all the relevant contracts, which are, ChildERC20, ChildERC721, Marketplace and their dependencies along with the scripts that will guide you through the tutorial ahead.
 
@@ -166,7 +166,7 @@ $ cd asset-swap-tutorial
 $ npm i
 ```
 
-> NOTE: All tokens that are mapped on to Matic (mapping is what enables movement of assets to and fro main chain - or root chain) are deployed on matic sidechain in the form of [ChildERC20](https://github.com/maticnetwork/contracts/blob/master/contracts/child/ChildERC20.sol) and [ChildERC721](https://github.com/maticnetwork/contracts/blob/master/contracts/child/ChildERC721.sol) tokens.
+> NOTE: All tokens that are mapped on to Polygon (mapping is what enables movement of assets to and fro main chain - or root chain) are deployed on Polygon sidechain in the form of [ChildERC20](https://github.com/maticnetwork/contracts/blob/master/contracts/child/ChildERC20.sol) and [ChildERC721](https://github.com/maticnetwork/contracts/blob/master/contracts/child/ChildERC721.sol) tokens.
 
 The version of ChildERC20 and ChildERC721 used in this tutorial include one additional function:
 
@@ -319,9 +319,9 @@ A successful swap displays a transaction hash. Next you can check the balances -
 $ node balance.js
 ```
 
-### Deploying and Swapping on Matic
+### Deploying and Swapping on Polygon
 
-If you'd like to deploy and test on Matic network, the steps would only differ in migrating your smart contracts onto Matic and changing contract addresses in the config file.
+If you'd like to deploy and test on Polygon, the steps would only differ in migrating your smart contracts onto Polygon and changing contract addresses in the config file.
 
 From root directory, run:
 ```bash
@@ -334,9 +334,9 @@ $ truffle migrate --network maticBetaMainnet
 
 Once you have your contract addresses, fill them in the config file under `/scripts/erc20-721/` along with the provider, which will be the following for the two networks:
 
-Matic testnet: `<Mumbai testnet RPC URL>. Sign up for a free dedicated RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.`
+Polygon testnet: `<Mumbai testnet RPC URL>. Sign up for a free dedicated RPC URL at https://rpc.maticvigil.com/ or other hosted node providers.`
 
-Matic beta mainnet: `https://beta.matic.network`
+Polygon beta mainnet: `https://beta.matic.network`
 
 Once the config file is ready, inside the `/scripts/erc20-721/` run the following - 
 

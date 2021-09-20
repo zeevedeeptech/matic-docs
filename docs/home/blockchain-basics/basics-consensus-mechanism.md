@@ -1,7 +1,7 @@
 ---
 id: consensus-mechanism
 title: Consensus Mechanism
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic

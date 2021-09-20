@@ -35,7 +35,7 @@ You will need to make sure that you are already running a separate machine where
 
 If you haven't setup your node, you can do so by using the following guide:
 
-https://docs.matic.network/docs/validate/mainnet/validator-guide
+https://docs.polygon.technology/docs/validate/mainnet/validator-guide
 
 For ease of this document, we will refer to your Current Node as Node 1 and your new node as Node 2.
 

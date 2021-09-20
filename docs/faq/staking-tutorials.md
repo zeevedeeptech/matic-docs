@@ -2,7 +2,7 @@
 id: staking-tutorials
 title: Staking Tutorials
 sidebar_label: Staking Tutorials
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic

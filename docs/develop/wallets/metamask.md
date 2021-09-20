@@ -1,7 +1,7 @@
 ---
 id: metamask
 title: Metamask
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic

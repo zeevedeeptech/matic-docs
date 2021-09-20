@@ -2,7 +2,7 @@
 id: staking-faq
 title: Staking FAQ
 sidebar_label: Staking FAQ
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -12,7 +12,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### How to stake?
 
-For Staking you would need to have funds on Ethereum Mainnet. Login to Metamask on the Ethereum network using the Staking Dashboard. https://wallet.matic.network/staking
+For Staking you would need to have funds on Ethereum Mainnet. Login to Metamask on the Ethereum network using the Staking Dashboard. https://wallet.polygon.technology/staking/
 
 Please watch the video for a graphical illustration of how this works
 
@@ -32,7 +32,7 @@ Please watch the video for a graphical illustration of how this works
 
 ### I am unable to view the Staking tab. How do i access Staking?
 
-Once logged into https://wallet.matic.network you need to  click on apps > staking. Users will be landed on staking overview page. Reference for guide:
+Once logged into https://wallet.polygon.technology/ you need to  click on apps > staking. Users will be landed on staking overview page. Reference for guide:
 
 <img src={useBaseUrl("img/staking_faq/howToAccessStake.png")} height="300px"/>
 
@@ -42,15 +42,15 @@ Check if you have funds on the Main Ethereum Network, to delegate your tokens. A
 
 ### How do I know which Validator to select for better rewards?
 
-It depends on your understanding and research on which validator you would want to stake on.You can find the list of validators here : https://wallet.matic.network/staking/validators
+It depends on your understanding and research on which validator you would want to stake on.You can find the list of validators here : https://wallet.polygon.technology/staking/validators
 
 ### What is the unbonding period? 
 
-The unbonding period on Matic is 80 checkpoints. This period applies to the originally delegated amount and re-delegated amounts. It does not apply to any rewards that were not re-delegated.
+The unbonding period on Polygon is 80 checkpoints. This period applies to the originally delegated amount and re-delegated amounts. It does not apply to any rewards that were not re-delegated.
 
 ### Where to Stake? 
 
-You can visit the below link for Staking: https://wallet.matic.network/staking/validators
+You can visit the below link for Staking: https://wallet.polygon.technology/staking/validators
 
 ### I want to Withdraw Rewards but I am unable to ?
 
@@ -143,7 +143,7 @@ Yes, hardware wallets are supported. You can use the "Connect Hardware Wallet" o
 
 Staking through Binance is not yet supported. There will be an announcement if and when Binance starts supporting it.
 
-### Do I need to deposit Matic tokens to the Matic Mainnet network for staking?
+### Do I need to deposit Matic tokens to the Polygon Mainnet network for staking?
 
 No. All your funds need to be on the Main Ethereum Network.
 
@@ -155,7 +155,7 @@ Currently 20188 Matic tokens are distributed proportionately on each successful 
 
 (Note that there is a 10% proposer bonus that accrues to the validator who submits the checkpoint, but over time, the effect of the extra bonus is nullified over multiple checkpoints by different validators.)
 
-The checkpoint submission is done by one of the validators approximately every 34 minutes. This time is approximate and may vary based on validator consensus on the Matic Heimdall layer. This may also vary based on Ethereum Network. Higher congestion in the network may result in delayed checkpoints.
+The checkpoint submission is done by one of the validators approximately every 34 minutes. This time is approximate and may vary based on validator consensus on the Polygon Heimdall layer. This may also vary based on Ethereum Network. Higher congestion in the network may result in delayed checkpoints.
 
 You can track checkpoints on the staking contract here: https://etherscan.io/address/0x86e4dc95c7fbdbf52e33d563bbdb00823894c287
 

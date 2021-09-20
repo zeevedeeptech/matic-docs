@@ -1,7 +1,7 @@
 ---
 id: network
 title: Network
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -13,14 +13,14 @@ import TabItem from '@theme/TabItem';
 <Tabs
   defaultValue="mainnet"
   values={[
-    { label: 'Matic-Mainnet', value: 'mainnet', },
+    { label: 'Polygon-Mainnet', value: 'mainnet', },
     { label: 'Mumbai-Testnet', value: 'mumbai', },
   ]
 }>
 <TabItem value="mumbai">
 
 # Mumbai-Testnet
-Mumbai Testnet replicates the Matic Mainnet, which is to be used for testing. Testnet coins are separate and distinct from actual tokens/assets, and are never supposed to have any value. This allows application developers or validators/testers to experiment, without having to use real assets or worrying about breaking the main Matic chain.
+Mumbai Testnet replicates the Polygon Mainnet, which is to be used for testing. Testnet coins are separate and distinct from actual tokens/assets, and are never supposed to have any value. This allows application developers or validators/testers to experiment, without having to use real assets or worrying about breaking the main Polygon chain.
 
 The documentation corresponding contains details for the RPC - HTTP, WS and Dagger endpoints. There is also a full node setup if you wish to setup your own full node.
 
@@ -31,77 +31,60 @@ The documentation corresponding contains details for the RPC - HTTP, WS and Dagg
 | chainId      | `80001`                                  |
 | Gas Token    | `MATIC Token` ([For more...](gas-token)) |
 | Gas Station    | [`https://gasstation-mumbai.matic.today`](https://gasstation-mumbai.matic.today) ([For more...](/docs/develop/tools/matic-gas-station)) |
+<<<<<<< HEAD
 | RPC          | `https://rpc-mumbai.matic.today` or <br/>` https://matic-mumbai.chainstacklabs.com` or <br/>`https://rpc-mumbai.maticvigil.com` or <br/>`https://matic-testnet-archive-rpc.bwarelabs.com`  <br/> <br/>Public RPCs may have traffic or rate-limits depending on usage. You can sign up for a dedicated free RPC URL at the following: <br/> <ul><li>[Moralis](https://moralis.io)</li><li>[Infura](https://infura.io)</li><li>[Alchemy](https://www.alchemy.com/)</li><li> [Chainstack](https://chainstack.com/build-better-with-polygon/)</li><li>[MaticVigil](https://rpc.maticvigil.com/)</li> <li> [QuickNode](https://blog.quicknode.com/polygon-matic-is-now-live-on-quiknode-api/) </li><li>[Ankr](https://www.ankr.com/)</li> </ul>    |
 | Websocket    | `wss://rpc-mumbai.matic.today` or <br/>`wss://ws-matic-mumbai.chainstacklabs.com` or <br/> `wss://rpc-mumbai.maticvigil.com/ws` or <br/> `wss://matic-testnet-archive-ws.bwarelabs.com`  <br/><br/>Public RPCs may have traffic or rate-limits depending on usage. You can sign up for a dedicated free RPC URL at the following: <br/> <ul><li>[Moralis](https://moralis.io)</li><li>[Infura](https://infura.io)</li><li>[Alchemy](https://www.alchemy.com/)</li><li> [Chainstack](https://chainstack.com/build-better-with-polygon/)</li><li>[MaticVigil](https://rpc.maticvigil.com/)</li> <li> [QuickNode](https://blog.quicknode.com/polygon-matic-is-now-live-on-quiknode-api/) </li><li>[Ankr](https://www.ankr.com/)</li></ul>     |
 | Dagger RPC   | `https://mumbai-dagger.matic.today`   |
 | Dagger WSS   | `wss://mumbai-dagger.matic.today`  |
+=======
+| RPC          | `https://rpc-mumbai.matic.today` or <br/>` https://matic-mumbai.chainstacklabs.com` or <br/>`https://rpc-mumbai.maticvigil.com` or <br/>`https://matic-testnet-archive-rpc.bwarelabs.com`  <br/> <br/>Public RPCs may have traffic or rate-limits depending on usage. You can sign up for a dedicated free RPC URL at the following: <br/> <ul><li>[Moralis](https://moralis.io)</li><li>[Infura](https://infura.io)</li><li>[Alchemy](https://www.alchemy.com/)</li><li> [Chainstack](https://chainstack.com/build-better-with-polygon/)</li><li>[MaticVigil](https://rpc.maticvigil.com/)</li> <li> [QuickNode](https://blog.quicknode.com/polygon-matic-is-now-live-on-quiknode-api/) </li><li>[Ankr](https://www.ankr.com/)</li><li> [Getblock](https://getblock.io/en/) </li> <li>[BlockPI](https://chains.blockpi.io/#/polygon)</li></ul>    |
+| Websocket    | `wss://rpc-mumbai.matic.today` or <br/>`wss://ws-matic-mumbai.chainstacklabs.com` or <br/> `wss://rpc-mumbai.maticvigil.com/ws` or <br/> `wss://matic-testnet-archive-ws.bwarelabs.com`  <br/><br/>Public RPCs may have traffic or rate-limits depending on usage. You can sign up for a dedicated free RPC URL at the following: <br/> <ul><li>[Moralis](https://moralis.io)</li><li>[Infura](https://infura.io)</li><li>[Alchemy](https://www.alchemy.com/)</li><li> [Chainstack](https://chainstack.com/build-better-with-polygon/)</li><li>[MaticVigil](https://rpc.maticvigil.com/)</li> <li> [QuickNode](https://blog.quicknode.com/polygon-matic-is-now-live-on-quiknode-api/) </li><li>[Ankr](https://www.ankr.com/)</li><li> [Getblock](https://getblock.io/en/) </li></ul>     |
+>>>>>>> 02f91411bc7dc2e46429e92b5a0cd38f1d138fb4
 | Heimdall API | `https://heimdall.api.matic.today` |
-| Block Explorer |[`https://polygon-explorer-mumbai.chainstacklabs.com`](https://polygon-explorer-mumbai.chainstacklabs.com)<br/> [`https://explorer-mumbai.maticvigil.com`](https://explorer-mumbai.maticvigil.com) <br/> [`https://mumbai-explorer.matic.today`](https://mumbai-explorer.matic.today) <br/> [`https://backup-mumbai-explorer.matic.today`](https://backup-mumbai-explorer.matic.today) <br/> [`https://mumbai.polygonscan.com/`](https://mumbai.polygonscan.com/)|
+| Block Explorer |[`https://mumbai.polygonscan.com/`](https://mumbai.polygonscan.com/)|
 
 
 > For more details: [https://static.matic.network/network/testnet/mumbai/index.json](https://static.matic.network/network/testnet/mumbai/index.json)
 
 :::important
-Matic network native token is **MATIC** which will be used as gas fee.
-:::
-
-:::note
-Moving forward we will be deprecating the following Testnets and Mainnets hosted by Matic. Please make sure to migrate to the new Mumbai testnet by then.
-
-**Deprecation date: 28th July 2020**
-
-- Testnetv2 `https://testnet2.matic.network`
-- Testnetv3 `https://testnetv3.matic.network`
-
-**Deprecation date: 15th Aug 2020**
-
-- Alpha-mainnet `https://alpha.ethereum.matic.network`
-- Betav2 mainnet `https://betav2.matic.network`
+Polygon network native token is **MATIC** which will be used as gas fee.
 :::
 
 </TabItem>
 <TabItem value="mainnet">
 
-# Matic-Mainnet
+# Polygon-Mainnet
 
-🎉Finally!!! Matic Mainnet is open for developers🎉
+🎉Finally!!! Polygon Mainnet is open for developers🎉
 
 The documentation corresponding contains details for the RPC - HTTP, WS and Dagger endpoints. There is also a full node setup if you wish to setup your own full node.
 
 
 |              |                                        |
 |--------------|----------------------------------------|
-| NetworkName  | **Matic Network**                                 |
+| NetworkName  | **Polygon Mainnet**                                 |
 | ParentChain  | **Ethereum Mainnet**                                 |
 | chainId      | `137`                                  |
 | Gas Token    | `MATIC Token` ([For more...](gas-token)) |
+<<<<<<< HEAD
 | Gas Station    | [`https://gasstation-mainnet.matic.network`](https://gasstation-mainnet.matic.network) ([For more...](/docs/develop/tools/matic-gas-station)) |[
 | RPC          | `https://rpc-mainnet.matic.network` or <br/>`https://matic-mainnet.chainstacklabs.com` or <br/>`https://rpc-mainnet.maticvigil.com` or <br/>`https://rpc-mainnet.matic.quiknode.pro` or <br/> `https://matic-mainnet-full-rpc.bwarelabs.com` or <br/>`https://matic-mainnet-archive-rpc.bwarelabs.com` <br/><br/>Public RPCs may have traffic or rate-limits depending on usage. You can sign up for a dedicated free RPC URL at the following: <br/> <ul><li>[Infura](https://infura.io)</li><li>[Alchemy](https://www.alchemy.com/)</li><li> [Chainstack](https://chainstack.com/build-better-with-polygon/)</li><li>[MaticVigil](https://rpc.maticvigil.com/)</li> <li> [QuickNode](https://blog.quicknode.com/polygon-matic-is-now-live-on-quiknode-api/) </li><li>[Ankr](https://www.ankr.com/)</li></ul>  |
 | Websocket    | `wss://rpc-mainnet.matic.network` or <br/>`wss://ws-matic-mainnet.chainstacklabs.com`  or <br/> `wss://rpc-mainnet.maticvigil.com/ws` or <br/>`wss://rpc-mainnet.matic.quiknode.pro` or <br/> `wss://matic-mainnet-full-ws.bwarelabs.com` or <br/>`wss://matic-mainnet-archive-ws.bwarelabs.com`<br/> <br/>Public RPCs may have traffic or rate-limits depending on usage. You can sign up for a dedicated free RPC URL at the following: <br/> <ul><li>[Infura](https://infura.io)</li><li>[Alchemy](https://www.alchemy.com/)</li><li> [Chainstack](https://chainstack.com/build-better-with-polygon/)</li><li>[MaticVigil](https://rpc.maticvigil.com/)</li> <li> [QuickNode](https://blog.quicknode.com/polygon-matic-is-now-live-on-quiknode-api/) </li><li>[Ankr](https://www.ankr.com/)</li></ul>     |
 | Ethereum Dagger WSS| `wss://mainnet.dagger.matic.network`  |
 | Matic Dagger WSS   | `wss://matic-mainnet.dagger.matic.network`  |
+=======
+| Gas Station    | [`https://polygonscan.com/gastracker`](https://polygonscan.com/gastracker) (**recommended**) or <br/> [`https://gasstation-mainnet.matic.network`](https://gasstation-mainnet.matic.network) ([For more...](/docs/develop/tools/matic-gas-station)) |[
+| RPC          | New unified URL (**recommended**): `https://polygon-rpc.com/`<br/>Use this new aggregated RPC link to avoid RPC disconnects. You can read more details on this [here](https://twitter.com/0xPolygon/status/1431277874238169094) and [here](https://blog.polygon.technology/polygon-rpc-gateway-will-provide-a-free-high-performance-connection-to-the-polygon-pos-blockchain-df148958d418).<br/><br/>Use these alternative RPCs only if the above RPC fails:<br/> `https://rpc-mainnet.matic.network` or <br/>`https://matic-mainnet.chainstacklabs.com` or <br/>`https://rpc-mainnet.maticvigil.com` or <br/>`https://rpc-mainnet.matic.quiknode.pro` or <br/> `https://matic-mainnet-full-rpc.bwarelabs.com`<br/><br/>Public RPCs may have traffic or rate-limits depending on usage. You can sign up for a dedicated free RPC URL at the following: <br/> <ul><li>[Moralis](https://moralis.io)</li><li>[Infura](https://infura.io)</li><li>[Alchemy](https://www.alchemy.com/)</li><li> [Chainstack](https://chainstack.com/build-better-with-polygon/)</li><li>[MaticVigil](https://rpc.maticvigil.com/)</li> <li> [QuickNode](https://blog.quicknode.com/polygon-matic-is-now-live-on-quiknode-api/) </li><li>[Ankr](https://www.ankr.com/)</li><li>[Pocket Network](https://www.portal.pokt.network/#1)</li><li> [Getblock](https://getblock.io/en/) </li><li>[BlockPI](https://chains.blockpi.io/#/polygon)</li></ul>  |
+| Websocket    | `wss://rpc-mainnet.matic.network` or <br/>`wss://ws-matic-mainnet.chainstacklabs.com`  or <br/> `wss://rpc-mainnet.maticvigil.com/ws` or <br/>`wss://rpc-mainnet.matic.quiknode.pro` or <br/> `wss://matic-mainnet-full-ws.bwarelabs.com` or <br/>`wss://matic-mainnet-archive-ws.bwarelabs.com`<br/> <br/>Public RPCs may have traffic or rate-limits depending on usage. You can sign up for a dedicated free RPC URL at the following: <br/> <ul><li>[Moralis](https://moralis.io)</li><li>[Infura](https://infura.io)</li><li>[Alchemy](https://www.alchemy.com/)</li><li> [Chainstack](https://chainstack.com/build-better-with-polygon/)</li><li>[MaticVigil](https://rpc.maticvigil.com/)</li> <li> [QuickNode](https://blog.quicknode.com/polygon-matic-is-now-live-on-quiknode-api/) </li><li>[Ankr](https://www.ankr.com/)</li><li> [Getblock](https://getblock.io/en/) </li></ul>     |
+>>>>>>> 02f91411bc7dc2e46429e92b5a0cd38f1d138fb4
 | Heimdall API | `https://heimdall.api.matic.network` |
-| Block Explorer | [`https://polygon-explorer-mainnet.chainstacklabs.com`](https://polygon-explorer-mainnet.chainstacklabs.com)<br/>  [`https://explorer-mainnet.maticvigil.com`](https://explorer-mainnet.maticvigil.com)  <br/> [`https://explorer.matic.network`](https://explorer.matic.network)  <br/> [`https://backup-explorer.matic.network`](https://backup-explorer.matic.network)<br/> [`https://polygonscan.com/`](https://polygonscan.com/)|
+| Block Explorer | [`https://polygonscan.com/`](https://www.polygonscan.com/)|
 
 
 For more details: [https://github.com/maticnetwork/static/blob/master/network/mainnet/v1/index.json](https://github.com/maticnetwork/static/blob/master/network/mainnet/v1/index.json)
 
 :::important
-Matic network native token is **MATIC** which will be used as gas fee.
-:::
-
-:::note
-Moving forward we will be deprecating the following Testnets and Mainnets hosted by Matic. Please make sure to migrate to the new Mumbai testnet by then.
-
-**Deprecation date: 28th July 2020**
-
-- Testnetv2 `https://testnet2.matic.network`
-- Testnetv3 `https://testnetv3.matic.network`
-
-**Deprecation date: 15th Aug 2020**
-
-- Alpha-mainnet `https://alpha.ethereum.matic.network`
-- Betav2 mainnet `https://betav2.matic.network`
+Polygon network native token is **MATIC** which will be used as gas fee.
 :::
 
 </TabItem>

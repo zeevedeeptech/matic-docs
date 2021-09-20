@@ -2,7 +2,7 @@
 id: delegator
 title: Who is a Delegator?
 sidebar_label: Who is a Delegator
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic

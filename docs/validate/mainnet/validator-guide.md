@@ -1,8 +1,8 @@
 ---
 id: validator-guide
-title: Matic Mainnet Node - Sentry & Validator
+title: Polygon Mainnet Node - Sentry & Validator
 sidebar_label: Node Setup Ansible
-description: Setup your validator node on Matic Mainnet
+description: Setup your validator node on Polygon Mainnet
 keywords:
   - docs
   - matic
@@ -11,19 +11,31 @@ image: https://matic.network/banners/matic-network-16x9.png
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 
-We have created a simple Ansible playbooks to setup a full node on Matic Mainnet
+We have created a simple Ansible playbooks to setup a full node on Polygon Mainnet
 
 ## Pre-requisites
 
 ### Minimum System Requirements
 
-- Minimum system requirements are as follows:
+- Minimum system requirements:
 
-    16 - 32 GiB of memory
+    32 GiB of memory
 
-    4 - 8 core CPU (t3 xLarge)
+    8 core CPU (m5d.2xlarge or t3.2xlarge with unlimited credits selected)
 
-    Minimum 650GB SSD (make sure it is extendable)
+    Minimum 1TB SSD (make sure it is extendable)
+    
+- Recommended system requirements:
+
+    64 GiB of memory
+
+    16 core CPU (m5d.4xlarge or OVH's infra-3)
+
+    Minimum 1TB SSD (make sure it is extendable)
+    
+    1Gb/s Bandwidth (expect 3-5 TB data transferred per month)
+    
+**Please note, at this time, there is limited space for accepting new validators. New validators can only join the active set when a currently active validator unbonds.**
 
 It is essential that you have **2 different Machines / VM** for your Sentry and Validator Node. Having a single Machine to run both, your Sentry and Validator will cause issues.
 
@@ -31,31 +43,63 @@ You can obviously opt for higher setup infra to future-proof your Node. However,
 
 ### Pre-Requisite
 
-- Ansible should be installed on local machine with **Python3.x**. The setup will not work if you have Python2.x.
+- Ansible should be installed on **local machine** with **Python3.x**. The setup will not work if you have Python2.x.
     - To install **ansible with Python 3.x** you can use this command `pip3 install ansible`. This will install Python 3 dependencies as well as ansible.
-- Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requirements
 - You will also need to make sure that **Go is not installed on your VM / Machine**. Setting up your full node through ansible will run into issues if you have Go already installed, as ansible requires specific packages of Go to be installed.
-- You will also need to make sure that your **VM / Machine does not have any previous setups for Matic Validator or Heimdall or Bor**. You will need to delete them as your setup will run in to issues.
+- You will also need to make sure that your **VM / Machine does not have any previous setups for Polygon Validator or Heimdall or Bor**. You will need to delete them as your setup will run in to issues.
+- Check [https://github.com/maticnetwork/node-ansible#requirements](https://github.com/maticnetwork/node-ansible#requirements) for requirements.
 
-## Setup Sentry Node for Matic mainnet
+## Setup Sentry Node for Polygon Mainnet
 
-You have to make sure that you setup your Sentry Node first than your Validator node as your Validator Node will only be connected to the Sentry Node. So it is essential that you setup your Sentry Node first
+You have to make sure that you setup your Sentry Node first then your Validator node as your Validator Node will only be connected to the Sentry Node. So it is essential that you setup your Sentry Node first.
 
-- Ensure you have access to the remote machine or VM that the full node is being setup on. Refer [https://github.com/maticnetwork/node-ansible#setup](https://github.com/maticnetwork/node-ansible#setup) for more details.
 - Clone the [`https://github.com/maticnetwork/node-ansible`](https://github.com/maticnetwork/node-ansible) repo on your local machine.
+    - `git clone https://github.com/maticnetwork/node-ansible`
 - `cd node-ansible`
-- Edit the `inventory.yml` file and insert your IP(s) in the `sentry->hosts` section. Refer [https://github.com/maticnetwork/node-ansible#inventory](https://github.com/maticnetwork/node-ansible#inventory) for more details.
+- Edit the `inventory.yml` file and insert your IP(s) in the `sentry->hosts` section. 
 
-<img src={useBaseUrl("img/mainnet/inventory.png")} />
+```yml
+all:
+  hosts:
+  children:
+    sentry:
+      hosts:
+        xxx.xxx.xx.xx: # <----- Add IP for sentry node
+        xxx.xxx.xx.xx: # <----- Add IP for second sentry node (optional)
+    validator:
+      hosts:
+        xxx.xxx.xx.xx: # <----- Add IP for validator node
+```
 
 - Check if remote machine is reachable by running `ansible sentry -m ping` You should be getting such an output
 
-<img src={useBaseUrl("img/mainnet/ping.png")} />
+```
+xxx.xxx.xx.xx | SUCCESS => {
+    "ansible_facts": {
+        "discovered_interpreter_python": "/usr/bin/python3"
+    },
+    "changed": false,
+    "ping": "pong"
+}
+```
+
+- If Ansible cannot find your ssh key, you will receive the following unreachable error:
+```
+xxx.xxx.xx.xx | UNREACHABLE! => {
+    "changed": false,
+    "msg": "Failed to connect to the host via ssh: ssh: connect to host xxx.xxx.xx.xx port 22: Operation timed out",
+    "unreachable": true
+} 
+```
+- Adding your ssh key to your ssh-agent can allow Ansible to use it to connect (this is applicable to AWS and other .pem login servers)
+    - `ssh-add /path/to/your/cert.pem
+    - `ssh-agent`
+- If you have a id_rsa.pub file, copy it to your authorized_keys: `cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys`
 
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
     ```jsx
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.6 heimdall_branch=v0.2.1-mainnet  network_version=mainnet-v1 node_type=sentry/sentry" --list-hosts
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.7 heimdall_branch=v0.2.2  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
     ```
 
 It should output the remote machine IP(s) you have configured.
@@ -65,7 +109,7 @@ It should output the remote machine IP(s) you have configured.
 - Setup the full node with this command:
 
     ```jsx
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.6 heimdall_branch=v0.2.1-mainnet  network_version=mainnet-v1 node_type=sentry/sentry"
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.7 heimdall_branch=v0.2.2  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
     ```
 
 Once you run this command, it will first run a series a checks to make sure your system is connected and all things are in place to start setup and install. You should see something like this
@@ -80,7 +124,7 @@ Once the setup is complete, you will see a message of completion on the terminal
     ansible-playbook -l sentry playbooks/clean.yml
     ```
 
-## Validator Node Setup for Matic Mainnet
+## Validator Node Setup for Polygon Mainnet
 
 Now once your Sentry node is completely setup you can then start setting up your Validator node. You will have to use ansible again to deploy all the comp
 
@@ -98,7 +142,7 @@ Check if remote machine is reachable by running `ansible validator -m ping`. You
 For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
 ```jsx
-ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.6 heimdall_branch=v0.2.1-mainnet network_version=mainnet-v1 node_type=sentry/validator" --list-hosts
+ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.7 heimdall_branch=v0.2.2 network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --list-hosts
 ```
 
 It should output the remote machine IP(s) you have configured
@@ -108,7 +152,7 @@ It should output the remote machine IP(s) you have configured
 - Setup the full node with this command:
 
 ```jsx
-ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.6 heimdall_branch=v0.2.1-mainnet  network_version=mainnet-v1 node_type=sentry/validator"
+ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.7 heimdall_branch=v0.2.2  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet"
 ```
 
 Once you run this command, it will first run a series a checks to make sure your system is connected and all things are in place to start setup and install. You should see something like this
@@ -116,7 +160,7 @@ Once you run this command, it will first run a series a checks to make sure your
 - Setup the full node with this command:
 
     ```jsx
-    ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.6 heimdall_branch=v0.2.1-mainnet  network_version=mainnet-v1 node_type=sentry/validator"
+    ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.7 heimdall_branch=v0.2.2  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet"
     ```
 
 Once you run this command, it will first run a series a checks to make sure your system is connected and all things are in place to start setup and install. You should see something like this
@@ -175,9 +219,9 @@ You will need to add the `EnodeID` of your **Validator Node** to the sentry node
 ]
 ```
 
-Before you start Heimdall and other services on your Sentry node, do note that Heimdall usually takes a day to sync to the latest block. We do have an option where you can import a snapshot of the Blockchain state of Heimdall and Bor and using that your Heimdall and Bor won't need to sync from scratch and thus will only take a couple of hours to sync to the latest block
+Before you start Heimdall and other services on your Sentry node, do note that Heimdall usually takes several days to sync to the latest block. We do have an option where you can import a snapshot of the Blockchain state of Heimdall and Bor and using that your Heimdall and Bor won't need to sync from scratch and thus will only take a couple of hours to sync to the latest block.
 
-For more information, you can read our forum post here: https://forum.matic.network/t/snapshots-for-blockchain-state-17th-november/553
+For more information, you can read our forum post here: [`https://forum.matic.network/t/snapshot-instructions-for-heimdall-and-bor/2278`](https://forum.matic.network/t/snapshot-instructions-for-heimdall-and-bor/2278)
 
 **Starting Services for Heimdall and Bor**
 
@@ -299,7 +343,7 @@ Now you will need to update the `static-nodes.json` file on your Validator nod
 
 ### Owner & Signer Keys
 
-On Matic you do have the option to set your Owner Key and Signer Key. Your signer address is the one that stays on the Node, this will be considered your Signer Key and this address would be used to Signing Checkpoints, etc. You need to make sure that you have at least 1 ETH on the Signer address. Whereas Owner key will have the Matic Tokens. This address will be used when completing the staking transactions. On Matic, it is recommended that you keep your Owner and Signer keys different for security reasons.
+On Polygon you do have the option to set your Owner Key and Signer Key. Your signer address is the one that stays on the Node, this will be considered your Signer Key and this address would be used to Signing Checkpoints, etc. You need to make sure that you have at least 1 ETH on the Signer address. Whereas Owner key will have the Matic Tokens. This address will be used when completing the staking transactions. On Polygon, it is recommended that you keep your Owner and Signer keys different for security reasons.
 
 ### **Generate Heimdall private key**
 
@@ -371,6 +415,10 @@ VALIDATOR_ADDRESS=<Enter your Ethereum Address here>
 
 ### **Starting Services for Heimdall and Bor**
 
+Before you start Heimdall and other services on your Sentry node, do note that Heimdall usually takes several days to sync to the latest block. We do have an option where you can import a snapshot of the Blockchain state of Heimdall and Bor and using that your Heimdall and Bor won't need to sync from scratch and thus will only take a couple of hours to sync to the latest block.
+
+For more information, you can read our forum post here: [`https://forum.matic.network/t/snapshot-instructions-for-heimdall-and-bor/2278`](https://forum.matic.network/t/snapshot-instructions-for-heimdall-and-bor/2278)
+
 - Run the full node with the following commands:
 
 **To Start Heimdall Service**
@@ -413,6 +461,6 @@ You can check Bor logs here:
 
     - Bor - `journalctl -u bor.service -f`
 
-Now, you have successfully setup your Sentry and Validator Node. Now all that you have to do is Stake by using the Matic Staking UI. However, you need to ensure that you perform a health check of your Node before you proceed to staking. You can ask for a health check on our Discord Server: https://discord.gg/4E2XMVC
+Now, you have successfully setup your Sentry and Validator Node. Now all that you have to do is Stake by using the Polygon Staking UI. However, you need to ensure that you perform a health check of your Node before you proceed to staking. You can ask for a health check on our Discord Server: https://discord.gg/4E2XMVC
 
-You can follow this step-by-step guide to understand how you can stake on Matic: https://docs.matic.network/docs/validate/mainnet/stake-on-matic
+You can follow this step-by-step guide to understand how you can stake on Polygon: https://docs.polygon.technology/docs/validate/mainnet/stake-on-matic

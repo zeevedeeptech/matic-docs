@@ -1,7 +1,7 @@
 ---
-id: matic-architecture
-title: Matic Architecture
-description: Build your next blockchain app on Matic.
+id: polygon-architecture
+title: Polygon Architecture
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -9,15 +9,15 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Matic Network is a blockchain application platform that provides hybrid Proof-of-Stake and Plasma-enabled sidechains.
+Polygon Network is a blockchain application platform that provides hybrid Proof-of-Stake and Plasma-enabled sidechains.
 
-Architecturally, the beauty of Matic is its elegant design, which features a generic validation layer separated from varying execution environments like Plasma enabled chains, full blown EVM sidechains, and in the future, other Layer 2 approaches such as Optimistic Rollups. 
+Architecturally, the beauty of Polygon is its elegant design, which features a generic validation layer separated from varying execution environments like Plasma enabled chains, full blown EVM sidechains, and in the future, other Layer 2 approaches such as Optimistic Rollups. 
 
-Currently, developers can use **Plasma** for specific state transitions for which Plasma predicates have been written such as ERC20, ERC721, asset swaps or other custom predicates. For arbitrary state transitions, they can use PoS. Or both! This is made possible by Matic's hybrid construction.
+Currently, developers can use **Plasma** for specific state transitions for which Plasma predicates have been written such as ERC20, ERC721, asset swaps or other custom predicates. For arbitrary state transitions, they can use PoS. Or both! This is made possible by Polygon's hybrid construction.
 
-To enable the PoS mechanism on our platform, a set of **staking** management contracts are deployed on Ethereum, as well as a set of incentivized validators running **Heimdall** and **Bor** nodes. Ethereum is the first basechain Matic Network supports, but Matic intends to offer support for additional basechains, based on community suggestions and consensus, to enable an interoperable decentralized Layer 2 blockchain platform.
+To enable the PoS mechanism on our platform, a set of **staking** management contracts are deployed on Ethereum, as well as a set of incentivized validators running **Heimdall** and **Bor** nodes. Ethereum is the first basechain Polygon supports, but Polygon intends to offer support for additional basechains, based on community suggestions and consensus, to enable an interoperable decentralized Layer 2 blockchain platform.
 
-Matic has a three-layer architecture:
+Polygon has a three-layer architecture:
 
 1. Staking and Plasma smart contracts on Ethereum
 2. Heimdall (Proof of Stake layer) 
@@ -25,9 +25,9 @@ Matic has a three-layer architecture:
 
 <img src={useBaseUrl("img/matic/Architecture.png")} />
 
-### Matic smart contracts (on Ethereum)
+### Polygon smart contracts (on Ethereum)
 
-Matic maintains a set of smart contracts on Ethereum, which handle the following:
+Polygon maintains a set of smart contracts on Ethereum, which handle the following:
 
 - Staking management for the Proof-of-Stake layer
 - Delegation management including validator shares
@@ -35,7 +35,7 @@ Matic maintains a set of smart contracts on Ethereum, which handle the following
 
 ### Heimdall (Proof-of-Stake validator layer)
 
-**Heimdall** is the PoS validator node that works in consonance with the Staking contracts on Ethereum to enable the PoS mechanism on Matic. We have implemented this by building on top of the Tendermint consensus engine with changes to the signature scheme and various data structures. It is responsible for block validation, block producer committee selection, checkpointing a representation of the sidechain blocks to Ethereum in our architecture and various other responsibilities.
+**Heimdall** is the PoS validator node that works in consonance with the Staking contracts on Ethereum to enable the PoS mechanism on Polygon. We have implemented this by building on top of the Tendermint consensus engine with changes to the signature scheme and various data structures. It is responsible for block validation, block producer committee selection, checkpointing a representation of the sidechain blocks to Ethereum in our architecture and various other responsibilities.
 
 Heimdall layer handles the aggregation of blocks produced by Bor into a merkle tree and publishing the merkle root periodically to the root chain. This periodic publishing are called `checkpoints`. For every few blocks on Bor, a validator (on the Heimdall layer): 
 
@@ -57,9 +57,9 @@ A bird’s eye view of the process can be explained as:
 
 ### Bor (Block Producer Layer)
 
-Bor is Matic’s block producer layer - the entity responsible for aggregating transactions into blocks. 
+Bor is Polygon block producer layer - the entity responsible for aggregating transactions into blocks. 
 
-Block producers are periodically shuffled via committee selection on Heimdall in durations termed as a `span` in Matic. Blocks are produced at the **Bor** node and the sidechain VM is EVM-compatible. Blocks produced on Bor are also validated periodically by Heimdall nodes, and a checkpoint consisting of the Merkle tree hash of a set of blocks on Bor is committed to Ethereum periodically.
+Block producers are periodically shuffled via committee selection on Heimdall in durations termed as a `span` in Polygon. Blocks are produced at the **Bor** node and the sidechain VM is EVM-compatible. Blocks produced on Bor are also validated periodically by Heimdall nodes, and a checkpoint consisting of the Merkle tree hash of a set of blocks on Bor is committed to Ethereum periodically.
 
 ### **:scroll:Resources**
 

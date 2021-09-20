@@ -1,7 +1,7 @@
 ---
 id: core_concepts
 title: Core Concepts
-description: Bor is state chain in Matic architecture. It is a fork of Geth [https://github.com/ethereum/go-ethereum](https://github.com/ethereum/go-ethereum) with new consensus called Bor.
+description: Bor is state chain in Polygon architecture. It is a fork of Geth [https://github.com/ethereum/go-ethereum](https://github.com/ethereum/go-ethereum) with new consensus called Bor.
 keywords:
   - docs
   - matic
@@ -9,7 +9,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-Bor is state chain in Matic architecture. It is a fork of Geth [https://github.com/ethereum/go-ethereum](https://github.com/ethereum/go-ethereum) with new consensus called Bor.
+Bor is state chain in Polygon architecture. It is a fork of Geth [https://github.com/ethereum/go-ethereum](https://github.com/ethereum/go-ethereum) with new consensus called Bor.
 
 Source: [https://github.com/maticnetwork/bor](https://github.com/maticnetwork/bor)
 
@@ -591,7 +591,7 @@ Apart from that there are few attacks possible:
 
 2. All validators are colluding with each-other and censoring particular transaction
 
-    In this case, Matic system will provide a way to submit a transaction on Ethereum chain and ask validators to include the transaction in next `x` checkpoints. If validators fail to include it during that time window, the user can slash the validators. Note that this is not currently implemented.
+    In this case, Polygon system will provide a way to submit a transaction on Ethereum chain and ask validators to include the transaction in next `x` checkpoints. If validators fail to include it during that time window, the user can slash the validators. Note that this is not currently implemented.
 
 ### Fraud
 

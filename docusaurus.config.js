@@ -1,21 +1,21 @@
 module.exports = {
-  title: "Matic Network | Documentation",
-  tagline: "Welcome to Matic developer documentation",
+  title: "Polygon Technolgy | Documentation",
+  tagline: "Welcome to Polygon developer documentation",
   url: "https://docs.matic.network/",
   baseUrl: "/",
-  favicon: "img/favicon.png",
-  organizationName: "Matic Network",
+  favicon: "img/polygon/polygon-logo.svg",
+  organizationName: "Polygon Technology",
   projectName: "matic-docs",
   customFields: {
-    description: "Build your next blockchain app on Matic.",
+    description: "Build your next blockchain app on Polygon.",
   },
   onBrokenLinks: 'log',
   themeConfig: {
     announcementBar: {
       id: "support_us",
       content:
-        '🎉Matic Mainnet <a target="_blank" rel="noopener noreferrer" href="/docs/develop/network-details/network"/>is open for developers🎉! ',
-      backgroundColor: "#2b6def", // Defaults to `#fff`
+        '🎉 Polygon Mainnet <a target="_blank" rel="noopener noreferrer" href="/docs/develop/network-details/network"/>is open for developers 🎉! ',
+      backgroundColor: "#8247e5", // Defaults to `#fff`
       textColor: "#fff", // Defaults to `#000`
     },
     // googleAnalytics: {
@@ -35,17 +35,16 @@ module.exports = {
     },
     navbar: {
       hideOnScroll: true,
-      title: "Developer",
       logo: {
-        alt: "Matic logo",
-        src: "/img/logo.svg",
-        srcDark: "/img/logo-white.svg",
-        // href: 'https://docs.matic.network/', // default to siteConfig.baseUrl
+        alt: "Polygon logo",
+        src: "/img/polygon/primary-logo.svg",
+        srcDark: "/img/polygon/monotone-white.png",
+        // href: 'https://docs.polygon.technology/', // default to siteConfig.baseUrl
         target: "_self", // by default, this value is calculated based on the `href` attribute (the external link will open in a new tab, all others in the current one)
       },
       items: [
         {
-          to: "docs/home/new-to-matic",
+          to: "docs/home/new-to-polygon",
           label: "Basics",
           position: "left",
           activeBasePath: "docs/home",
@@ -80,16 +79,17 @@ module.exports = {
           position: "right",
         },
         {
-          to: "docs/faq/technical-faqs",
-          label: "FAQ",
-          position: "left",
-          activeBasePath: "docs/faq",
-        },
-        {
           label: "Polygon SDK",
           href: "https://sdk-docs.polygon.technology/docs/overview/",
           position: "left",
         },
+        {
+          to: "docs/faq/faq",
+          label: "FAQ",
+          position: "left",
+          activeBasePath: "docs/faq",
+        },
+   
       ],
     },
   },

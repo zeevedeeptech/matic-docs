@@ -1,7 +1,7 @@
 ---
 id: state-sync-mechanism
 title: State Sync Mechanism
-description: The mechanism to natively read Ethereum data from Matic EVM chain is that of ‘State Sync’.
+description: The mechanism to natively read Ethereum data from Polygon EVM chain is that of ‘State Sync’.
 keywords:
   - docs
   - matic

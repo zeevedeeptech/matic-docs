@@ -2,14 +2,14 @@
 id: key_management
 title: Validator key management
 sidebar_label: Validator key management
-description: Each validator uses two keys to manage validator related activities on Matic
+description: Each validator uses two keys to manage validator related activities on Polygon
 keywords:
   - docs
   - matic
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
-Each validator uses two keys to manage validator related activities on Matic:
+Each validator uses two keys to manage validator related activities on Polygon:
 
 1. **Signer key**
 

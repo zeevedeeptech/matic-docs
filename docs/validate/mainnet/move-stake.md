@@ -1,7 +1,7 @@
 ---
 id: move-stake
 title: Moving Stake 
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -24,11 +24,11 @@ Moving Stake from the foundation node to external node is a single transaction. 
 
 Please note that Moving Stake is only allowed from Foundation node to External nodes. If you want to move your stake from an External node to another External node, you will have to Unbond first and then Delegate on the new external node.
 
-Also, the Move Stake function is a temporary function developed by the Matic team to ensure smooth transistioning of funds from the Foundation nodes to External. And will only stay active until the foundation nodes are turned off.
+Also, the Move Stake function is a temporary function developed by the Polygon team to ensure smooth transistioning of funds from the Foundation nodes to External. And will only stay active until the foundation nodes are turned off.
 
 ### How to Move Stake
 
-In order to Move stake, first you will need to login to the Staking UI: https://wallet.matic.network/staking using your Delegator Address. 
+In order to Move stake, first you will need to login to the Staking UI: https://wallet.polygon.technology/staking using your Delegator Address. 
 
 **Delegator Address** = The address that you have already used for Staking on the Foundation Nodes.
 

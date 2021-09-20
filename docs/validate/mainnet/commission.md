@@ -1,7 +1,7 @@
 ---
 id: commission
 title: Commission
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -17,7 +17,7 @@ Currently there is no upper limit on the Commision rate. Validators are allowed 
 
 ## How to change your Commission Rate
 
-Login to your Validator profile using your owner address on the Staking Dashboard: https://wallet.matic.network/staking/
+Login to your Validator profile using your owner address on the Staking Dashboard: https://wallet.polygon.technology/staking/
 
 Note: The owner address is the address that holds your Matic Tokens and the address that is used for Logging to the Staking Dashboard.
 

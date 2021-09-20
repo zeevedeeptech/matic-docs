@@ -1,7 +1,7 @@
 ---
 id: gas-fees
 title: Changing Gas Fees
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -9,13 +9,13 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-For any transaction to be completed, for example, deploying a contract on Matic testnet, Metamask requires some ETH to cover Gas fees. However, not everyone will have ETH in their accounts even if it's a testnet like Ropsten or Matic testnet.
+For any transaction to be completed, for example, deploying a contract on Polygon testnet, Metamask requires some ETH to cover Gas fees. However, not everyone will have ETH in their accounts even if it's a testnet like Ropsten or Polygon testnet.
 
 To overcome this you can bring down the gas fee to zero so that your transactions can be processed.
 
-Consider the example mentioned earlier, "Deploying a contract on Matic testnet"
+Consider the example mentioned earlier, "Deploying a contract on Polygon testnet"
 
-When you deploy a contract on Matic Testnet, you will receive a pop-up alert from metamask to confirm the transaction, but it will show you an error that you do not have sufficient funds to complete the transaction.
+When you deploy a contract on Polygon Testnet, you will receive a pop-up alert from metamask to confirm the transaction, but it will show you an error that you do not have sufficient funds to complete the transaction.
 
 <img src={useBaseUrl("img/metamask/insufficient-funds.png")} />
 

@@ -1,7 +1,7 @@
 ---
 id: full-node-binaries
 title: Full Node Binaries
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -15,7 +15,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 <Tabs
   defaultValue="mainnet"
   values={[
-    { label: 'Matic-Mainnet', value: 'mainnet', },
+    { label: 'Polygon-Mainnet', value: 'mainnet', },
     { label: 'Mumbai-Testnet', value: 'mumbai', },
   ]
 }>
@@ -95,7 +95,7 @@ git clone https://github.com/maticnetwork/bor
 cd bor
 
 # Checkout to a proper version
-# For eg: git checkout v0.2.6
+# For eg: git checkout v0.2.7
 git checkout <TAG OR BRANCH>
 make bor-all
 sudo ln -nfs ~/bor/build/bin/bor /usr/bin/bor
@@ -251,7 +251,7 @@ You can use VPN to restrict access for 22 port as per your requirement and secur
 
 <TabItem value="mainnet">
 
-# Matic Full Node Setup Using Binaries
+# Polygon Full Node Setup Using Binaries
 
 ## Pre-requisites
 
@@ -326,7 +326,7 @@ git clone https://github.com/maticnetwork/bor
 cd bor
 
 # Checkout to a proper version
-# For eg: git checkout v0.2.6
+# For eg: git checkout v0.2.7
 git checkout <TAG OR BRANCH>
 make bor-all
 sudo ln -nfs ~/bor/build/bin/bor /usr/bin/bor
@@ -361,7 +361,7 @@ cd ~/
 mkdir -p node
 cp -rf launch/<network-name>/sentry/<node-type>/* ~/node
 
-# To setup sentry node for matic mainnet
+# To setup sentry node for Polygon mainnet
 # cp -rf launch/mainnet-v1/sentry/sentry/* ~/node
 ```
 

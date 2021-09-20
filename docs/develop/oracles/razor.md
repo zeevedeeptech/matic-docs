@@ -2,7 +2,7 @@
 id: razor
 title: Razor
 sidebar_label: Razor
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -14,7 +14,7 @@ The core of Razor Network is a set of smart contracts, that can run on any Ether
 
 ### Usage
 
-This oracle network is currently running on Görli testnet. A "[Bridge](https://github.com/razor-network/bridge)", which picks results from the network and delivers them to Matic Network. To get started with connecting to the data feed, check out this **[Tutorial](https://docs.razor.network/tutorial/matic/)**
+This oracle network is currently running on Matic Mumbai testnet. To get started with connecting to the data feed, check out this **[Tutorial](https://docs.razor.network/)**
 
-- The bridge has been updated with more features and linked to razorscan [https://matic.razor.to/](https://matic.razor.to/) (Make sure to connect metamask to matic testnet!)
-- [Sample DApp](https://matic-king.netlify.com/) (Make sure to connect Metamask to Matic testnet (`https://rpc-mumbai.matic.today`))
+- The Razor Network can be explored at razorscan [https://razorscan.io/](https://razorscan.io/) 
+

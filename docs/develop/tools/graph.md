@@ -1,6 +1,6 @@
 ---
 id: graph
-title: Setting up hosted project with  TheGraph and Matic
+title: Setting up hosted project with  TheGraph and Polygon
 description: 
 keywords:
   - graph
@@ -10,7 +10,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-TheGraph, a decentralized protocol for indexing and querying chain data, supports the Matic chain. Data defined through subgraphs is easy to query and explore. Subgraphs can be created locally, or use a free hosted explorer for indexing and data display. 
+TheGraph, a decentralized protocol for indexing and querying chain data, supports the Polygon chain. Data defined through subgraphs is easy to query and explore. Subgraphs can be created locally, or use a free hosted explorer for indexing and data display. 
 
 > Note: See https://thegraph.com/docs/quick-start for more details, local installation and more. The docs include an example for learning how subgraphs work and this video provides a good introduction.
 
@@ -39,8 +39,8 @@ graph init \
   [--abi <FILE>] \
   <GITHUB_USER>/<SUBGRAPH_NAME> [<DIRECTORY>]
 
---network: choose “Matic” for Matic mainnet and “Mumbai” for Matic Testnet.
---from-contract <CONTRACT_ADDRESS> is the address of your existing contract which you have deployed on the Matic network: Testnet or Mainnet.
+--network: choose “Polygon” for Matic mainnet and “Mumbai” for Polygon Testnet.
+--from-contract <CONTRACT_ADDRESS> is the address of your existing contract which you have deployed on Polygon: Testnet or Mainnet.
 --abi <FILE> is a local path to a contract ABI file (optional, If verified in BlockScout, the graph will grab the ABI, otherwise you will need to manually add the ABI. You can save the abi from BlockScout or by running truffle compile or solc on a public project.)
 The <GITHUB_USER> is your github user or organization name, <SUBGRAPH_NAME> is the name for your subgraph, and <DIRECTORY> is the optional name of the directory where graph init will put the example subgraph manifest.
 ```

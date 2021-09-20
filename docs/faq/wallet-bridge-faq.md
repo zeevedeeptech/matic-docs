@@ -1,7 +1,7 @@
 ---
 id: wallet-bridge-faq
 title: Wallet and Bridge FAQ 
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -11,31 +11,31 @@ image: https://matic.network/banners/matic-network-16x9.png
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ## Where can I use the Matic Web Wallet?
-[https://wallet.matic.network/](https://wallet.matic.network/)
+[https://wallet.polygon.technology/](https://wallet.polygon.technology/)
 
 ## Which wallets are currently supported?
 
 - Metamask
 - Coinbase Wallet
-- Trust Wallet
+- Wallet Connect
 
 We will soon add more wallets.
 
 ## How is Plasma different from PoS?
 
-Plasma comes with a additional security where your funds are locked in a challenge period , post 7 day period user can withdraw tokens. [https://docs.matic.network/docs/develop/ethereum-matic/getting-started](https://docs.matic.network/docs/develop/ethereum-matic/getting-started)
+Plasma comes with a additional security where your funds are locked in a challenge period , post 7 day period user can withdraw tokens. [https://docs.polygon.technology/docs/develop/ethereum-matic/getting-started](https://docs.polygon.technology/docs/develop/ethereum-matic/getting-started)
 
 ## What tokens are only available on Plasma?
 
 MATIC tokens
 
-## How do I deposit to Matic Wallet and also withdraw?
+## How do I deposit to Polygon Wallet and also withdraw?
 
-These blogs and videos are a perfect guide to start with depositing and withdrawing: [https://docs.matic.network/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic](https://docs.matic.network/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic)[https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9](https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9)
+These blogs and videos are a perfect guide to start with depositing and withdrawing: [https://docs.polygon.technology/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic](https://docs.polygon.technology/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic)[https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9](https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9)
 
 ## How to switch to Polygon mainnet in Metamask?
 
-Assuming that you have already added the network and custom RPC for Matic mainnet in your Metamask wallet here is how you can switch:
+Assuming that you have already added the network and custom RPC for Polygon mainnet in your Metamask wallet here is how you can switch:
 
 1. Open your Metamask wallet and click on the network dropdown to expand as shown in figure:
 
@@ -47,11 +47,11 @@ Assuming that you have already added the network and custom RPC for Matic mainne
 
 You have now switched to Polygon mainnet.
 
-You can refer to this link if you are looking for instructions on how to add the network to Metamask: [https://docs.matic.network/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-metamask](https://docs.matic.network/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-metamask)
+You can refer to this link if you are looking for instructions on how to add the network to Metamask: [https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-metamask](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-metamask)
 
 ## How to choose Polygon mainnet in Walletlink?
 
-Please follow the guide provided [here](https://docs.matic.network/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-walletlink)
+Please follow the guide provided [here](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-walletlink)
 
 ## I have deposited WETH but I don’t see it on Metamask. What do I do?
 
@@ -61,9 +61,9 @@ Open Metamask and scroll down to click on add tokens.
 
 [https://lh6.googleusercontent.com/KXBiSkXtLJaP6f1uEeYOOU6Suj7II6g3Nw5EXLklIWujd7_Q56Bn5yfsRpZD5ouB87-qzUHNVmcGWche1G5A2zif0VTZ3rH9GTeuJR2fzi6YvUDCDsGEPWTukjNJbid7klNJwug8](https://lh6.googleusercontent.com/KXBiSkXtLJaP6f1uEeYOOU6Suj7II6g3Nw5EXLklIWujd7_Q56Bn5yfsRpZD5ouB87-qzUHNVmcGWche1G5A2zif0VTZ3rH9GTeuJR2fzi6YvUDCDsGEPWTukjNJbid7klNJwug8)
 
-Then, select Custom Token to add the relevant contract address, symbol and the decimal precision. Contract addresses (PoS-WETH in this case) can be found on this link: [https://docs.matic.network/docs/develop/network-details/mapped-tokens/](https://docs.matic.network/docs/develop/network-details/mapped-tokens/)
+Then, select Custom Token to add the relevant contract address, symbol and the decimal precision. Contract addresses (PoS-WETH in this case) can be found on this link: [https://docs.polygon.technology/docs/develop/network-details/mapped-tokens/](https://docs.polygon.technology/docs/develop/network-details/mapped-tokens/)
 
-You will need to add the child token address to view balances on Matic mainnet.
+You will need to add the child token address to view balances on Polygon mainnet.
 
 Decimal of precision is 18 for WETH (generally, for most tokens decimal of precision is 18).
 
@@ -71,13 +71,13 @@ Once you fill in all the fields, you can click on next and your token will be ad
 
 [https://lh3.googleusercontent.com/xlHZO9N35Y7qRHVHoYdoXLHrGpDRCkd6ZM7bBD3mwi24lbwjJBW3AVWCRYMTRKem-vsj-3h0C1Hs1HpWHWlcAfGlpjZCXoEWYETYT3MXGCukqGhmDc2uOtr3LlOoPSJFJt_RfQ__](https://lh3.googleusercontent.com/xlHZO9N35Y7qRHVHoYdoXLHrGpDRCkd6ZM7bBD3mwi24lbwjJBW3AVWCRYMTRKem-vsj-3h0C1Hs1HpWHWlcAfGlpjZCXoEWYETYT3MXGCukqGhmDc2uOtr3LlOoPSJFJt_RfQ__)
 
-## Can I send my tokens from Matic to any other wallet/exchange ?
+## Can I send my tokens from Polygon to any other wallet/exchange ?
 
-You cannot directly send tokens from Matic UI to Exchange/wallets. You have to first withdraw from Matic to Ethereum and then send it to your exchange address (unless your exchange/wallet explicitly supports the network).
+You cannot directly send tokens from Polygon UI to Exchange/wallets. You have to first withdraw from Polygon to Ethereum and then send it to your exchange address (unless your exchange/wallet explicitly supports the network).
 
 ## I made a mistake of sending funds to an exchange/wallet directly. Can you help?
 
-Unfortunately, we can not assist in such cases. Please don't send funds directly to exchanges that support only Ethereum, you have to first withdraw from Matic to Ethereum and then send it to your exchange address.
+Unfortunately, we can not assist in such cases. Please don't send funds directly to exchanges that support only Ethereum, you have to first withdraw from Polygon to Ethereum and then send it to your exchange address.
 
 ## My transaction is pending for too long, what can I do?
 
@@ -95,7 +95,7 @@ Watching the video below can give more clarity on how to use the "Try Again" fea
 
 Below is a list of centralised exchanges that currently support Polygon and also the tokens that these exchanges support.
 
-Bitmax- USDC, EASY, MATIC
+AscendEX - USDC, EASY, MATIC
 
 MXC - MATIC, QUICK, PlotX, Dfyn
 
@@ -105,22 +105,22 @@ Okex - BAL, BAT, CEL, COMP, CRV, DAI, ETH, GHST, GUSD, LINK, MKR, PAX, SNX, SUSH
 
 Bitforex - MATIC
 
-Sending Tokens to any other exchange that is not mentioned explicitly in the above list can lead to a loss of funds. If you want to withdraw funds to any exchange that does not support Polygon, you will have to first withdraw the token to Ethereum and then send it to the exchange using your Ethereum wallet. This video demonstrates how to withdraw funds from Matic to Ethereum - [https://www.youtube.com/watch?v=DgpHY95qrbQ&list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9&index=5](https://www.youtube.com/watch?v=DgpHY95qrbQ&list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9&index=5)
+Sending Tokens to any other exchange that is not mentioned explicitly in the above list can lead to a loss of funds. If you want to withdraw funds to any exchange that does not support Polygon, you will have to first withdraw the token to Ethereum and then send it to the exchange using your Ethereum wallet. This video demonstrates how to withdraw funds from Polygon to Ethereum - [https://www.youtube.com/watch?v=DgpHY95qrbQ&list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9&index=5](https://www.youtube.com/watch?v=DgpHY95qrbQ&list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9&index=5)
 
 Alternatively, you can follow this guide [here](https://docs.matic.today/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/).
 
 ## I am not able to login, what do I do?
 
-[https://docs.matic.network/docs/validate/delegator-faq/#my-metamask-is-stuck-at-confirming-after-login-what-do-i-do-or-nothing-happens-when-i-try-to-login](https://docs.matic.network/docs/validate/delegator-faq/#my-metamask-is-stuck-at-confirming-after-login-what-do-i-do-or-nothing-happens-when-i-try-to-login)
+[https://docs.polygon.technology/docs/validate/delegator-faq/#my-metamask-is-stuck-at-confirming-after-login-what-do-i-do-or-nothing-happens-when-i-try-to-login](https://docs.polygon.technology/docs/validate/delegator-faq/#my-metamask-is-stuck-at-confirming-after-login-what-do-i-do-or-nothing-happens-when-i-try-to-login)
 
-## Does Matic support hardware wallets?
+## Does Polygon support hardware wallets?
 Yes, hardware wallets are supported.
 
-## What can I do with my Matic wallet?
+## What can I do with my Polygon wallet?
 
-- Send funds to any account on Matic.
-- Deposit funds from Ethereum to Matic (using the bridge).
-- Withdraw funds back to Ethereum from Matic (also using the bridge).
+- Send funds to any account on Polygon.
+- Deposit funds from Ethereum to Polygon (using the bridge).
+- Withdraw funds back to Ethereum from Polygon (also using the bridge).
 
 ## My token is not visible in the list. Who should I contact?
 
@@ -128,8 +128,8 @@ Reach out to the Polygon team on Discord or Telegram and get your token listed. 
 
 ## What are some best practices to follow?
 
-- When you want to send funds from Matic to Ethereum, use the withdraw functionality. Do not use the send functionality. This will lead to loss of funds.
-- Do not deposit to the Matic mainnet if you wish to participate in staking only.
+- When you want to send funds from Polygon to Ethereum, use the withdraw functionality. Do not use the send functionality. This will lead to loss of funds.
+- Do not deposit to the Polygon mainnet if you wish to participate in staking only.
 - Do not change the gas limit from Metamask.
 
 ## What do I do if the deposit is confirmed but the balance is not getting updated?
@@ -150,11 +150,11 @@ No, you have to complete the next steps. If the current gas price is too high, t
 
 ## Why is there a 7 day challenge period?
 
-Plasma bridge comes with a plasma security challenge period of 7 days in which anyone can challenge the transaction that has happened on Matic.
+Plasma bridge comes with a plasma security challenge period of 7 days in which anyone can challenge the transaction that has happened on Polygon.
 
 ## Why is the MATIC token is not supported on PoS?
 
-MATIC is the native token of Matic network and it has a contract address - 0x0000000000000000000000000000000000001010 on the Matic chain. It is also used to pay gas. Mapping the MATIC token on the PoS bridge will lead to MATIC having an additional contract address on the MATIC chain. This will collide with the existing contract address as this new token address can not be used to pay for gas and will have to remain as a normal ERC20 token on the matic chain. Hence, to avoid this confusion, it was decided to retain MATIC only on Plasma.
+MATIC is the native token of Polygon and it has a contract address - 0x0000000000000000000000000000000000001010 on the Polygon chain. It is also used to pay gas. Mapping the MATIC token on the PoS bridge will lead to MATIC having an additional contract address on the Polygon chain. This will collide with the existing contract address as this new token address can not be used to pay for gas and will have to remain as a normal ERC20 token on the Polygon chain. Hence, to avoid this confusion, it was decided to retain MATIC only on Plasma.
 
 ## How do I map tokens?
 
@@ -205,7 +205,7 @@ We have listed some common errors that the users might face. You can find the so
 
     The current RPC error you're facing might be due to an RPC overload.
 
-    Please try changing your RPC and proceed with the transaction. You may follow this link [here](https://docs.matic.network/docs/develop/network-details/network#matic-mainnet) for more information.
+    Please try changing your RPC and proceed with the transaction. You may follow this link [here](https://docs.polygon.technology/docs/develop/network-details/network#matic-mainnet) for more information.
   
   c. 
 
@@ -219,7 +219,7 @@ Sadly, we regret to inform you that we may not be able to assist if you have sen
 
 Here is what an exchange needs to do in this case (although not sure how much flexibility the support executives have to execute this). Assuming the exchange support executive has access to the account's private keys, they can transfer the funds from their account on Polygon to your (the user's) address on Polygon.
 
-It's important to note that you shouldn't send funds directly to exchanges that support only Ethereum. The correct procedure is you have to first withdraw from Matic to Ethereum and then send it to your exchange address.
+It's important to note that you shouldn't send funds directly to exchanges that support only Ethereum. The correct procedure is you have to first withdraw from Polygon to Ethereum and then send it to your exchange address.
 
 ## I'm shown an insufficient balance error.
 
@@ -229,7 +229,7 @@ If this is a transaction on the Polygon mainnet, we'll require that you have suf
 
 ## How do I bridge assets across chains?
 
-[https://wallet.matic.network/bridge/](https://wallet.matic.network/bridge/) (ETH <-> Polygon) <br/>
+[https://wallet.polygon.technology/bridge/](https://wallet.polygon.technology/bridge/) (ETH <-> Polygon) <br/>
 [https://xpollinate.io/](https://xpollinate.io/) (BSC <-> Polygon <-> xDai) <br/>
 [https://exchange.chainswap.com/](https://exchange.chainswap.com/) (ETH <-> Polygon/BSC) <br/>
 [https://anyswap.exchange/bridge](https://anyswap.exchange/bridge) (ETH <-> Polygon <-> BSC/xDai) <br/>

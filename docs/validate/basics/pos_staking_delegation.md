@@ -1,7 +1,7 @@
 ---
 id: pos_staking_delegation
 title: PoS, Staking & Delegation
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -24,7 +24,7 @@ For more details, refer [https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FA
 
 ## Staking
 
-Staking refers to the process of locking up tokens into a deposit to earn the right to validate and produce blocks on a blockchain. Typically staking is done in the native token for the network - for e.g. the MATIC token is locked up by validators/stakers in the Matic Network. Other examples include ETH in ETH 2.0, ATOM in Cosmos, etc.
+Staking refers to the process of locking up tokens into a deposit to earn the right to validate and produce blocks on a blockchain. Typically staking is done in the native token for the network - for e.g. the MATIC token is locked up by validators/stakers in the Polygon Network. Other examples include ETH in ETH 2.0, ATOM in Cosmos, etc.
 
 ## Delegation
 

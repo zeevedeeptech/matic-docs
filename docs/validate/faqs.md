@@ -1,7 +1,7 @@
 ---
 id: faqs
 title: FAQs
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -14,30 +14,30 @@ Matic Network is a Layer 2 scaling solution that achieves scale by utilizing sid
 
 ### What is Proof of Stake (PoS)?
 
-Proof-of-Stake is a system in which the blockchain network aims to achieve distributed consensus. Anyone with sufficient amount of tokens can lock up their cryptocurrencies and the economic incentive lies in the shared value of the decentralized network. The individuals staking their cryptocurrencies validate transactions by voting on the same while consensus is achieved when a transaction or a set of transactions in a block or a set of blocks in a checkpoint receives enough votes. The threshold uses the weight in terms of stake that comes with every vote. For instance, in Matic Network, consensus is achieved for committing checkpoints of Matic blocks to the Ethereum network, when at least ⅔ +1  of the total staking power vote for this 
+Proof-of-Stake is a system in which the blockchain network aims to achieve distributed consensus. Anyone with sufficient amount of tokens can lock up their cryptocurrencies and the economic incentive lies in the shared value of the decentralized network. The individuals staking their cryptocurrencies validate transactions by voting on the same while consensus is achieved when a transaction or a set of transactions in a block or a set of blocks in a checkpoint receives enough votes. The threshold uses the weight in terms of stake that comes with every vote. For instance, in Polygon, consensus is achieved for committing checkpoints of Polygon blocks to the Ethereum network, when at least ⅔ +1  of the total staking power vote for this 
 
 
-### What role does Proof-of-Stake play in the Matic Network architecture?
+### What role does Proof-of-Stake play in the Polygon architecture?
 
-The Proof-of-Stake layer in the Matic Network architecture serves the following 2 purposes:
+The Proof-of-Stake layer in the Polygon architecture serves the following 2 purposes:
 
 - Acts as an incentivization layer for maintaining liveness of the Plasma chain, chiefly mitigating the thorny issue of data unavailability
 - Implement the Proof-of-Stake security guarantees for state transitions not covered by Plasma
 
 
-### How is Matic PoS different from other similar systems?
+### How is Polygon PoS different from other similar systems?
 
 It is different in the sense that it serves a dual purpose - providing data availability guarantees for the Plasma chain covering state transitions via Plasma Predicates, as well as Proof-of-Stake validation for generic smart contracts in the EVM.
 
-The Matic architecture also separates the process of block production and validation into 2 distinct layers. Validators as block producers create blocks as the name suggests on the Matic chain for quicker (< 2 secs) partial confirmations while the final confirmation is attained once the checkpoint is committed on the main-chain with a certain interval, period of which may vary depending upon multiple factors like Ethereum congestion or number of Matic transactions. In ideal conditions, it shall be around 15 min to 1 hour. 
+The Polygon architecture also separates the process of block production and validation into 2 distinct layers. Validators as block producers create blocks as the name suggests on the Polygon chain for quicker (< 2 secs) partial confirmations while the final confirmation is attained once the checkpoint is committed on the main-chain with a certain interval, period of which may vary depending upon multiple factors like Ethereum congestion or number of Polygon transactions. In ideal conditions, it shall be around 15 min to 1 hour. 
 
 A checkpoint is basically the Merkle root of all blocks produced in between intervals. Validators play multiple roles, creating blocks at the block producer layer, participating in the consensus by signing all checkpoints and committing the checkpoint when acting as proposer. The probability of a validator becoming the block producer or proposer is based on their stake ratio in the overall pool. 
 
 
-### What’s the incentive to be a Matic staker?
-Matic will be allocating 12% of its total supply of 10 billion tokens to fund the staking rewards. These 1.2 billion tokens will be the staking incentive for the first five years. This is to ensure that the network is seeded well enough until transaction fees gain traction. These rewards are primarily meant to jump-start the network, while the protocol in the long run should be able to sustain itself on the basis of transaction fees. 
+### What’s the incentive to be a Polygon staker?
+Polygon will be allocating 12% of its total supply of 10 billion tokens to fund the staking rewards. These 1.2 billion tokens will be the staking incentive for the first five years. This is to ensure that the network is seeded well enough until transaction fees gain traction. These rewards are primarily meant to jump-start the network, while the protocol in the long run should be able to sustain itself on the basis of transaction fees. 
  
-**Validator Rewards = Staking Rewards + Transaction Fees from Matic chain**
+**Validator Rewards = Staking Rewards + Transaction Fees from Polygon chain**
  
 First year will see the maximum amount of tokens allocated as staking rewards. This is allocated in a way to ensure gradual decoupling of staking rewards from being the dominant component of the validator rewards. 
  

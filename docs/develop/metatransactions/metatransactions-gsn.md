@@ -2,7 +2,7 @@
 id: metatransactions-gsn
 title: Gas Station Network
 sidebar_label: Gas Station Network
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -10,9 +10,9 @@ image: https://matic.network/banners/matic-network-16x9.png
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-In general, for interacting with Matic DApps users need to have enough Matic in their account, which requires them to go through lengthy KYC procedure; then buying Matic on exchange, transfer it to Matic Chain & start interacting - not a good UX. 
+In general, for interacting with Polygon DApps users need to have enough Polygon in their account, which requires them to go through lengthy KYC procedure; then buying Polygon on exchange, transfer it to Polygon Chain & start interacting - not a good UX. 
 
-That's where GSN comes into picture with an interesting proposal for improving DApp UX, where gas less transactions can be sent to Matic Network & user requests to be funded by some party other than user. Now clients without Matic in their account, can talk to Matic Blockchain & pay their fees using ERC20 tokens. Using GSN can also improve UX when onboarding new users to dApp.
+That's where GSN comes into picture with an interesting proposal for improving DApp UX, where gas less transactions can be sent to Polygon Network & user requests to be funded by some party other than user. Now clients without Polygon in their account, can talk to Polygon Blockchain & pay their fees using ERC20 tokens. Using GSN can also improve UX when onboarding new users to dApp.
 
 <img src={useBaseUrl("img/gsn/paymaster_needs_gas.png")} />
 
@@ -24,14 +24,14 @@ GSNv2 at time of writing, is still not released with a stable version, although 
 
 ### GSNv1 
 #### Background
-For those, looking to integrate a stable GSN as fast as possible. GSNv1 remains the solution. It is deployed both on Matic Mumbai as well as Mainnet, with a number of relayers being maintained by various entities. 
+For those, looking to integrate a stable GSN as fast as possible. GSNv1 remains the solution. It is deployed both on Polygon Mumbai as well as Mainnet, with a number of relayers being maintained by various entities. 
 
 The deployed contract address is the same as the Ethereum mainnets
 
 |Network   | ```RelayHub.sol``` Address |
 |---|---|
-| Matic Mumbai  |  ```0xD216153c06E857cD7f72665E0aF1d7D82172F494``` |
-| Matic Mainnet  | ```0xD216153c06E857cD7f72665E0aF1d7D82172F494``` |
+| Polygon Mumbai  |  ```0xD216153c06E857cD7f72665E0aF1d7D82172F494``` |
+| Polygon Mainnet  | ```0xD216153c06E857cD7f72665E0aF1d7D82172F494``` |
 
 #### Integration of GSNv1 
 
@@ -59,7 +59,7 @@ GSNv2 is a broad idea, which brings several components into picture, discussed b
 
 #### Deployed Addresses
 
-|Contract   | Matic Mumbai |
+|Contract   | Polygon Mumbai |
 |---|---|
 | Forwarder  |  ```0xF65De530849aC11d6931b07A52C17e054489920e``` |
 | RelayHub  |  ```0x79A1c9f5a05795aFc04bbACaE46275Ac01a11919``` |
@@ -67,7 +67,7 @@ GSNv2 is a broad idea, which brings several components into picture, discussed b
 | VersionRegistry  | ```0x94492Dd0130d93AB76E106B4d8F91eB0f1613931``` |
 | Accept-Everything Paymaster | ```0x5566b6DE069c8c60caD808E133f513AE9AD2Eb5a``` |
 
-|Contract   | Matic Mainnet |
+|Contract   | Polygon Mainnet |
 |---|---|
 | Forwarder  |  ```0xCB8e0DE47A619d2f26450f22F40399f1B4E015e9``` |
 | RelayHub  |  ```0x4DEb80d7dbcD0Df91F301fe89993194E16735b58``` |
@@ -86,7 +86,7 @@ It's always advisable to use dedicated relay server for your dApp & use third pa
 
 ##### PayMaster
 
-PayMaster contract has a full gas tank of Matic, in relayhub, which is to be used for paying gas fees of relayed transactions. PayMaster contract has full control of either accepting or rejecting any relayed transaction. You can design custom paymasters which implements custom ERC20 based incentivization scheme.
+PayMaster contract has a full gas tank of Polygon, in relayhub, which is to be used for paying gas fees of relayed transactions. PayMaster contract has full control of either accepting or rejecting any relayed transaction. You can design custom paymasters which implements custom ERC20 based incentivization scheme.
 
 ##### Trusted Forwarder
 
@@ -150,7 +150,7 @@ npm i -g truffle # global installation will be helpful
 
 We're going to use one private blockchain i.e. a simulated blockchain environment like ganache or you can also use geth/ parity in private mode.
 
-So, lets go ahead and install GUI version of [ganache](https://www.trufflesuite.com/ganache). There's also one npm package `ganache-cli`. Consider using that if you're familiar with basic command line functionalities. If you're planning to target Matic, you can safely skip this step.
+So, lets go ahead and install GUI version of [ganache](https://www.trufflesuite.com/ganache). There's also one npm package `ganache-cli`. Consider using that if you're familiar with basic command line functionalities. If you're planning to target Polygon, you can safely skip this step.
 
 ```bash
 npm i -g ganache-cli # lets install it globally
@@ -331,11 +331,11 @@ We're going to use `@opengsn/gsn` for installing these components in local block
 
 ```bash
 npx gsn deploy
-# for targetting another network, you need to 
+# for targeting another network, you need to 
 # check here https://docs.opengsn.org/gsn-provider/gsn-helpers.html#deploy
 ```
 
-For targetting Matic Testnet (sign up for a dedicated free Mumbai testnet RPC URL at https://rpc.maticvigil.com/ or other hosted node providers), use following command.
+For targeting Matic Testnet (sign up for a dedicated free Mumbai testnet RPC URL at https://rpc.maticvigil.com/ or other hosted node providers), use following command.
 
 ```bash
 npx gsn deploy --network <Mumbai testnet RPC URL>
@@ -350,7 +350,7 @@ npx gsn fund-paymaster
 # for more control: https://docs.opengsn.org/gsn-provider/gsn-helpers.html#paymaster_fund
 ```
 
-For Matic Mumbai network, try using this command.
+For Polygon Mumbai network, try using this command.
 
 ```bash
 npx gsn fund-paymaster --from <your-account-address> --hub <relay-hub-address> --paymaster <your-dapp-specific-paymaster> --network <Mumbai testnet RPC URL>
@@ -371,7 +371,7 @@ npx gsn relayer-run --Workdir <workdir> --DevMode --RelayHubAddress <hub_address
 # check here too: https://docs.opengsn.org/gsn-provider/gsn-helpers.html#run
 ```
 
-For Matic Mumbai run below command
+For Polygon Mumbai run below command
 
 ```bash
 npx gsn relayer-run --Workdir <workdir> --DevMode --RelayHubAddress <hub_address> --EthereumNodeUrl <Mumbai testnet RPC URL> --Url <public-url-on-which-to-advertise-relayhub>
@@ -388,7 +388,7 @@ npx gsn register-relayer
 # also check here: https://docs.opengsn.org/gsn-provider/gsn-helpers.html#relayer_register
 ```
 
-For Matic Mumbai, don't forget to specify RPC endpoint using `--network` switch.
+For Polygon Mumbai, don't forget to specify RPC endpoint using `--network` switch.
 
 ##### Finally Deployment
 
@@ -398,7 +398,7 @@ Given we're running `ganache-cli`, which is exposing its RPC endpoint on `http:/
 
 If you'd like to deploy contracts on different network, consider adding new network & specify it while invoking truffle. In that case you need to also ensure, you've deployed all previous components on that certain network.
 
-If you want to deploy it to Matic Mumbai Testnet/ Mainnet, make sure you're using `@truffle/hdwallet-provider`. Lets get that installed.
+If you want to deploy it to Polygon Mumbai Testnet/ Mainnet, make sure you're using `@truffle/hdwallet-provider`. Lets get that installed.
 
 ```bash
 npm i @truffle/hdwallet-provider
@@ -430,7 +430,7 @@ module.exports = {
       network_id: 80001,
     },
     maticMainNet: {
-      provider: () => new HDWalletProvider(mnemonic, `<Sign up for a dedicated free Matic mainnet RPC URL at https://rpc.maticvigil.com/ or other hosted node providers>`),
+      provider: () => new HDWalletProvider(mnemonic, `<Sign up for a dedicated free Polygon mainnet RPC URL at https://rpc.maticvigil.com/ or other hosted node providers>`),
       network_id: 137,
     },
   },
@@ -460,7 +460,7 @@ Lets deploy our contracts on local blockchain.
 npx truffle migrate
 ```
 
-For deploying on Matic Mumbai Testnet, consider using following command.
+For deploying on Polygon Mumbai Testnet, consider using following command.
 
 ```bash
 npx truffle migrate --network mumbai

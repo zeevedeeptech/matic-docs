@@ -1,13 +1,13 @@
 ---
 id: proposer_bonus
 title: Proposer Bonus
-description: In Matic Network, there is an additional element of committing periodic checkpoints (a Merkle tree hash representation of the Matic sidechain blocks) to the Ethereum mainnet. This is a major part of the validator responsibilities and they are incentivized to perform this activity.
+description: In Polygon Network, there is an additional element of committing periodic checkpoints (a Merkle tree hash representation of the Polygon sidechain blocks) to the Ethereum mainnet. This is a major part of the validator responsibilities and they are incentivized to perform this activity.
 keywords:
   - docs
   - matic
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
-In Matic Network, there is an additional element of committing periodic checkpoints (a Merkle tree hash representation of the Matic sidechain blocks) to the Ethereum mainnet. This is a major part of the validator responsibilities and they are incentivized to perform this activity. This constitutes a cost to the validator which is unique to a Layer 2 solution such as ours. We strive to accommodate this cost in the validator staking reward payout mechanism as a **bonus to be paid to the proposer**, who is responsible for committing the checkpoint. Rewards, minus the bonus is to be shared among all stakers; proposer and signers, proportionally.
+In Polygon Network, there is an additional element of committing periodic checkpoints (a Merkle tree hash representation of the Polygon sidechain blocks) to the Ethereum mainnet. This is a major part of the validator responsibilities and they are incentivized to perform this activity. This constitutes a cost to the validator which is unique to a Layer 2 solution such as ours. We strive to accommodate this cost in the validator staking reward payout mechanism as a **bonus to be paid to the proposer**, who is responsible for committing the checkpoint. Rewards, minus the bonus is to be shared among all stakers; proposer and signers, proportionally.
 
 **How is the proposer bonus calculated?**
 

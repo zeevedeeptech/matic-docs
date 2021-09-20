@@ -13,7 +13,7 @@ A Validator is a participant in the network who locks up MATIC tokens in the sys
 
 ### Overview
 
-Matic Network relies on a set of validators to secure the network. The role of validators is to run a full node; produce blocks, validate and participate in consensus and commit checkpoints on the main-chain. To become a validator, one needs to stake their Matic tokens with staking management contracts residing on the main-chain.
+Polygon relies on a set of validators to secure the network. The role of validators is to run a full node; produce blocks, validate and participate in consensus and commit checkpoints on the main-chain. To become a validator, one needs to stake their Matic tokens with staking management contracts residing on the main-chain.
 
 Heimdall reads the events emitted by the staking contracts to pick the validators for the current set with their updated stake ratio, which is used also by Bor while producing blocks.
 
@@ -23,7 +23,7 @@ Rewards are distributed to all stakers proportional to their stake at every chec
 
 Stakes are at risk of getting slashed in case the validator node commits a malicious act like double signing which also affects the linked delegators at that checkpoint.
 
-### End-to-end flow for a Matic validator
+### End-to-end flow for a Polygon validator
 
 Validators set up their signing nodes, sync data and then stake their tokens on the Ethereum staking contracts to be accepted as a validator in the current set. If a slot is vacant, the validator is accepted immediately. Otherwise, one needs to go through the replacement mechanism to get a slot.
 
@@ -39,7 +39,7 @@ One can opt out of the system at any time and can withdraw tokens once the unbon
 
 ### Economics
 
-Matic has allocated 12% of its total supply of 10 billion tokens to fund the staking rewards. This is to ensure that the network is seeded well enough until transaction fees gain traction. These rewards are primarily meant to jump-start the network. While the protocol in the long run is intended to sustain itself on the basis of transaction fees.
+Polygon has allocated 12% of its total supply of 10 billion tokens to fund the staking rewards. This is to ensure that the network is seeded well enough until transaction fees gain traction. These rewards are primarily meant to jump-start the network. While the protocol in the long run is intended to sustain itself on the basis of transaction fees.
 
 > Validator Rewards = Staking Rewards + Transaction Fees
 
@@ -67,4 +67,3 @@ Setting up a validator node is a job that comes with responsibilities. To better
 
 The responsibility of creating blocks and also proposing checkpoints is variably dependent on a validator’s stake ratio in the overall pool.
 
-To setup your node you can follow the instructions from [here](https://docs.matic.network/docs/validate/counter-stake-stage-2/getting-started) 

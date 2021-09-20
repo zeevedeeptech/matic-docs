@@ -1,6 +1,6 @@
 ---
 id: validator-replacement
-title: Replacing a Validator on Matic Network
+title: Replacing a Validator on Polygon
 ---
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -55,7 +55,7 @@ Without these mandatory information, you will not able to proceed ahead.
 
 **Note**:The Commission % will only show an estimated number and will not be an exact
 
-You can then click on **Stake Now** to confirm your stake. Once the transaction is successful you will be provided with a success message and then you become a validator on Matic.
+You can then click on **Stake Now** to confirm your stake. Once the transaction is successful you will be provided with a success message and then you become a validator on Polygon.
 
 <img src={useBaseUrl("img/staking/success.png")} />
 

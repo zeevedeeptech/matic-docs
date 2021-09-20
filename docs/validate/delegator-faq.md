@@ -2,7 +2,7 @@
 id: delegator-faq
 title: Delegator FAQ
 sidebar_label: Delegator FAQ
-description: Build your next blockchain app on Matic.
+description: Build your next blockchain app on Polygon.
 keywords:
   - docs
   - matic
@@ -12,7 +12,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 ### What is the Staking Dashboard URL?
 
-The staking dashboard URL is: https://wallet.matic.network/staking
+The staking dashboard URL is: https://wallet.polygon.technology/staking
 
 ### What is the Minimum stake amount?
 
@@ -20,11 +20,11 @@ There is no minimum stake amount to delegate. However, you can always start with
 
 ### How many rewards will I get if I delegate?
 
-Please use the Staking Rewards Calculator to determine your estimates: https://wallet.matic.network/staking/rewards-calculator
+Please use the Staking Rewards Calculator to determine your estimates: https://wallet.polygon.technology/staking/rewards-calculator
 
 ### Why does my transaction take so long?
 
-All staking transactions of Matic happen on Ethereum for security reasons.
+All staking transactions of Polygon happen on Ethereum for security reasons.
 
 The time taken to complete a transaction depends on the gas fees that you have allowed and also the network congestion of Ethereum mainnet at that point in time. You can always use the “Speed Up” option to increase the gas fees so that your transaction can be completed soon.
 
@@ -70,7 +70,7 @@ Currently 107163 Matic tokens are distributed proportionately on each successful
 
 **Note:** there is a 10% proposer bonus that accrues to the validator who submits the checkpoint, but over time, the effect of the extra bonus is nullified over multiple checkpoints by different validators.
 
-The checkpoint submission is done by one of the validators approximately every 3 hours. This time is approximate and may vary based on validator consensus on the Matic Heimdall layer. This may also vary based on Ethereum Network. Higher congestion in the network may result in delayed checkpoints.
+The checkpoint submission is done by one of the validators approximately every 3 hours. This time is approximate and may vary based on validator consensus on the Polygon Heimdall layer. This may also vary based on Ethereum Network. Higher congestion in the network may result in delayed checkpoints.
 
 You can track checkpoints on the staking contract here: https://etherscan.io/address/0x86e4dc95c7fbdbf52e33d563bbdb00823894c287
 
@@ -86,7 +86,7 @@ You can claim your rewards instantly by clicking on the `New Rewards` card and t
 
 ### What is the Unbonding period?
 
-The unbonding period on Matic is approximately 9 days now. It was 19 days previously. This period applies to the originally delegated amount and re-delegated amounts - it does not apply to any rewards that were nor re-delegated.
+The unbonding period on Polygon is approximately 9 days now. It was 19 days previously. This period applies to the originally delegated amount and re-delegated amounts - it does not apply to any rewards that were nor re-delegated.
 
 ### Will I keep receiving rewards after I unbond?
 
@@ -102,9 +102,9 @@ Redelegating your rewards simply means that you want to increase your stake by r
 
 ### Can I stake to any validator?
 
-Yes. All validators are Matic Foundation nodes currently.
+Yes. All validators are Polygon Foundation nodes currently.
 
-We are doing a phased rollout of the Matic mainnet. Later on, external validators will be onboarded gradually. Please see https://blog.matic.network/mainnet-is-going-live-announcing-the-launch-sequence/ for more details.
+We are doing a phased rollout of the Polygon mainnet. Later on, external validators will be onboarded gradually. Please see https://blog.matic.network/mainnet-is-going-live-announcing-the-launch-sequence/ for more details.
 
 ### Which browser is compatible with Staking Dashboard?
 
@@ -119,15 +119,15 @@ Check for the following:
 - Check if you are logged into Metamask with Trezor/Ledger. Additionally, you need to turn on permission to call contracts on your Ledger device, if it is not enabled already.
 - Check your system timestamp. If the system time is not correct, you will need to correct it.
 
-### How do I send funds from Binance or other exchanges to Matic wallet?
+### How do I send funds from Binance or other exchanges to Polygon wallet?
 
-Technically, the Matic web wallet/Staking interface is just a web application. Currently, it supports the following wallets - Metamask. WalletConnect and WalletLink.
+Technically, the Polygon web wallet/Staking interface is just a web application. Currently, it supports the following wallets - Metamask. WalletConnect and WalletLink.
 
 So first you must withdraw your funds from Binance or any other exchange to your Ethereum address on Metamask. If you don't know how to use Metamask, google it a bit. There are plenty of videos and blogs to get started with it.
 
 ### When will it be possible to become a validator and how many tokens do I need to have?
 
-The Matic mainnet is being rolled out gradually in phases. Currently, we are in Phase 1 with only the Matic foundation nodes running. Gradually, additional external validators will be onboarded. Please refer to https://blog.matic.network/mainnet-is-going-live-announcing-the-launch-sequence/ for more details.
+The Polygon mainnet is being rolled out gradually in phases. Currently, we are in Phase 1 with only the Polygon foundation nodes running. Gradually, additional external validators will be onboarded. Please refer to https://blog.matic.network/mainnet-is-going-live-announcing-the-launch-sequence/ for more details.
 
 ### If I have earned rewards while delegating, and if I add additional funds to the same validator node, what happens?
 
