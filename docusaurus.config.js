@@ -84,7 +84,7 @@ module.exports = {
           position: "left",
         },
         {
-          to: "docs/faq/faq",
+          to: "docs/faq/technical-faqs",
           label: "FAQ",
           position: "left",
           activeBasePath: "docs/faq",

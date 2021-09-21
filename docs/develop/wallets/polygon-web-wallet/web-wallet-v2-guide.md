@@ -34,10 +34,10 @@ Click on the Polygon Wallet or Polygon Bridge, and you will see all your token b
 ## Depositing Funds from Ethereum to Polygon
 
 Click on the ‘Move Funds to Polygon Mainnet’ button or you can click on the ‘Deposit’ link from any of the token types on ‘Your tokens on Polygon Mainnet’ section.
-<img src={useBaseUrl("img/wallet/wallet-two.png")} width="100%" height="100%" /> 
+<img src={useBaseUrl("img/wallet/Wallet-two.png")} width="100%" height="100%" /> 
 
 You will be redirected to the bridge page where you need to enter the deposit amount.
-<img src={useBaseUrl("img/wallet/wallet-13.png")} width="100%" height="100%"/> 
+<img src={useBaseUrl("img/wallet/Wallet-13.png")} width="100%" height="100%"/> 
 
 You can see the selected bridge type on “Transfer Mode”. You can change the “Transfer Mode” if you want deposit your funds on particular bridge type(PoS or Plasma)
 

@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 Plasma Secured Solution to transfer your assets from Ethereum to Polygon and vice-versa.
 * Use [matic.js](https://github.com/maticnetwork/matic.js) to interact with the Polygon Plasma contracts.
 
-<!-- * [getting-started](/docs/develop/maticjs/getting-started): Set-up the environment for maticjs.
+<!-- * [getting-started](https://maticnetwork.github.io/matic.js/docs/): Set-up the environment for maticjs.
 1. [(Ethereum → Matic)](/docs/develop/maticjs/deposit): Deposit assets from root chain to Matic.
 2. [(Matic ↔ Matic)](/docs/develop/maticjs/transfer): Transfer assets between accounts on Matic.
 3. [(Matic → Ethereum)](/docs/develop/maticjs/withdraw): Withdraw assets from Matic to root chain. -->
