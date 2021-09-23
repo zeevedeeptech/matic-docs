@@ -15,7 +15,7 @@ If you are looking to become a Validator by setting your node for Polygon or to 
 
 ## To Become a Validator
 
-Lets get you started on understand what's under the hood of Polygon.
+Lets get you started on understanding what's under the hood of Polygon.
 
 #### Architecture
 
@@ -25,7 +25,7 @@ Please refer [this link](/docs/validate/validator/architecture) for more details
 
 
 #### Specs
-In order to understand the granular information about core components such as Heimdall, Bor and Contracts you can head over to the link below. This will not only help you understand how Polygon works under-the-hood but also help you to execute attacks correctly
+In order to understand the granular information about core components such as Heimdall, Bor and Contracts you can head over to the link below. This will not only help you understand how Polygon works under-the-hood but also help you to execute attacks correctly.
 
 You can navigate to the specs with these links:
 
@@ -41,7 +41,7 @@ Codebase of Polygon to understand the granular interaction of how Polygon's core
 - Bor: https://github.com/maticnetwork/bor
 - Contracts: https://github.com/maticnetwork/contracts
 
-Once you have familiarised with the Architecture and Specs and Codebase, you can setup your node. Note that the documentation above is to only to get you familiarised with how the Internals of Polygon works, you directly setup your node without getting familiarised with the Specs above. 
+Once you have familiarised yourself with the Architecture and Specs and Codebase, you can setup your node. Note that the documentation above is to only to get you familiarised with how the Internals of Polygon work, you could setup your node directly without getting familiarised with the Specs above. 
 
 #### Setup your node
 
@@ -60,4 +60,4 @@ Delegators are token holders who cannot, or do not want to run a validator thems
 
 Here is a Step-By-Step guide to help you become a delegator on Polygon's incentivised testnet program. There are no pre-requisites required to become a delegator on Polygon. All you have to do is have an Ethereum account.
 
-Article: [Become a Delegator](https://docs.polygon.technology/docs/validate/counter-stake-stage-2/delegate)
+Article: [Become a Delegator](https://docs.polygon.technology/docs/validate/delegator)

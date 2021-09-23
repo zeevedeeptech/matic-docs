@@ -10,11 +10,9 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<details>
-    <summary><b>How to: New node setup</b></summary>
-<br/>
+## **1. How to: New node setup**
 
- **Note:** Below are some additional information to the official documentation that can help while setting up a new node
+> Below are some additional information to the official documentation that can help while setting up a new node
 
 **This document gives some additional details for setting up a new node based on** : https://docs.polygon.technology/docs/integrate/full-node-deployment
 
@@ -87,61 +85,41 @@ eth_rpc_url =<insert Infura or any full node RPC URL to Ethereum>
     <img src={useBaseUrl("img/validators/infura.png")} />
     - Provide the copied https endpoint as eth_rpc_url in `~/.heimdalld/config/heimdall-config.toml`
 
-</details>
 
-<details>
-<br/>
-    <summary><b>Why do I have to keep ETH in my signer account?</b></summary>
+
+## **2. Why do I have to keep ETH in my signer account?**
 
 ETH is required on your signer account because for submitting checkpoints to Ethereum, all transactions require ETH to be used as Gas. Hence ETH is required on your Signer Account.
 
-</details>
-
-<details>
-<br/>
-    <summary><b>For a Matic Validator, do I need to setup a Sentry and Validator node or can I just run the Validator node only?</b></summary>
+## **3. For a Matic Validator, do I need to setup a Sentry and Validator node or can I just run the Validator node only?**
 
 For the Matic Validator, our ecosystem and architecture demands that you run a Sentry + Validator setup. This is to ensure that your Validator node is not exposed to the public and only your Sentry node is.
 
 Your Sentry node gleans information / blocks from the network and then relays them to the validator for validation.
 
-</details>
 
-<details>
-<br/>
-    <summary><b>How to migrate to new nodes and then cut over?</b></summary>
+## **4. How to migrate to new nodes and then cut over?**
 
-1. Provision nodes and install all software as per the instructions.
-2. Download the latest Heimdall and Bor snapshots on both nodes.
-3. Move the Key and Keystore files to the new validator. 
-4. Shut down the current validator and sentry node.
-5. Start all services on sentry, then the validator.
+- Provision nodes and install all software as per the instructions.
+- Download the latest Heimdall and Bor snapshots on both nodes.
+- Move the Key and Keystore files to the new validator. 
+- Shut down the current validator and sentry node.
+- Start all services on sentry, then the validator.
 
-</details> 
-
-<details>
-<br/>
-    <summary><b>How to check the heimdall version?</b></summary>
+## **5. How to check the heimdall version?**
 
 run: 
 
-```bash
+```jsx
 heimdalld version
 ```
 
-</details> 
-
-<details>
-<br/>
-    <summary><b>Which Private Key should we add when we generate validator key?</b></summary>
+## **6. Which Private Key should we add when we generate validator key?**
 
 The Private key to be used is your Wallet's ETH address where your Matic testnet Tokens are stored. You can complete the setup with one public-private key pair tied to the address submitted on the form.
 
-</details> 
 
-<details>
-<br/>
-    <summary><b>Where can we find Heimdall account info location</b></summary>
+## **7.Where can we find Heimdall account info location**
 
 For binaries:
 ```js
@@ -152,31 +130,20 @@ For Linux package:
 /etc/heimdall/config
 ```
 
-</details> 
-
-<details>
-<br/>
-    <summary><b>Which file do we add the API key?</b></summary>
+## **8. Which file do we add the API key?**
 
 Once you have created the API key you need to add the API key in `heimdall-config.toml` file.
 
 
-</details> 
-
-<details>
-<br/>
-    <summary><b>Which file do we add the persistent_peers?</b></summary>
+## **9. Which file do we add the persistent_peers?**
 
  You can add the persistent_peers in the following file:
 
  ```jsx
 ~/.heimdalld/config/config.toml
 ```
-</details> 
 
-<details>
-<br/>
-    <summary><b>How to stop Heimdall and Bor services?</b></summary>
+## **10. How to stop Heimdall and Bor services?**
 
 **For Linux packages**:
 
@@ -193,11 +160,8 @@ Stop Heimdall: `pkill heimdalld`
 Stop Bridge: `pkill heimdalld-bridge`
 
 Stop Bor:  `bash stop.sh`
-</details> 
 
-<details>
-<br/>
-    <summary><b>How to remove Heimdall and Bor directories?</b></summary>
+## **11. How to remove Heimdall and Bor directories?**
 
 **For Linux packages**: 
 
@@ -210,18 +174,13 @@ Delete Bor: `sudo rm -rf /etc/bor/*`
 Delete Heimdall: `sudo rm -rf ~/.heimdalld/`
 
 Delete Bor: `sudo rm -rf ~/.bor`
-</details> 
 
-<details>
-<br/>
-    <summary><b>How to reduce cache in Bor?</b></summary>
+
+## **12. How to reduce cache in Bor?**
 
 The bor supports the `--cache` parameter you can reduce the cache to avoid running out of memory
-</details> 
 
-<details>
-<br/>
-    <summary><b>How to delete the Bor DB data?</b></summary>
+## **13. How to delete the Bor DB data?**
 
 ```jsx
 bor --datadir  ~/.bor/data removedb
@@ -229,4 +188,3 @@ cd ~/node/bor
 bash setup.sh
 service bor start
 ```
-</details> 

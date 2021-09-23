@@ -427,7 +427,7 @@ module.exports = {
         "validate/mainnet/signer-change",
         "validate/mainnet/commission",
         "validate/mainnet/move-stake",
-        "validate/mainnet/technical-faqs",
+        //"validate/mainnet/technical-faqs",
         {
           type: "category",
           label: "Validator Knowledge Base",
