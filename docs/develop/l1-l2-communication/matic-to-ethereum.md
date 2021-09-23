@@ -30,7 +30,7 @@ Once this phase is over, we can use the **decoded event log data to perform any 
 
 # Implementation
 
-This is a simple demonstration of how data can be transfered from Polygon to Ethereum. This tutorial shows an example of transfering a uint256 value accross the chain. But you can transfer type of data. But it is necessary to encode the data in bytes and then emit it from the child contract. It can be finally decoded at the root contract.
+This is a simple demonstration of how data can be transfered from Polygon to Ethereum. This tutorial shows an example of transfering a uint256 value across the chain. But you can transfer type of data. But it is necessary to encode the data in bytes and then emit it from the child contract. It can be finally decoded at the root contract.
 
 1.  First create the root chain and child chain contract. Ensure that the function that does the state change also emits an event. This event must include the data to be transferred as one of its parameters. A sample format of how the Child and Root contract must look like is given below. This is a very simple contract that has a data variable whose value is set by using a setData function. Calling the setData function emits the Data event. Rest of the things in the contract will be explained in the upcoming sections of this tutorial.
 

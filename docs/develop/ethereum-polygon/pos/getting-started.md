@@ -36,7 +36,7 @@ At a lower level and with more detail, this is what happens
 Want to see this in video format? Please check it out below
 
 <video loop autoplay width="70%" height="70%" controls="true" >
-  <source type="video/mp4" src="/img/matic-to-eth/matic-eth-deposit.mp4"></source>
+  <source type="video/mp4" src="/img/matic-to-eth/deposit-eth-matic.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
