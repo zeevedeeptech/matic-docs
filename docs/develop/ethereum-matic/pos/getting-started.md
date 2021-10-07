@@ -32,9 +32,9 @@ At a lower level and with more detail, this is what happens
 
 ### Deposit
 
-- The owner of the asset token approves the Predicate Contract to lock down the amount of tokens to be deposited. Once this approval transaction has confirmed, the owner of the asset token interacts with the RootChainManager contract to complete the deposit.
+- The owner of the asset token approves the Predicate Contract to lock down the amount of tokens to be deposited. Once this approval transaction has confirmed, the owner of the asset token interacts with the **RootChainManager** contract to complete the deposit.
 
-- Next up, the asset is deposited with the State Sync Mechanism, if you didn't get a run-through of what the State Sync Mechanism is, it's in its simplest form the native mechanism to send data from Ethereum Network to the Polygon Network. The inner workings of the mechanism itself comprises of a function call that is made of the RootChainManager which triggers the ChildChainManager contract. 
+- Next up, the asset is deposited with the **State Sync Mechanism**. if you didn't get a run-through of what the State Sync Mechanism is, it's in its simplest form the native mechanism to send data from Ethereum Network to the Polygon Network. The inner workings of the mechanism itself comprises of a function call that is made of the **RootChainManager** which triggers the **ChildChainManager** contract. 
 
 Want to see this in video format? Please check it out below
 
