@@ -118,14 +118,14 @@ module.exports = {
         "develop/wallets/portis",
         "develop/wallets/torus",
         "develop/wallets/walletconnect",
-        {
-          type: "category",
-          label: "Matic Web Wallet",
-          items: [
-            "develop/wallets/matic-web-wallet/web-wallet-v2-guide",
-            "develop/wallets/matic-web-wallet/deposit-eth-dai-on-matic",
-          ],
-        },
+        // {
+        //   type: "category",
+        //   label: "Matic Web Wallet",
+        //   items: [
+        //     "develop/wallets/matic-web-wallet/web-wallet-v2-guide",
+        //     "develop/wallets/matic-web-wallet/deposit-eth-dai-on-matic",
+        //   ],
+        // },
       ],
     },
     {
@@ -174,6 +174,7 @@ module.exports = {
             "develop/ethereum-matic/plasma/erc721",
             "develop/ethereum-matic/plasma/deposit-withdraw-event-plasma",
             "develop/ethereum-matic/plasma/mapping-assets",
+            "develop/ethereum-matic/plasma/calling-plasma-contracts",
           ],
         },
         "develop/ethereum-matic/submit-mapping-request",
@@ -194,8 +195,13 @@ module.exports = {
       items: [
         "develop/metatransactions/getting-started",
         "develop/metatransactions/metatransactions-biconomy",
+        // {
+        //   type: "link",
+        //   label: "Biconomy",
+        //   href: "https://docs.biconomy.io/guides/biconomy-dashboard",
+        // },
         "develop/metatransactions/metatransactions-gsn",
-        "develop/metatransactions/network-agnostics",
+        "develop/metatransactions/custom-meta-transactions",
       ],
     },
     {
@@ -245,7 +251,6 @@ module.exports = {
       type: "category",
       label: "Advanced",
       items: [
-        "develop/advanced/calling-plasma-contracts",
         "develop/advanced/swap-assets",
         "develop/advanced/custom-restrictions",
       ],
@@ -537,6 +542,14 @@ module.exports = {
     "faq/commit-chain-multisigs",
     "faq/staking-faq",
     // "faq/staking-tutorials",
+    {
+      type: "category",
+      label: "Polygon Web Wallet",
+      items: [
+        "faq/polygon-web-wallet/web-wallet-v2-guide",
+        "faq/polygon-web-wallet/deposit-eth-dai-on-polygon",
+      ],
+    },
     "faq/wallet-bridge-faq",
     "faq/consensys-framework",
     "faq/widget-faq",
