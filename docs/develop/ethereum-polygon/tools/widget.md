@@ -39,8 +39,13 @@ npm i @maticnetwork/wallet-widget
 We have created examples for different framework and tools to help you with the development. All examples are present at - [https://github.com/maticnetwork/wallet-widget-example](https://github.com/maticnetwork/wallet-widget-example)
 
 ## How to use
+### With target
 
-Create instance of widget with some configuration
+Consider you have a button in your app and you want to show widget when clicked on that button - 
+
+```html
+<button id="btnMaticWidget"></btn>
+```
 
 ```javascript
 import { Widget } from "@maticnetwork/wallet-widget";
@@ -55,13 +60,42 @@ var widget = new Widget({
 Create widget whenever you are ready. It is best to call create function after document is loaded.
 
 ```javascript 
-widget.create();
+await widget.create();
 ```
+widget is created, now click on your button and widget will be shown.
+
+### Without target
+
+```javascript
+import { Widget } from "@maticnetwork/wallet-widget";
+
+var widget = new Widget({
+    appName: "<widget name>", //widget name from dashboard
+    network: 'mainnet' // network to be used - testnet or mainnet
+});
+
+await widget.create();
+```
+
+widget is now created, but in order to show the widget - you will have to call `show` API.
+
+```
+widget.show();
+```
+
+Similarly you can hide the widget, by calling `hide` API.
+
+```
+widget.hide();
+```
+
 ### Important Note 👉
 
 1. Based on network "testnet" or "mainnet", you need to create your app on respective dashboard. We recommend to create app with same name on both testnet & mainnet, so that you don't have any issue when you are changing network.
 
-2. Wallet widget is UI Library and on different website it might have some issues like - colors, responsiveness etc. So please spend some time on testing - how it looks & behave. In case of any help needed - please reach out to [support team](https://support.polygon.technology/).
+2. Wallet widget is UI Library and on different website it will look different & might have some issues like - colors, responsiveness etc. So please spend some time on testing and customizing. In case of any help needed - please reach out to [support team](https://support.polygon.technology/).
+
+3. Wallet widget is full screen in mobile devices but you can customize it by `style` configuration.
 
 ## Configuration
 

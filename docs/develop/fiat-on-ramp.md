@@ -1,4 +1,3 @@
-
 ---
 id: fiat-on-ramp
 title: Fiat-on-Ramp

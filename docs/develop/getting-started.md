@@ -27,7 +27,7 @@ All the network related details can be found in [network docs](/docs/develop/net
     - [Using Remix](/docs/develop/remix)
     - [Using Truffle](/docs/develop/truffle)
     - [Using Hardhat](/docs/develop/hardhat)
-- Connecting to Polygon [with RPC](https://docs.polygon.technology/docs/develop/metamask/testnet) by adding Polygon on Metamask or directly via [Arkane](/docs/develop/wallets/arkane/network).
+- Connecting to Polygon [with RPC](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask) by adding Polygon on Metamask or directly via [Arkane](/docs/develop/wallets/arkane/network).
 
   Note that same RPC can be used with web3js.
 
@@ -70,7 +70,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 **😎 Advanced**
 
 - [Sidechains and Plasma](https://docs.polygon.technology/docs/home/blockchain-basics/sidechain)
-- [Polygon's architecture and Security](https://docs.polygon.technologyk/docs/home/architecture/security-models)
+- [Polygon's architecture and Security](https://docs.polygon.technology/docs/home/architecture/security-models)
 - [When to use Plasma](https://docs.polygon.technology/docs/home/architecture/security-models)
 - [Moving assets from Mainchain to Polygon chain: the Plasma way](https://maticnetwork.github.io/matic.js/docs/)
 - [Swapping Plasma Assets](https://docs.polygon.technology/docs/develop/advanced/swap-assets)
@@ -106,11 +106,11 @@ All the network related details can be found in [network docs](/docs/develop/net
 ### **Learn the developer tools**
 
 - [CryptoZombies](https://cryptozombies.io/)
-- [Full stack dapp tutorial series](https://kauri.io/collection/5b8e401ee727370001c942e3/full-stack-dapp-tutorial-series)
+- [Full stack dapp tutorial series](https://kauri.io/#collections/Full%20Stack%20dApp%20Tutorial%20Series/full-stack-dapp-tutorial-series-intro/)
 - [Infura Docs](https://infura.io/docs)
 - [Truffle Suite Docs](https://www.trufflesuite.com/docs) (Recommended)
 - [Truffle tutorial](https://www.trufflesuite.com/tutorial) (Recommended)
-- [Parity Wiki](https://wiki.parity.io/)
+- [Parity Wiki](https://openethereum.github.io/)
 - [Geth docs](https://geth.ethereum.org/)
 - [Remix](https://remix.ethereum.org/)
 - [OpenZeppelin Docs](https://docs.openzeppelin.com/)
@@ -121,7 +121,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 
 ### **Learn the Basics of Development**
 
-- [Full stack dapp tutorial series](https://kauri.io/collection/5b8e401ee727370001c942e3/full-stack-dapp-tutorial-series)
+- [Full stack dapp tutorial series](https://kauri.io/#collections/Full%20Stack%20dApp%20Tutorial%20Series/full-stack-dapp-tutorial-series-intro/)
 - [Truffle tutorial](https://www.trufflesuite.com/tutorial)
 - [Dapp University](https://www.youtube.com/channel/UCY0xL8V6NzzFcwzHCgB8orQ)
 - [ConsenSys Academy Developer Program On-Demand course](https://consensys.net/academy/ondemand/)
@@ -135,20 +135,8 @@ Hackathons take place at blockchain conferences and meetups all over the world. 
 
 <div style={{textAlign: 'center', paddingTop: '15px', paddingBottom: '15px'}}>
   <button className="btn btn-primary btn-md">
-    <a href="https://discord.gg/yCj3gc" target="_blank" style={{color: 'inherit'}}>
+    <a href="https://discord.gg/DfWQd2Tc" target="_blank" style={{color: 'inherit'}}>
       Polygon's Hackathons Discord Channel
-    </a>
-  </button>
-</div>
-
-### **Meet-ups**
-
-Some meetups are more about trading “investment” advice but a good technical meetup in your area is an excellent way to meet other people interested in Dapp development.
-
-<div style={{textAlign: 'center', paddingTop: '15px', paddingBottom: '15px'}}>
-  <button className="btn btn-primary btn-md">
-    <a href="https://t.me/EthereumIndiaOfficial" target="_blank" style={{color: 'inherit'}}>
-    Ethereum India Official
     </a>
   </button>
 </div>
@@ -161,18 +149,17 @@ Dapp development encourages network decentralization, and it also embodies it. D
 
 Reddit:
 
-- /r/maticnetwork
-- /r/ethereum
-- /r/ethdev
-- /r/ethfinance
-- /r/ethereumnoobies
+- https://reddit.com/r/0xPolygon
+- https://reddit.com/r/ethereum
+- https://reddit.com/r/ethdev
+- https://reddit.com/r/ethereumnoobies
 
 Twitter:
 
 - [Bankless: How to Use Crypto Twitter](https://bankless.substack.com/p/how-to-use-crypto-twitter-to-level-77c)
 - [EthHub](https://twitter.com/ethhub_io)
 - [CodeFi](https://twitter.com/ConsenSysCodefi)
-- [ConsenSys Labs](https://twitter.com/ConsenSysLabs)
+- [ConsenSys Labs](https://twitter.com/ConsenSys)
 - [Universal Login](https://twitter.com/unilogin)
 - [MetaCartle](https://twitter.com/meta_cartel)
 - [Ethereum Foundation](https://twitter.com/ethereum)
