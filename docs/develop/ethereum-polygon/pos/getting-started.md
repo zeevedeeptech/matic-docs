@@ -40,7 +40,7 @@ Want to see this in video format? Please check it out below
   <p>Your browser does not support the video element.</p>
 </video>
 
-### Withdrawls
+### Withdrawals
 
 - Withdrawing assets is a breeze with the PoS bridge. It's as simple as burning the asset tokens on the Polygon chain, collecting the transaction hash of this burn transaction, and submitting it to the **RootChainManager**. The **RootChainManager** then calls for the predicate contract to release the funds that were locked on the Ethereum chain.
 

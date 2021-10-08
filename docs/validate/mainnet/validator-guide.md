@@ -99,7 +99,7 @@ xxx.xxx.xx.xx | UNREACHABLE! => {
 - For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
     ```jsx
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.8 heimdall_branch=v0.2.2  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.9-beta1 heimdall_branch=v0.2.3-beta1  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet" --list-hosts
     ```
 
 It should output the remote machine IP(s) you have configured.
@@ -109,7 +109,7 @@ It should output the remote machine IP(s) you have configured.
 - Setup the full node with this command:
 
     ```jsx
-    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.8 heimdall_branch=v0.2.2  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
+    ansible-playbook -l sentry playbooks/network.yml --extra-var="bor_branch=v0.2.9-beta1 heimdall_branch=v0.2.3-beta1  network_version=mainnet-v1 node_type=sentry/sentry heimdall_network=mainnet"
     ```
 
 Once you run this command, it will first run a series a checks to make sure your system is connected and all things are in place to start setup and install. You should see something like this
@@ -142,7 +142,7 @@ Check if remote machine is reachable by running `ansible validator -m ping`. You
 For a test run to confirm if the correct remote machine / VM is configured, run the following command:
 
 ```jsx
-ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.8 heimdall_branch=v0.2.2 network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --list-hosts
+ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.9-beta1 heimdall_branch=v0.2.3-beta1 network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet" --list-hosts
 ```
 
 It should output the remote machine IP(s) you have configured
@@ -152,7 +152,7 @@ It should output the remote machine IP(s) you have configured
 - Setup the full node with this command:
 
 ```jsx
-ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.8 heimdall_branch=v0.2.2  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet"
+ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.9-beta1 heimdall_branch=v0.2.3-beta1  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet"
 ```
 
 Once you run this command, it will first run a series a checks to make sure your system is connected and all things are in place to start setup and install. You should see something like this
@@ -160,7 +160,7 @@ Once you run this command, it will first run a series a checks to make sure your
 - Setup the full node with this command:
 
     ```jsx
-    ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.8 heimdall_branch=v0.2.2  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet"
+    ansible-playbook -l validator playbooks/network.yml --extra-var="bor_branch=v0.2.9-beta1 heimdall_branch=v0.2.3-beta1  network_version=mainnet-v1 node_type=sentry/validator heimdall_network=mainnet"
     ```
 
 Once you run this command, it will first run a series a checks to make sure your system is connected and all things are in place to start setup and install. You should see something like this
