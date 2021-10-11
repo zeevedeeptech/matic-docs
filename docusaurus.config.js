@@ -1,5 +1,5 @@
 module.exports = {
-  title: "Polygon Technolgy | Documentation",
+  title: "Polygon Technology | Documentation",
   tagline: "Welcome to Polygon developer documentation",
   url: "https://docs.matic.network/",
   baseUrl: "/",
