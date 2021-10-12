@@ -34,7 +34,7 @@ We have a fast finality layer that finalizes the sidechain state periodically vi
 
 As a DApp developer, to build on PoS security, the procedure is as simple as taking your smart contract and deploying it on Polygon. This is possible because of the account based architecture enabling an EVM-compatible sidechain.
 
-[Here is a Full Stack Dapp build on POS security](/docs/develop/full-stack-dapp-with-pos).
+
 
 ### Plasma Security
 

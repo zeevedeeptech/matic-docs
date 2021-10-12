@@ -36,11 +36,11 @@ At a lower level and with more detail, this is what happens
 Want to see this in video format? Please check it out below
 
 <video loop autoplay width="70%" height="70%" controls="true" >
-  <source type="video/mp4" src="/img/matic-to-eth/matic-eth-deposit.mp4"></source>
+  <source type="video/mp4" src="/img/matic-to-eth/deposit-eth-matic.mp4"></source>
   <p>Your browser does not support the video element.</p>
 </video>
 
-### Withdrawls
+### Withdrawals
 
 - Withdrawing assets is a breeze with the PoS bridge. It's as simple as burning the asset tokens on the Polygon chain, collecting the transaction hash of this burn transaction, and submitting it to the **RootChainManager**. The **RootChainManager** then calls for the predicate contract to release the funds that were locked on the Ethereum chain.
 
@@ -64,3 +64,4 @@ Want to watch all of this in video form? Please check it out below
   8. Once the transaction has been added to the check point, a proof of the burn transaction can be submitted on the **RootChainManager** contract on Ethereum by calling the **exit** function.
   9. This function call **verifies the checkpoint inclusion** and then triggers the Predicate contract which had locked the asset tokens when the assets were deposited initially.
   10. As the final step, the **predicate contract releases the locked tokens** and refunds it to the Users account on Ethereum.
+

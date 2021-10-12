@@ -423,11 +423,11 @@ module.exports = {
         "validate/mainnet/validator-guide",
         "validate/mainnet/validator-guide-binaries",
         "validate/mainnet/stake-on-polygon",
-        "validate/mainnet/validator-replacement",
+        //"validate/mainnet/validator-replacement",
         "validate/mainnet/signer-change",
         "validate/mainnet/commission",
         "validate/mainnet/move-stake",
-        "validate/mainnet/technical-faqs",
+        //"validate/mainnet/technical-faqs",
         {
           type: "category",
           label: "Validator Knowledge Base",

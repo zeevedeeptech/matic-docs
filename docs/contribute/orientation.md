@@ -17,7 +17,7 @@ There are several ways to identify an area where you can contribute to Polygon:
 - If you do not have a specific contribution in mind, you can also browse the issues labelled as `help wanted` on the [Polygon GitHub repos](https://github.com/maticnetwork)
 - Issues that additionally have the `good first issue` label are considered ideal for first-timers
 ## **Add to Polygon Documentation:**
-  - If you need to add or change anything in Polygon Documentation, please raise a PR to the `develop` branch. (Kindly check the sample PR)
+  - If you need to add or change anything in Polygon Documentation, please raise a PR to the `polygon-staging` branch. (Kindly check the sample PR)
   - Polygon team will review the PR or reach out accordingly. 
   - Repository: https://github.com/maticnetwork/matic-docs
   - Sample PR: https://github.com/maticnetwork/matic-docs/pull/360

@@ -82,7 +82,7 @@ Click on the Deposit success transaction to see the “Transfer Completed” pop
 
 Withdrawing funds from Polygon back to the Ethereum mainnet via,
 
-PoS Bridge is a simple 2-step process.For the funds to be available back on Ethereum it will take ~3 hours.
+PoS Bridge is a simple 2-step process. For the funds to be available back on Ethereum it will take ~3 hours.
  
 To withdraw funds, click on the ‘Withdraw’ link from any of the PoS token on ‘Your tokens on Polygon Mainnet’ section.
 
@@ -140,7 +140,7 @@ To withdraw funds, click on the ‘Withdraw’ link from any of the Plasma token
 
 You will be redirected to the bridge page where you need to enter the Withdraw amount.
 
-<img src={useBaseUrl("img/wallet/Wallet-13.png")} width="100%" height="100%"/> 
+<img src={useBaseUrl("img/wallet/Wallet-33.png")} width="100%" height="100%"/> 
 
 Once you have added the amount that you want to Withdraw and you can then click on the “Transfer” button.
 After you click on the “Transfer” button, you need to click on the “continue” button on “Important(Withdraw Disclaimer)” popup.

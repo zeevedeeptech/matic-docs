@@ -30,7 +30,7 @@ The sample project will ask you to install hardhat-waffle and hardhat-ethers.You
 
 - Go to hardhat.config.js
 - Update the hardhat-config with matic-network-crendentials.
-- create .secret file in the root to store your private key
+- create .env file in the root to store your private key
 
 ```js
 require("@nomiclabs/hardhat-ethers");
@@ -43,7 +43,7 @@ module.exports = {
     },
     matic: {
       url: "https://rpc-mumbai.maticvigil.com",
-      accounts: [privateKey]
+      accounts: [process.env.PRIVATE_KEY]
     }
   },
   solidity: {
@@ -55,15 +55,6 @@ module.exports = {
       }
     }
   },
-  paths: {
-    sources: "./contracts",
-    tests: "./test",
-    cache: "./cache",
-    artifacts: "./artifacts"
-  },
-  mocha: {
-    timeout: 20000
-  }
 }
 ```
 

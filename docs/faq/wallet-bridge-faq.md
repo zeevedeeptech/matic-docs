@@ -27,11 +27,15 @@ Plasma comes with a additional security where your funds are locked in a challen
 
 ## What tokens are only available on Plasma?
 
-MATIC tokens
+Polygon tokens
 
 ## How do I deposit to Polygon Wallet and also withdraw?
 
-These blogs and videos are a perfect guide to start with depositing and withdrawing: [https://docs.polygon.technology/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic](https://docs.polygon.technology/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic)[https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9](https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9)
+These blogs and videos are a perfect guide to start with depositing and withdrawing: 
+
+Documentation: [https://docs.polygon.technology/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic](https://docs.polygon.technology/docs/develop/wallets/matic-web-wallet/web-wallet-v2-guide/#depositing-funds-from-ethereum-to-matic)
+
+Videos: [https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9](https://www.youtube.com/playlist?list=PLslsfan1R_z0Epvnqsj29V1LBAh99dzu9)
 
 ## How to switch to Polygon mainnet in Metamask?
 
@@ -39,11 +43,11 @@ Assuming that you have already added the network and custom RPC for Polygon main
 
 1. Open your Metamask wallet and click on the network dropdown to expand as shown in figure:
 
-[https://lh5.googleusercontent.com/0Od3W3sy7nxQDY06EN22SjqdMuwzJBnF4I5zVPTSLkOZ2ycjLTri048ttVnzFTmya6IHKzlm3cYH9Zv-zN5cWmcwdK2e4Uq1OVfUPof24-5imaRju1uz1skGWDjSbBy4yrgY1Aoo](https://lh5.googleusercontent.com/0Od3W3sy7nxQDY06EN22SjqdMuwzJBnF4I5zVPTSLkOZ2ycjLTri048ttVnzFTmya6IHKzlm3cYH9Zv-zN5cWmcwdK2e4Uq1OVfUPof24-5imaRju1uz1skGWDjSbBy4yrgY1Aoo)
+<img src={useBaseUrl("img/wallet-bridge/wallet-faq-1.png")} width="30%" height="30%" />
 
-1. Once the window expands you can select Matic Network to switch.
+1. Once the window expands you can select Polygon Network to switch.
 
-[https://lh6.googleusercontent.com/wEW3bZ8F_MowOEJ1qyZT7vjBbb4H6pzU9Xnr9kEzJKmp8TXxqOox-ONmebCQSg4Ebvpogc0lscG9yi11yY_lHbcy_Xz0yVpA_mkimzAEUYI15NWSsM8OA9KqHxTZ2gVhVV-gDndz](https://lh6.googleusercontent.com/wEW3bZ8F_MowOEJ1qyZT7vjBbb4H6pzU9Xnr9kEzJKmp8TXxqOox-ONmebCQSg4Ebvpogc0lscG9yi11yY_lHbcy_Xz0yVpA_mkimzAEUYI15NWSsM8OA9KqHxTZ2gVhVV-gDndz)
+<img src={useBaseUrl("img/wallet-bridge/wallet-faq-2.png")} width="30%" height="30%" />
 
 You have now switched to Polygon mainnet.
 
@@ -59,7 +63,8 @@ You need to manually add the custom token address of WETH to Metamask.
 
 Open Metamask and scroll down to click on add tokens.
 
-[https://lh6.googleusercontent.com/KXBiSkXtLJaP6f1uEeYOOU6Suj7II6g3Nw5EXLklIWujd7_Q56Bn5yfsRpZD5ouB87-qzUHNVmcGWche1G5A2zif0VTZ3rH9GTeuJR2fzi6YvUDCDsGEPWTukjNJbid7klNJwug8](https://lh6.googleusercontent.com/KXBiSkXtLJaP6f1uEeYOOU6Suj7II6g3Nw5EXLklIWujd7_Q56Bn5yfsRpZD5ouB87-qzUHNVmcGWche1G5A2zif0VTZ3rH9GTeuJR2fzi6YvUDCDsGEPWTukjNJbid7klNJwug8)
+<img src={useBaseUrl("img/wallet-bridge/wallet-faq-3.png")} width="30%" height="30%" />
+
 
 Then, select Custom Token to add the relevant contract address, symbol and the decimal precision. Contract addresses (PoS-WETH in this case) can be found on this link: [https://docs.polygon.technology/docs/develop/network-details/mapped-tokens/](https://docs.polygon.technology/docs/develop/network-details/mapped-tokens/)
 
@@ -69,7 +74,8 @@ Decimal of precision is 18 for WETH (generally, for most tokens decimal of preci
 
 Once you fill in all the fields, you can click on next and your token will be added.
 
-[https://lh3.googleusercontent.com/xlHZO9N35Y7qRHVHoYdoXLHrGpDRCkd6ZM7bBD3mwi24lbwjJBW3AVWCRYMTRKem-vsj-3h0C1Hs1HpWHWlcAfGlpjZCXoEWYETYT3MXGCukqGhmDc2uOtr3LlOoPSJFJt_RfQ__](https://lh3.googleusercontent.com/xlHZO9N35Y7qRHVHoYdoXLHrGpDRCkd6ZM7bBD3mwi24lbwjJBW3AVWCRYMTRKem-vsj-3h0C1Hs1HpWHWlcAfGlpjZCXoEWYETYT3MXGCukqGhmDc2uOtr3LlOoPSJFJt_RfQ__)
+<img src={useBaseUrl("img/wallet-bridge/wallet-faq-4.png")} width="30%" height="30%" />
+
 
 ## Can I send my tokens from Polygon to any other wallet/exchange ?
 

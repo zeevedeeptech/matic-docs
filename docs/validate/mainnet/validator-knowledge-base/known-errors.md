@@ -10,7 +10,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-## *Error: Bad block/Invalid Merkle*
+## **1. Error: Bad block/Invalid Merkle**
 
 **Description:** 
 A Bad Block or Invalid Merkle root error occurs when your Heimdall and Bor are not in sync with each other. Heimdall is the consensus layer for Polygon POS chain, which means that Heimdall directs Bor to create blocks accordingly. A Bad Block occurs when Bor moves ahead to create a block which has not been directed by Heimdall and hence there is an invalid hash been created, which causes the error, Bad Block, or Invalid Merkle root.
@@ -53,12 +53,12 @@ Once you run these commands, the output for this would be `null` . Null means go
 
 If in any case, none of these solutions work for you, please contact the Polygon Support team immediately.
 
-## *Error: Failed Sanity Checks*
+## **2. Error: Failed Sanity Checks**
 
 **Description:** 
 `Addressbook` warnings can be ignored without an issue most of the time. If your node is connected to sufficient number of peers these kind of errors can be ignored. Your `pex` is just trying to re-establish it's connections with peers already present in `addrbook.json`
 
-## *Issue: Bor synchronisation is slow*
+## **3. Issue: Bor synchronisation is slow**
 
 **Description:** 
 If Bor synchronisation is slow it could be due to either of the below reasons:
@@ -79,7 +79,7 @@ If Bor synchronisation is slow it could be due to either of the below reasons:
 **Solution:** 
 As the issue is more about lack of hardware resources try upgrading it to double of the current specifications.
 
-## *Node is not signing any checkpoints*
+## **4. Node is not signing any checkpoints**
 
 **Description:** 
 First of all, your node not signing checkpoints could be for a multiple reasons. 
@@ -93,7 +93,7 @@ Check your Bor service and see if it has halted abruptly or there are any errors
 **Solution 3:** 
 Check if your Heimdall Bridge is running or not or if it has any errors in the logs. Try restarting the service and see if the issue resolves.
 
-## *Issue: Validator Heimdall is unable to connect to Peers*
+## **5. Issue: Validator Heimdall is unable to connect to Peers**
 
 **Description:** 
 This typically means that your Sentry Heimdall is running into issues. 
@@ -104,11 +104,11 @@ This typically means that your Sentry Heimdall is running into issues.
 - If the service is stopped then restarting the service on your Sentry should resolve this issue.
 - Similarly, after fixing your sentry, a restart of your Heimdall service should also resolve the problem.
 
-## *Error: Error while fetching mainchain receipt error*
+## **6. Error: Error while fetching mainchain receipt error**
 
 **Description:** These are normal logs. Do not do anything to your bridge.
 
-## *Validator bor is stuck on block for a long time*
+## **7. Validator bor is stuck on block for a long time**
 
 **Description:** 
 This means that your Bor on your Sentry is also stuck because your Validator gets information from your Sentry. 
@@ -118,7 +118,7 @@ This means that your Bor on your Sentry is also stuck because your Validator get
 - Please check your Bor logs on your sentry and see if everything is okay.
 - Probably restart the Bor service one on your Bor and then simultaneously restart your Bor service on your Validator as well.
 
-## *Error(while upgrading Bor): build [github.com/ethereum/go-ethereum/cmd/geth:](http://github.com/ethereum/go-ethereum/cmd/geth:) cannot load hash/maphash: malformed module path "hash/maphash": missing dot in first path element*
+## **8. Error(while upgrading Bor): build [github.com/ethereum/go-ethereum/cmd/geth:](http://github.com/ethereum/go-ethereum/cmd/geth:) cannot load hash/maphash: malformed module path "hash/maphash": missing dot in first path element**
 
 **Description:** 
 This is because your Go Version is slightly outdated. 
@@ -126,7 +126,7 @@ This is because your Go Version is slightly outdated.
 **Solution:** 
 The recommended Go version is 1.15.x and above
 
-## *Issue: Sentry Bor is still struggling with 'Looking for peers' and Peers are not succeeding*
+## **9. Issue: Sentry Bor is still struggling with 'Looking for peers' and Peers are not succeeding**
 
 **Description:** 
 This could happen when Bor has lost connectivity with other peers. 
@@ -139,7 +139,7 @@ This could happen when Bor has lost connectivity with other peers.
 
 If none of this works, then please contact the **Support Team** immediately for assistance.
 
-## *Error: (in Bor)"Failed to prepare header mining at block 0"*
+## **10. Error: (in Bor)"Failed to prepare header mining at block 0"**
 
 **Description:** 
 This happens because of a formatting issue in your `static-nodes.json` file (~/.bor/data/bor/static-nodes.json). 
@@ -149,7 +149,7 @@ This happens because of a formatting issue in your `static-nodes.json` file (~/.
 - Ensure there are no space and no additional characters like < / > .
 - If you have made any changes to the file then please restart your Bor service and you should see logs printing.
 
-## *Error: "30303" or invalid command*
+## **11. Error: "30303" or invalid command**
 
 **Description:** 
 This is because you haven’t created the bor keystore and the password file for it. 
@@ -158,14 +158,14 @@ This is because you haven’t created the bor keystore and the password file for
 
 Ensure that you follow all the steps from the guide setup.
 
-## *Error: Impossible reorg, please file an issue*
+## **12. Error: Impossible reorg, please file an issue**
 
 **Description:** 
 Let these logs be. Your node should ideally not suffer because of this and the issue should be automatically resolved.
 
 If your node is suffering because of this, please contact the support team immdiately.
 
-## *Error: "Host not found" while setting up a node using Ansible*
+## **13. Error: "Host not found" while setting up a node using Ansible**
 
 **Description:** 
 This could be because your `inventory.yml` file may have some formatting issues. 
@@ -173,7 +173,7 @@ This could be because your `inventory.yml` file may have some formatting issues.
 **Solution:** 
 Correct them with proper indentation and then try again
 
-## *Issue: "Dialling failed" in Heimdall*
+## **14. Issue: "Dialling failed" in Heimdall**
 
 **Description:** 
 This is related to connectivity and more specifically a port related problem
@@ -186,7 +186,7 @@ This is related to connectivity and more specifically a port related problem
 - Try adding additional peers in vi ~/.heimdalld/config/config.toml
 - Set max_open_connection parameter to 100.
 
-## *Issue: Looking for Peers or Stopping Peer for error*
+## **15. Issue: Looking for Peers or Stopping Peer for error**
 
 **Solution:**
 
@@ -236,7 +236,7 @@ This is related to connectivity and more specifically a port related problem
     sudo service heimdalld start
     ```
 
-## *Error: Error while fetching data from URL*
+## **16. Error: Error while fetching data from URL**
 
 **Error sample:**
 
@@ -251,14 +251,14 @@ module=span service=processor lastSpanId=2862
 
 Then the Heimdall Bridge needs a restart.
 
-## *Error: no contract code at the given address*
+## **17. Error: no contract code at the given address**
 
 **Solution**
 
 1. Get the right configs from Github and copy them to ~/.heimdalld/config and
 2.  Please reset heimdall using heimdalld unsafe-reset-all.
 
-## *Issue: Problems in starting Bor*
+## **18. Issue: Problems in starting Bor**
 
 **Issue:**
 
@@ -274,7 +274,7 @@ have to add address
 /etc/matic/metadata
 ```
 
-## *Error: Failed to unlock account (0x...) No key for given address or file*
+## **19. Error: Failed to unlock account (0x...) No key for given address or file**
 
 **Description:**
 
@@ -321,7 +321,7 @@ For Binaries:
     ~/.bor/password.txt
     ```
 
-## *Consequences of validator missing a checkpoint and points to investigate from our side*
+## **20. Consequences of validator missing a checkpoint and points to investigate from our side**
 
 - Economics
     - Bad reputation for Validator
@@ -329,7 +329,7 @@ For Binaries:
 - investigation
     - Ask for recent logs
 
-## *Error: dpkg: error processing archive matic-heimdall-xxxxxxxxxx*
+## **21. Error: dpkg: error processing archive matic-heimdall-xxxxxxxxxx**
 
 **Sample:**
 
@@ -341,7 +341,7 @@ This occurs mainly because of a previous installation of Matic on machine. To re
 
 `sudo dpkg -r matic-node`
 
-## *Issue: Tendermint was rest without resetting application's data*
+## **22. Issue: Tendermint was rest without resetting application's data**
 
 **Solution:**
 
@@ -355,7 +355,7 @@ This occurs mainly because of a previous installation of Matic on machine. To re
     $ rm -rf $HEIMDALLDIR/bridge
     ```
 
-## *Error: "Wrong Block.Header.AppHash."*
+## **23. Error: "Wrong Block.Header.AppHash."**
 
 **Description:** 
 This error usually occurs due to Infura requests getting exhausted. When you setup a node on Matic, you add an Infura Key to the Config file (Heimdall). By default you are allowed 100k Requests per day, if this limit is crossed, then you would face such problems. 
@@ -363,14 +363,14 @@ This error usually occurs due to Infura requests getting exhausted. When you set
 **Solution**
 To resolve this you can create a new API key and add it to the `config.toml` file.
 
-## *Issue: Bor crashed*
+## **24. Issue: Bor crashed**
 
 **Solution:**
 
 - Try upgrading to double the amount of RAM
 - For example, their current RAM capacity is 16GB, it can be upgraded to 32GB
 
-## *Error: err="insufficient funds for gas * price + value"*
+## **25. Error: err="insufficient funds for gas * price + value"**
 
 **Description:**
 
