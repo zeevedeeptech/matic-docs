@@ -18,7 +18,7 @@ The [**FxERC20RootTunnel**](https://github.com/fx-portal/contracts/blob/main/con
 
 Here are some important functions that should be known if you're using the **FxERC20RootTunnel**
 
-- `deposit(address rootToken, address user, uint256 amount, bytes memory data`he `deposit()` function is called with the address of the token on root chain, the receivers address, the amount and the data if needed. You must have approved the contract using the standard ERC20 `Approve` function to spend your tokens first.
+- `deposit(address rootToken, address user, uint256 amount, bytes memory data` The `deposit()` function is called with the address of the token on root chain, the receivers address, the amount and the data if needed. You must have approved the contract using the standard ERC20 `Approve` function to spend your tokens first.
 - _`processMessageFromChild(bytes memory data)` : The receiveMessage function calls the `_processMessageFromChild()` function which is the exit function for the **FxERC20RootTunnel**. The `_processMessageFromChild()`function is called with the data that was successfully transferred from the Child chain and then it goes on to transfer or release the tokens to the receiver's account.
 
 ## FxERC20ChildTunnel
