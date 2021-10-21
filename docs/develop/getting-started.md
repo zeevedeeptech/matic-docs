@@ -72,7 +72,7 @@ All the network related details can be found in [network docs](/docs/develop/net
 - [Sidechains and Plasma](https://docs.polygon.technology/docs/home/blockchain-basics/sidechain)
 - [Polygon's architecture and Security](https://docs.polygon.technology/docs/home/architecture/security-models)
 - [When to use Plasma](https://docs.polygon.technology/docs/home/architecture/security-models)
-- [Moving assets from Mainchain to Polygon chain: the Plasma way](https://maticnetwork.github.io/matic.js/docs/)
+- [Moving assets from Mainchain to Polygon chain: the Plasma way](https://maticnetwork.github.io/matic.js/)
 - [Swapping Plasma Assets](https://docs.polygon.technology/docs/develop/advanced/swap-assets)
 
 **Other links**
