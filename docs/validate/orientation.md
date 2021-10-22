@@ -52,7 +52,7 @@ Once you have familiarised with the Architecture and Specs and Codebase, you can
 
 **Stake on Polygon**
 
-Stake tokens to become a validator - [follow this guide](https://docs.matic.network/docs/validate/counter-stake-stage-2/stake-on-matic)
+Stake tokens to become a validator - [follow this guide](https://docs.polygon.technology/docs/validate/mainnet/stake-on-matic/)
 
 ## To become a Delegator
 
