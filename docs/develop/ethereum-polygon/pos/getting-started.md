@@ -19,11 +19,11 @@ Proof of stake based assets provides PoS security and faster exit with one check
 
 ## Steps to use the PoS Bridge
 
-Before we enter into this section of the docs, it may help to have a thorough understanding of these terms as you'll interact with them while trying to use the bridge. [Mapping](https://docs.matic.network/docs/develop/ethereum-matic/submit-mapping-request/) and the [State Sync Mechanism](https://docs.matic.network/docs/validate/validator/state-sync-mechanism/) 
+Before we enter into this section of the docs, it may help to have a thorough understanding of these terms as you'll interact with them while trying to use the bridge. [Mapping](https://docs.polygon.technology/docs/develop/ethereum-matic/submit-mapping-request/) and the [State Sync Mechanism](https://docs.polygon.technology/docs/validate/validator/state-sync-mechanism/) 
 
 Done with those links? Let's continue to a high level overview of the flow then.
 
-- The first step to using the PoS bridge is mapping the **Root Token** and **Child Token**. Don't worry, this isn't anything complex. It just means that the token contract on the root chain and the token contract on the child chain have to maintain a connection (called mapping) to transfer assets between themselves. If you're interested in submitting a mapping request, please do that [here](https://docs.matic.network/docs/develop/ethereum-matic/submit-mapping-request/).
+- The first step to using the PoS bridge is mapping the **Root Token** and **Child Token**. Don't worry, this isn't anything complex. It just means that the token contract on the root chain and the token contract on the child chain have to maintain a connection (called mapping) to transfer assets between themselves. If you're interested in submitting a mapping request, please do that [here](https://docs.polygon.technology/docs/develop/ethereum-matic/submit-mapping-request/).
 
 At a lower level and with more detail, this is what happens
 
