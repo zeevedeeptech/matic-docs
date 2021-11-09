@@ -23,7 +23,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 
 1. Call the `deployChildToken()` on **FxMintableERC20ChildTunnel** and pass the necessary token info as parameters. This emits a TokenMapped event which contains the rootToken and childToken addresses. Note these addresses.
 2. Call `mintToken()` on **FxMintableERC20ChildTunnel** to mint tokens on the child chain.
-3. Call withdraw() on **FxMintableERC20ChildTunnel** to withdraw tokens from Polygon. Note the transaction hash as this will come in handy to generate the burn proof.
+3. Call `withdraw()` on **FxMintableERC20ChildTunnel** to withdraw tokens from Polygon. Note the transaction hash as this will come in handy to generate the burn proof.
 4. Wait for the burn transaction to be included in the checkpoint (~30-45 minutes). After this, generate the burn proof using an example script [here](https://www.notion.so/62c4503d9a6a4bc57c491ee09376d71a).
 
 ### Steps for withdrawing tokens on Ethereum[#](https://docs.matic.network/docs/develop/l1-l2-communication/fx-portal#steps-for-withdrawing-tokens-on-ethereum)

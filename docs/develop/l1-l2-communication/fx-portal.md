@@ -29,7 +29,7 @@ The child and root tunnel contracts enable deposit of tokens on the root chain a
 #### `FxERC20RootTunnel`
 
 - `mapToken(address rootToken)` You can call the function on the deployed contract to map your ERC20 token and create a corresponding child token on the child chain.
-- `deposit(address rootToken, address user, uint256 amount, bytes memory data)` Call deposit() with the address of the mapped token, the address who can withdraw with a corresponding amount (along with data, if needed). You must have approved the contract using the standard ERC20 `approve` function to spend your tokens first.
+- `deposit(address rootToken, address user, uint256 amount, bytes memory data)` Call deposit() with the address of the mapped token, the address who can withdraw with a corresponding amount (along with data, if needed). You must have approved the contract using the standard ERC20 `approve()` function to spend your tokens first.
 
 #### `FxERC20ChildTunnel`
 

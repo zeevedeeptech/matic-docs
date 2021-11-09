@@ -16,7 +16,7 @@ Why not the PoS bridge as Polygon as we architected it? Well, its simple. We wan
 
 ## How does the FxPortal work?
 
-The FxPortal works through two contracts, the FxChild and the FxRoot, that communicate via passing information through the StateSync Mechanism and the use of what we call tunnelling contracts. In Polygon, our tunneling contracts are the [FxBaseRootTunnel](https://github.com/fx-portal/contracts/blob/main/contracts/tunnel/FxBaseRootTunnel.sol) and the [FxBaseChildTunnel](https://github.com/fx-portal/contracts/blob/main/contracts/tunnel/FxBaseChildTunnel.sol) which form the data tunnel mechanism.. The Polygon team has deployed these contracts for you so you can get a jump start on the project, but if you want to start your own way, you can go ahead to extend the tunneling contracts to include your custom logic.
+The FxPortal works through two contracts, the FxChild and the FxRoot, that communicate via passing information through the StateSync Mechanism and the use of what we call tunnelling contracts. In Polygon, our tunneling contracts are the [FxBaseRootTunnel](https://github.com/fx-portal/contracts/blob/main/contracts/tunnel/FxBaseRootTunnel.sol) and the [FxBaseChildTunnel](https://github.com/fx-portal/contracts/blob/main/contracts/tunnel/FxBaseChildTunnel.sol) which form the data tunnel mechanism. The Polygon team has deployed these contracts for you so you can get a jump start on the project, but if you want to start your own way, you can go ahead to extend the tunneling contracts to include your custom logic.
 
 ## Talk is cheap, show me the code
 
