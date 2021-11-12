@@ -1,7 +1,7 @@
 module.exports = {
   title: "Polygon Technology | Documentation",
   tagline: "Welcome to Polygon developer documentation",
-  url: "https://docs.matic.network/",
+  url: "https://docs.polygon.technology/",
   baseUrl: "/",
   favicon: "img/polygon/polygon-logo.svg",
   organizationName: "Polygon Technology",
@@ -29,6 +29,7 @@ module.exports = {
       defaultLanguage: "javascript",
     },
     algolia: {
+      appId: 'BH4D9OD16A',
       apiKey: "c3ad4eabc5af314ea3ed331efbe0a5c4",
       indexName: "matic_developer",
       algoliaOptions: {},
@@ -56,7 +57,7 @@ module.exports = {
           activeBasePath: "docs/develop",
         },
         {
-          to: "docs/validate/orientation",
+          to: "docs/validate/polygon-overview",
           label: "Validate",
           position: "left",
           activeBasePath: "docs/validate",

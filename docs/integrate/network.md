@@ -8,10 +8,10 @@ keywords:
 image: https://matic.network/banners/matic-network-16x9.png 
 ---
 
-- [RPC Health](https://status.matic.today) -> To view current status and rpc health
+
 - [Network Details](/docs/develop/network-details/network) -> To view network details
 - [Polygon Faucet](https://faucet.matic.network/) -> Get TestTokens at Polygon faucet
-- [Checkpoint Status](https://status.matic.today/#/checkpoints) -> To view checkpoint status
+
 
 ## Testnets
 | Network   | RPC | Status         | Parent Chain                                                                                                    | Block Explorer

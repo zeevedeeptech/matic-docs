@@ -11,7 +11,7 @@ image: https://matic.network/banners/matic-network-16x9.png
 Plasma Secured Solution to transfer your assets from Ethereum to Polygon and vice-versa.
 * Use [matic.js](https://github.com/maticnetwork/matic.js) to interact with the Polygon Plasma contracts.
 
-<!-- * [getting-started](https://maticnetwork.github.io/matic.js/docs/): Set-up the environment for maticjs.
+<!-- * [getting-started](https://maticnetwork.github.io/matic.js/): Set-up the environment for maticjs.
 1. [(Ethereum → Matic)](/docs/develop/maticjs/deposit): Deposit assets from root chain to Matic.
 2. [(Matic ↔ Matic)](/docs/develop/maticjs/transfer): Transfer assets between accounts on Matic.
 3. [(Matic → Ethereum)](/docs/develop/maticjs/withdraw): Withdraw assets from Matic to root chain. -->
@@ -43,6 +43,6 @@ We will deploy a Child Contract for you on Polygon which can be flexible based o
 
 7. If the users want to get back these Xtoken on Etheruem Chain, then call StartWithdraw which will withdraw from childTokenContract and Burn these tokens on Polygon Chain. To avoid any bad participation, A set of validation will take place. Once it is done the tokens will be available at Ethereum Chain.
 
-8. Call processExits() to recieve those tokens back to your EOA or your account address.
+8. Call processExits() to receive those tokens back to your EOA or your account address.
 
 9. You should see the 50 XToken on the Ethereum mainnet at you Account Address.

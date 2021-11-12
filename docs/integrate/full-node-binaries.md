@@ -186,7 +186,7 @@ sudo cp *.service /etc/systemd/system/
 ```js
  seeds="4cd60c1d76e44b05f7dfd8bab3f447b119e87042@54.147.31.250:26656,b18bbe1f3d8576f4b73d9b18976e71c65e839149@34.226.134.117:26656"
 ```
-- Configure the following in `~/.heimdalld/config/heimdall-config.toml`:
+- Configure the following in `vi ~/.heimdalld/config/heimdall-config.toml`:
 
     ```js
     eth_rpc_url =<insert Infura or any full node RPC URL to Goerli>

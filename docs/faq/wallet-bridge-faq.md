@@ -51,7 +51,7 @@ Assuming that you have already added the network and custom RPC for Polygon main
 
 You have now switched to Polygon mainnet.
 
-You can refer to this link if you are looking for instructions on how to add the network to Metamask: [https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-metamask](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-wallets#configure-polygon-on-metamask)
+You can refer to this link if you are looking for instructions on how to add the network to Metamask: [https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/](https://docs.polygon.technology/docs/develop/metamask/config-polygon-on-metamask/)
 
 ## How to choose Polygon mainnet in Walletlink?
 

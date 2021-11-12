@@ -1,54 +1,37 @@
-Rewards for Stage 1 will be distributed for the following sub-categories:
+---
+id: rewards
+title: Rewards
+sidebar_label: Rewards
+description: Learn about the Polygon Network staking incentives.
+keywords:
+  - docs
+  - matic
+image: https://matic.network/banners/matic-network-16x9.png 
+---
 
-* Uptime
-* Bug Bounties
-* Mini-contests
+Polygon has allocated 12% of its total supply of 10 billion tokens to fund the staking rewards. This is to ensure that the network is seeded well enough until transaction fees gain traction. These rewards are primarily meant to jump-start the network. While the protocol in the long run is intended to sustain itself on the basis of transaction fees.
 
-## Uptime (~50% of reward pool / ~$20,000 worth of MATIC tokens)
+**Validator Rewards = Staking Rewards + Transaction Fees**
 
-People who are running the node for the entirety of the Counter Stake program (Stage 1) will be rewarded based on node uptime %. Uptime will be calculated on the performance of the blocks signed on Heimdall.
+This is allocated in a way to ensure gradual decoupling of staking rewards from being the dominant component of the validator rewards.
 
-Note this is a testnet, and therefore it will be subject to issues and bugs which may affect the network and uptime. In such events, uptime calculation may be reset. All uptime calculations will be decided by the Polygon project team at this stage.
+|Year|Target Stake (30% of circulating supply)|Reward Rate for 30% Bonding|Reward Pool|
+|---|---|---|---|
+|First|1,977,909,431|20%|312,917,369|
+|Second|2,556,580,023|12%|275,625,675|
+|Third|2,890,642,855|9%|246,933,140|
+|Fourth|2,951,934,048|7%|204,303,976|
+|Fifth|2,996,518,749|5%|148,615,670 + **11,604,170**|
 
-Typically, participants are not expected to do anything other than just stake their testnet tokens and have a high-uptime validator node setup to qualify for this phase.
+Below is a sample snapshot of the expected annual rewards for the first 5 years considering staked supply ranging from 5% to 40% at 5% interval
 
-All participants calculated based on uptime percentage will be rewarded with this pool. The reward distribution will be weighted based on relative uptime scores.
+|% of circulating supply staked|5%|10%|15%|20%|25%|30%|35%|40%|
+|---|---|---|---|---|---|---|---|---|
+|Annual reward for year|
+|First|120%|60%|40%|30%|24%|20%|17.14%|15%|
+|Second|72%|36%|24%|18%|14.4%|12%|10.29%|9%|
+|Third|54%|27%|18%|13.5%|10.8%|9%|7.71%|6.75%|
+|Fourth|42%|21%|14%|10.5%|8.4%|7%|6%|5.25%|
+|Fifth|30%|15%|10%|7.5%|6%|5%|4.29%|3.75%|
 
-To determine the winners, Polygon Network will primarily consider the uptime (votes on the blockchain) of the validators rather than the total bonded stake or the total amount of test tokens held. This means that delegating or transferring stake from Sybil accounts does not directly lead to winning.
-
-Note that all rewards in the Polygon Counter Stake program are awarded at the Polygon project team’s discretion. Polygon Network reserves the right to modify or revoke any rewards.
-
-## Bug Bounties (~40% of reward pool / ~$16,000 worth of MATIC tokens)
-
-There will bounties for bugs that are found and reported during Stage 1 of the Counter Stake program. The bugs reported will be categorised as:
-
-* L0 – Highest Severity
-* L1 – Moderate Severity
-* L2 – Lowest Severity
-
-The categorization of a reported bug will be at the Polygon team’s discretion. Rewards will be based on the category of the bugs reported.
-
-Following are the provisional nature of the bugs:
-
-* Node stopped
-* Staking Contract bugs
-* Heimdall bugs
-* Bor bugs
-* Checkpoint issues
-
-There will be more categories of bugs which will be identified during the course of the event.
-
-To qualify for this you will need to create GitHub issues in the correct repository. Depending on the severity (decided by the project team, for example L0 is the highest severity and L2 would be the lowest severity) reported issue will be rewarded.
-
-## Other Rewards (~10% of reward pool / ~$4,000 worth of MATIC tokens)
-
-During the course of the event (Stage 1) there will be multiple mini-contests taking place where validators can earn further rewards. Depending on completing certain tasks or activities, rewards will be distributed. Some of the tasks are mentioned below:
-
-* Validator Join
-* Validator Signer Change
-* Validator Exit
-* Validator Replacement
-* Claim Rewards
-* Delegation
-
-The above tasks/activities may be subject to change in the future. The rewards for these events will be disclosed during the course of Stage 1.
+See also [Polygon reward calculator](https://wallet.polygon.technology/staking/rewards-calculator).
