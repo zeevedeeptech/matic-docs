@@ -106,7 +106,7 @@ GSN will help us in building great dApps where user won't need to pay for their 
 
 ##### Recipient Contract
 
-This is the contract that we want to make GSN-aware, for that we're simply going to inherit from [BaseRelayRecipeint](https://github.com/opengsn/gsn/blob/master/contracts/BaseRelayRecipient.sol), which adds one important method `_msgSender()`, to be used in all occurances of `msg.sender`. `_msgSender()` will take care of all lower level details for extracting actual client address, which will be different that `msg.sender` in case of meta transactions.
+This is the contract that we want to make GSN-aware, for that we're simply going to inherit from [BaseRelayRecipeint](https://github.com/opengsn/gsn/blob/master/contracts/BaseRelayRecipient.sol), which adds one important method `_msgSender()`, to be used in all occurrences of `msg.sender`. `_msgSender()` will take care of all lower level details for extracting actual client address, which will be different that `msg.sender` in case of meta transactions.
 
 ##### PayMaster Contract
 
