@@ -54,7 +54,7 @@ It must be understood that the mapping always happens in order. If a mapping isn
 
 Go to the example contracts list, copy the FxERC20RootTunnel contract address, paste it on [Goerli's Etherscan](http://goerli.etherscan.io/), go the the contracts tab and walk through the code like this
 
-- The `FxERC20RootTunnel()` ****function on line 1295 internally calls `deposit()` function which in itself calls `_sendMessageToChild()`
+- Just below the `mapToken()` function, we internally call the `deposit()` function which in itself calls `_sendMessageToChild()`
 - `_sendMessageToChild()` on line 1109 then calls the `sendMessageToChild()` function of the FxRoot and takes in the `FxChildTunnel` and `message` as parameters
 
 Go [here](https://github.com/fx-portal/contracts/blob/main/contracts/FxRoot.sol) to continue 
@@ -81,7 +81,7 @@ Go [here](https://github.com/fx-portal/contracts/blob/main/contracts/examples/er
 
 Copy this (0xbfDeFCd92335b22b205bb5b63B9eC909D6e99C16), and continue [here](https://goerli.etherscan.io/address/0xbfDeFCd92335b22b205bb5b63B9eC909D6e99C16#code)
 
-1. On line 1232, we have the `processMessageFromChild()`. The `recieveMessage()` verifies check point inclusion of the child token transaction then calls the `processMessageFromChild()` function. This function decodes the amount of tokens that was burnt and then transfers the amount back to the user. 
+1. Next up, we have the `processMessageFromChild()` function. The `recieveMessage()` that is called inside it verifies check point inclusion of the child token transaction then calls the `processMessageFromChild()` function. This function decodes the amount of tokens that was burnt and then transfers the amount back to the user. 
 2. And that is it! 
 
 `receiveMessage()` function verifies check point inclusion of the child token transaction and then calls _processMessageFromChild
