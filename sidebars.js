@@ -425,6 +425,11 @@ module.exports = {
         "validate/validate/validator-commission-operations",
       ],
     },
+    {
+      type: "category",
+      label: "Knowledge Base",
+      items: ["validate/knowledge-base/known-issues","validate/knowledge-base/how-to",]
+    },
     "validate/validator-faq",
     "validate/general-faq",
     "validate/bug-bounty-program",
