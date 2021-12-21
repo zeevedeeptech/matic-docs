@@ -143,7 +143,7 @@ sequence: 0
 To print all params 
 
 ```go
-heimdalldcli query auth params
+heimdallcli query auth params
 ```
 
 **Expected Result:**

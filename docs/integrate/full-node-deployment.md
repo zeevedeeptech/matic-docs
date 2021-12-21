@@ -353,7 +353,7 @@ You have to follow the exact outlined sequence of actions, otherwise you will ru
     - Open ports 22, 26656 and 30303 to world (0.0.0.0/0) on node firewall. All other ports should be closed.
 
 ## Full Node Access (via Alchemy)
-  1. Visit Alchemy.com and sign up for a free account
+  1. Visit [Alchemy.com](https://www.alchemy.com/) and sign up for a free account
   2. Get your private key and API endpoint
   3. Use your Alchemy account to access Polygon Mainnet
 

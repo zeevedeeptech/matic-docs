@@ -67,6 +67,8 @@ All the network related details can be found in [network docs](/docs/develop/net
 - [Full Stack DApp: Tutorial Series](https://kauri.io/full-stack-dapp-tutorial-series/5b8e401ee727370001c942e3/c)
 - Getting to know your tools:
     - [Web3js](https://www.dappuniversity.com/articles/web3-js-intro), [Ethers.js](https://docs.ethers.io/v5/),[Remix](https://docs.polygon.technology/docs/develop/remix/), [Truffle](https://docs.polygon.technology/docs/develop/truffle), [Metamask](https://docs.polygon.technology/docs/develop/metamask/hello), [Arkane](/docs/develop/wallets/arkane/intro)
+- [Integrating Webhooks](https://docs.alchemy.com/alchemy/guides/v2-alchemy-notify)
+
 
 
 **😎 Advanced**
