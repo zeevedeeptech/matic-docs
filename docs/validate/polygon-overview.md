@@ -30,7 +30,7 @@ On the Polygon Network, you can be a validator or a delegator. See:
 
 If your goal is to become a validator, it is essential that you understand the Polygon architecture.
 
-See [Polygon Architecture](/docs/contribute/matic-architecture).
+See [Polygon Architecture](/docs/validate/validator/architecture).
 
 ### Components
 
