@@ -323,6 +323,15 @@ module.exports = {
         "home/architecture/security-models",
       ],
     },
+    {
+      type: "category",
+      label: "CEXs, Wallets & Fiat-on-ramps",
+      items: [
+        "develop/cexs-wallets/fiat-ramps",
+        "develop/cexs-wallets/cexs",
+        "develop/cexs-wallets/wallets",
+      ],
+    },
   ],
   Integrate: [
     "integrate/quickstart",
