@@ -129,6 +129,13 @@ Once you have confirmed the second transaction, you will receive your funds back
 
 >Note: You can view the successful transactions after “Transfer in Progress/Action required” transactions in the “Action Required” popup.
 
+Please watch this video below for a graphical illustration of how deposits work:
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/wallet/depositMatic.mp4"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
+
 
 ## Withdrawing Funds from Polygon Back to Ethereum on Plasma Bridge
 
@@ -183,5 +190,12 @@ Once you have confirmed all these transactions, you will receive your funds back
 >Note: You can view the successful transactions after “Transfer in Progress/Action required” transactions in the “Action Required” popup.
 
 
->Note: In case you any queries, feel free to raise a ticket here https://support.polygon.technology/support/home
+>Note: In case you have any queries, feel free to raise a ticket here https://support.polygon.technology/support/home
+
+Please watch this video below for a graphical illustration of how withdrawals work:
+
+<video loop autoplay width="70%" height="70%" controls="true" >
+  <source type="video/mp4" src="/img/wallet/WithdrawMatic.mp4"></source>
+  <p>Your browser does not support the video element.</p>
+</video>
 
