@@ -400,6 +400,11 @@ Length in byte format - 4
   1. Visit [nownodes.io](https://nownodes.io) and sign up for a free account
   2. Get your free API key
   3. Use your NOWNodes account to access Polygon Mainnet
+  
+## Full Node and Block Explorer Access (via Zeeve)
+  1. Visit [zeeve.io](https://zeeve.io) and sign up for a free account
+  2. Get your free API key
+  3. Use your Zeeve account to access Polygon Mainnet
 
 </TabItem>
 </Tabs>
